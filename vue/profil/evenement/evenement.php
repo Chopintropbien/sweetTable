@@ -6,8 +6,11 @@
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/base.css"/>
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/profil/navigateur/navigateur.css"/>
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/navigateur/navigateur.css"/>
+
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/profil/evenement/evenement.css"/>
-			
+
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/class/evenement/evenement.class.css"/>
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/class/evenement/evenementResume.class.css"/>
 			
 			
 			<title id="titre">  </title>
@@ -45,32 +48,18 @@
 						
 						
 						<article id="evenementAuQuelOnParticipeArticle">
-							<ul id="evenementAuQuelOnParticipe">
-								<li><h4> Evenement au quel je participe</h4></li>
-								<hr/>
-								<li>
-									<img src="http://localhost/Meittopi/image/profil_vide.png" />
-									<input type="button" class="petiteCroix"value ="+"/>
-									<article> 
-										<a><h6> kZEFB SZfh IF fqhjeb fquj</h6></a>
-										<time> mardi 20 à 20h</time>
-										<p> Avec: <a>Mehdi</a>, <a>Andrei</a> </p>
-										<p>Participation? <a>Peut-être</a></p>
-									</article>
-									
-								</li>
-								<hr/>
-								<li>
-									<img src="http://localhost/Meittopi/image/profil_vide.png" />
-									<input type="button" class="petiteCroix"value ="+"/>
-									<article> 
-										<a><h6> kZEFB SZfh IF fqhjeb fquj</h6></a>
-										<time> mardi 20 à 20h</time>
-										<p> Avec: <a>Mehdi</a>, <a>Andrei</a> </p>
-										<p>Participation? <a>Peut-être</a></p>
-									</article>
-								</li>
-						</ul>
+                            <?php
+                            include_once('../vue/class/evenement/evenementResume.class.php');
+                            include_once('../vue/class/liste/listeAcTitre.class.php');
+
+                            $listeAcTitre = new ListeAcTitre('Evenement au quel vous participer');
+                            foreach($listeEvenementResumeJSON as $evenementResumeJSON){
+                                $listeAcTitre->ajoute(new EvenementResume($evenementResumeJSON));
+                            }
+                            $listeAcTitre->affiche('evenementAuQuelOnParticipe', '');
+
+                            ?>
+
 						</article>
 						
 						

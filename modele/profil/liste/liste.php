@@ -39,7 +39,7 @@ function get_listeDeListe(){
 								[
 									[
 									"Chez J\'aime ",
-									"http://localhost/Meittopi/image/restau.jpg",
+									"http://localhost/Meittopi/image/profil_vide.png",
 									"4.5",
 									"3",
 									"100",
@@ -54,13 +54,14 @@ function get_listeDeListe(){
 									"04 50 62 29 24",
 									""
 									],
-									"voici mon commentaire at oui cest vriament trop bien"
+									"voici mon commentaire at oui cest vriament trop bien",
+									"restaurant"
 								],
 								
 								[
 									[
 									"Chez J\'aime ",
-									"http://localhost/Meittopi/image/restau.jpg",
+									"http://localhost/Meittopi/image/profil_vide.png",
 									"4.5",
 									"3",
 									"100",
@@ -75,7 +76,8 @@ function get_listeDeListe(){
 									"04 50 62 29 24",
 									""
 									],
-									""
+									"",
+								    "restaurant"
 								]
 							 ]
 						]

@@ -1,0 +1,55 @@
+#section{
+    display: inline-block;
+    margin: 2% 0% 2% 2%;
+    width: 75%;
+}
+
+/* les inputs de recherche */
+div{
+    text-align: center;
+    margin: 1% 2% 4% 0%;
+}
+#rechercherPersonne{
+    padding: 0.4%;
+    width: 30%;
+    margin-right: 1%;
+
+}
+#inviterAmis{
+    padding: 0.4%;
+    margin-left: 1%;
+    border: 2px red outset;
+    background-color: red;
+    font-weight: bold;
+}
+#inviterAmis:active{
+    position: relative;
+    top: 0.6%;
+    left: 0.2%;
+}
+
+
+/* les section ou sont afficher les liste des amlis et des gens que l'on suis */
+
+/* la liste de gauche */
+#listeAmisSection{
+    display: inline-block;
+    width: 29%;
+    margin-right: 2.3%;
+    vertical-align: top;
+}
+
+/* liste du milieu */
+#listeGensSuivisSection{
+    display: inline-block;
+    width: 29%;
+    margin-right: 2.3%;
+    vertical-align: top;
+}
+/* la liste de droite */
+#listePersonneQuiNousSuis{
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+}
+

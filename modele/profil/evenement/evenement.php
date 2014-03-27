@@ -30,7 +30,7 @@ $listeEvenementJSON = '{
 							"Sorie chez j aime comme tous les diamnche!!!!!!",
 							"il y a 2 min",
 							"14/02/2014",
-							[["Mehdi", true, "sss"], ["Lauriane", false, "def"]],
+							[["Mehdi", 1, "sss"], ["Lauriane", 3, "def"]],
 							"Je veux absolument que tu viennes!!!!! J aimerais vraiment te voir, s il te plais vien!!!!!!!!!!!!!!",
 							"Alors, comme d ab, on va chez jaime et on mange plein de pizzaaaaaaaaaaa",
 							1,
@@ -44,7 +44,7 @@ $listeEvenementJSON = '{
 							"Sorie chez j aime comme tous les diamnche!!!!!!",
 							"il y a 2 min",
 							"14/02/2014",
-							[["Mehdi", true, "sss"], ["Lauriane", false, "def"]],
+							[["Mehdi", 0, "sss"], ["Lauriane", 2, "def"]],
 							"Je veux absolument que tu viennes!!!!! J aimerais vraiment te voir, s il te plais vien!!!!!!!!!!!!!!",
 							"Alors, comme d ab, on va chez jaime et on mange plein de pizzaaaaaaaaaaa",
 							3,
@@ -55,6 +55,8 @@ $listeEvenementJSON = '{
 
 	return json_decode($listeEvenementJSON);
 }
+
+
 
 
 ?>

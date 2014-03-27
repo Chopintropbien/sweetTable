@@ -38,6 +38,8 @@
 		}
 		
 		public function affiche($i){
+			include('francais/restaurantRecherche.php');
+			
 			echo '<img src="'.$this->photo .'"></img>';
 			echo '<section>'; // a droite de la photo
 				echo '<article>'; // info restau
@@ -52,7 +54,7 @@
 								echo '<canvas width="23" height="23"></canvas>';
 							}
 						echo '</div>';
-						echo '<p>'. $this->nbAvis .' avis</p>'; // francais
+						echo '<p>'. $this->nbAvis .$avis. '</p>';
 					echo'</div>';
 					
 					echo '<section>'; // prix et cathegorie
@@ -90,23 +92,23 @@
 				
 				echo '<section>'; // tableau des amis qui aimes ou pas
 					echo '<ul>'; //  avis positif
-						echo '<h6>'.'Avis positif'.'</h6>'; // francais
+						echo '<h6>'.$avisPositif.'</h6>';
 						foreach($this->listeAmisQuiAime as $amisQuiAime){
-							echo '<li><a href="'.$amisQuiAime[2].'"><p>'.$amisQuiAime[0].': </p></a><a href="'.$amisQuiAime[3] .'"> <span>'.$amisQuiAime[1].' avis'.'</span></a></li>';
+							echo '<li><a href="'.$amisQuiAime[2].'"><p>'.$amisQuiAime[0].': </p></a><a href="'.$amisQuiAime[3] .'"> <span>'.$amisQuiAime[1].$avis.'</span></a></li>';
 						}
 					echo '</ul>';
 					
 					echo '<ul>'; // Avis mitigé
-						echo '<h6>'.'Avis mitigé'.'</h6>'; // francais
+						echo '<h6>'.$avisMitiger.'</h6>';
 						foreach($this->listeAmisQuiBof as $amisQuiAimeBof){
-							echo '<li><a href="'.$amisQuiAimeBof[2].'"><p>'.$amisQuiAimeBof[0].': </p></a><a href="'.$amisQuiAimeBof[3] .'"> <span>'.$amisQuiAimeBof[1].' avis'.'</span></a></li>';
+							echo '<li><a href="'.$amisQuiAimeBof[2].'"><p>'.$amisQuiAimeBof[0].': </p></a><a href="'.$amisQuiAimeBof[3] .'"> <span>'.$amisQuiAimeBof[1]. $avis.'</span></a></li>';
 						}
 					echo '</ul>';
 					
 					echo '<ul>'; // avis negatif
-						echo '<h6>'.'Avis negatif'.'</h6>'; // francais
+						echo '<h6>'.$avisNegatif.'</h6>';
 						foreach($this->liseAmisQuiAimePas as $amisQuiAimePas){
-							echo '<li><a href="'.$amisQuiAimePas[2].'"><p>'.$amisQuiAimePas[0].': </p></a><a href="'.$amisQuiAimePas[3].'"> <span>'.$amisQuiAimePas[1].' avis'.'</span></a></li>';
+							echo '<li><a href="'.$amisQuiAimePas[2].'"><p>'.$amisQuiAimePas[0].': </p></a><a href="'.$amisQuiAimePas[3].'"> <span>'.$amisQuiAimePas[1].$avis.'</span></a></li>';
 						}
 					echo '</ul>';
 				echo '</section>';

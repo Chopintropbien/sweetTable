@@ -7,18 +7,13 @@
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/profil/navigateur/navigateur.css"/>
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/navigateur/navigateur.css"/>
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/profil/liste/liste.css"/>
-			
-			
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/menuPricipal/profil/listes.css"/>
 
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/class/listeDeListe.class.css"/>
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/class/listeRestau.class.css"/>
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/class/restaurant.class.css"/>
-			
-			
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/classDaffichage/listeRestaurantRecherche/restaurant.class.css"/>
-			
-			
+
+
+
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/listeDeListe.class.css"/>
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/listeCommente.class.css"/>
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/class/restaurant/restaurantRecherche.class.css"/>
 			
 			<title id="titre">  </title>
 		</head>
@@ -46,15 +41,14 @@
 							foreach($listeDeListeJSON as $listeJSON){
 								$liste = new ListeCommente($listeJSON[0]);
 								foreach($listeJSON[1] as $choseCommenteJSON){
-									$liste->ajoute(new RestaurantRecherche($choseCommenteJSON[0]), $choseCommenteJSON[1]);
+									$liste->ajoute(new RestaurantRecherche($choseCommenteJSON[0]), $choseCommenteJSON[1], $choseCommenteJSON[2]);
 								}
                                 $listeDeListe->ajoute($liste);
 							}
 							
 							$classListe = 'liste';
-
                             $listeDeListe->afficheEntete('listeDeListe');
-                            $listeDeListe->afficheListe($classListe, 'liste');
+                            $listeDeListe->afficheListe($classListe, '');
 
 						?>
 

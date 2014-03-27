@@ -1,0 +1,68 @@
+#titreRecherche{
+	font-size: 230%;
+	margin: 2.7%;
+	width: 65%;
+}
+
+#options{
+	margin: 2%;
+	padding-left: 5px;
+	padding-top: 5px;
+	border: 2px #EBEAEB outset; 
+	background-color: #F4F4F4;
+	width: 15.5%;
+	font-size: 93%;
+	display: inline-block;
+}
+
+	.titreOption{
+		margin-top: 5px;
+	}
+	
+	.avance{
+		color: blue;
+		margin-top: 5px;
+		margin-bottom: 8px;
+	}
+	.avance:hover{
+		text-decoration: underline;
+		
+	}
+
+#rechercheRestau{
+	border: 2px #EBEAEB outset; 
+	background-color: #F4F4F4;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2%;
+    padding: 1%;
+}
+
+#carte{
+	position: fixed;
+	margin-left: 61%;
+	width: 23%;
+	margin-right: 2.5%;
+}
+
+
+
+
+
+/*
+#cuisineCachees{
+	animation: 0.5s ease-in-out 7s;
+}
+*/
+
+/*
+#cuisinesAvancees:active{
+	color: rgb(255,0,0);
+}
+*/
+
+
+
+
+

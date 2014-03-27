@@ -7,7 +7,5 @@
 	$oui = 'oui ';
 	$non = 'non ';
 	$participe = 'Je participe ? ';
-	
-	
-	
+
 ?>

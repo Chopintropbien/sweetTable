@@ -1,0 +1,12 @@
+/* class liste de gens */
+.listeAcTitre{
+	border: 1px #EBEAEB outset; 
+	background-color: #F4F4F4;
+	padding: 1%;
+	vertical-align: top;
+}
+
+.listeAcTitre>li> h1{
+	font-size: 120%;
+	text-align: center;	
+}
