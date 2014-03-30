@@ -28,9 +28,11 @@
 					
 					<?php
                         include_once('vue/class/restaurant/restaurantRecherche.class.php');
-                        include_once('vue/class/liste/liste.class.php');
 
+                        include_once('vue/class/liste/liste.class.php');
+                    echo '<sqdfc';
                         $liste = new Liste();
+
                         foreach($liste_restaurant_rechercheJSON as $restaurant_rechercheJSON){
                             $liste->ajoute(new RestaurantRecherche($restaurant_rechercheJSON));
                         }
