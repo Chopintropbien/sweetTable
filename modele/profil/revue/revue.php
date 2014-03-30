@@ -1,9 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lauriane
- * Date: 3/29/14
- * Time: 9:50 AM
+/*
+ * Une revue est un tableau de
+ *  1° un boolean vraie si si l'utilisateur a confirmer sa revue sur ordi (c'est le truc pour pas etre capable de le faire sur son natel)
+ *  2° Un restaurant
+ *  3° Si l'utilisateur a confirmer sa revue un tableau de:
+ *          1°  du commentaire de sa revue
+ *          2°  nombre de personne qui ont voté util pour cette revus
+ *          3°  nombre de personne qui ont voté drole pour cette revus
+ *          4°  nombre de personne qui ont voté cool pour cette revus
+ *          5°  nombre de personne qui fait un compliement pour cette revus
+ *          6°  Date de publication 
+ *
  */
 
     function get_liste_revues(){
@@ -31,7 +38,8 @@
                             2,
                             4,
                             7,
-                            10
+                            10,
+                            "14/02/2014"
                         ]
                     ],
             "revue1" : [

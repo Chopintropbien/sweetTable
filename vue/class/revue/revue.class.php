@@ -13,6 +13,7 @@ class Revue {
     private $nbVoteDrole;
     private $nbVoteCool;
     private $nbCompliment;
+    private $datePublication;
 
 
     public function __construct($restaurant, $json){
@@ -22,10 +23,12 @@ class Revue {
         $this->nbVoteDrole = $json[2];
         $this->nbVoteCool = $json[3];
         $this->nbCompliment = $json[4];
+        $this->datePublication = $json[5];
 
     }
 
     public function affiche($i){
+        echo '<time>'.$this->datePublication.'</time>';
         echo '<article class="restaurant">';
             $this->restaurant->affiche($i);
         echo '</article>';

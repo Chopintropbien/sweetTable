@@ -1,4 +1,9 @@
-
+    /* date de publication */
+.revue >time{
+    display: block;
+    color: grey;
+    text-align: right;
+}
     /*la parie du restaurant*/
 .revue > article{
     width : 64%;
@@ -64,7 +69,6 @@
             border-radius: 5px;
             padding: 1% 2% 1% 2%;
             width: 20%;
-            margin: 0% 0% 0% 0%;
             cursor: pointer;
         }
         .revue > section>div>input:active{

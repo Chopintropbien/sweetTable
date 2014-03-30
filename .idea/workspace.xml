@@ -23,49 +23,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="liste.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/profil/liste/liste.php">
+      <file leaf-file-name="revue.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modele/profil/revue/revue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="71" selection-start="1892" selection-end="1892" vertical-scroll-proportion="-16.25" vertical-offset="270" max-vertical-offset="1005">
+            <state line="11" column="36" selection-start="625" selection-end="625" vertical-scroll-proportion="0.29151943" vertical-offset="0" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liste.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modele/profil/liste/liste.php">
+      <file leaf-file-name="revue.class.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="59" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.45053002" vertical-offset="105" max-vertical-offset="1785">
+            <state line="70" column="23" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1590">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rechercher.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modele/rechercher/rechercher.php">
+      <file leaf-file-name="revue.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="24" selection-start="1572" selection-end="2050" vertical-scroll-proportion="-11.25" vertical-offset="270" max-vertical-offset="975">
+            <state line="30" column="7" selection-start="673" selection-end="673" vertical-scroll-proportion="-13.75" vertical-offset="45" max-vertical-offset="1230">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurantRecherche.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRecherche.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="24" selection-start="699" selection-end="699" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="870">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurantRevue.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRevue.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="23" selection-start="1071" selection-end="1074" vertical-scroll-proportion="-6.25" vertical-offset="495" max-vertical-offset="1515">
-              <folding>
-                <element signature="e#6#90#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -108,12 +88,9 @@
         <option value="$PROJECT_DIR$/vue/profil/monProfil/monProfil.php" />
         <option value="$PROJECT_DIR$/vue/class/liste/listeAcTitre.class.php" />
         <option value="$PROJECT_DIR$/vue/class/revue/francais/revue.php" />
-        <option value="$PROJECT_DIR$/vue/class/revue/revue.class.php" />
         <option value="$PROJECT_DIR$/vue/class/revue/revueAValider..class.php" />
-        <option value="$PROJECT_DIR$/modele/profil/revue/revue.php" />
         <option value="$PROJECT_DIR$/vue/class/revue/francais/revueAValider.class.css" />
         <option value="$PROJECT_DIR$/vue/class/revue/revueAValider.class.css" />
-        <option value="$PROJECT_DIR$/vue/class/revue/revue.class.css" />
         <option value="$PROJECT_DIR$/vue/class/revue/francais/revueAValider.php" />
         <option value="$PROJECT_DIR$/vue/class/revue/revueAValider.class.php" />
         <option value="$PROJECT_DIR$/vue/profil/revue/francais.php" />
@@ -131,6 +108,9 @@
         <option value="$PROJECT_DIR$/vue/class/restaurant/restaurantRecherche.class.php" />
         <option value="$PROJECT_DIR$/vue/profil/liste/liste.php" />
         <option value="$PROJECT_DIR$/modele/profil/liste/liste.php" />
+        <option value="$PROJECT_DIR$/vue/class/revue/revue.class.php" />
+        <option value="$PROJECT_DIR$/vue/class/revue/revue.class.css" />
+        <option value="$PROJECT_DIR$/modele/profil/revue/revue.php" />
       </list>
     </option>
   </component>
@@ -304,6 +284,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="revue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="restaurant" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -344,28 +346,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liste" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meittopi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meittopi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="modele" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -385,6 +365,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rechercher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="revue" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -747,33 +749,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="824" selection-end="872" vertical-scroll-proportion="0.50353354" vertical-offset="180" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/class/revue/francais/revueAValider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="7" selection-start="151" selection-end="158" vertical-scroll-proportion="0.2385159" vertical-offset="0" max-vertical-offset="566">
           <folding>
             <element signature="e#6#89#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="21" selection-start="1203" selection-end="1203" vertical-scroll-proportion="1.398305" vertical-offset="0" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/profil/revue/revue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="29" selection-start="1089" selection-end="1121" vertical-scroll-proportion="0.9275618" vertical-offset="0" max-vertical-offset="900">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,39 +879,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/profil/liste/liste.php">
+    <entry file="file://$PROJECT_DIR$/modele/profil/liste/liste.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="71" selection-start="1892" selection-end="1892" vertical-scroll-proportion="-16.25" vertical-offset="270" max-vertical-offset="1005">
+        <state line="24" column="59" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.45053002" vertical-offset="105" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRevue.class.php">
+    <entry file="file://$PROJECT_DIR$/vue/profil/liste/liste.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="23" selection-start="1071" selection-end="1074" vertical-scroll-proportion="-6.25" vertical-offset="495" max-vertical-offset="1515">
-          <folding>
-            <element signature="e#6#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRecherche.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="24" selection-start="699" selection-end="699" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="870">
+        <state line="44" column="71" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.7052441" vertical-offset="270" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modele/rechercher/rechercher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="24" selection-start="1572" selection-end="2050" vertical-scroll-proportion="-11.25" vertical-offset="270" max-vertical-offset="975">
+        <state line="41" column="24" selection-start="1572" selection-end="2050" vertical-scroll-proportion="0.4770318" vertical-offset="270" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele/profil/liste/liste.php">
+    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRecherche.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="59" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.45053002" vertical-offset="105" max-vertical-offset="1785">
+        <state line="22" column="24" selection-start="699" selection-end="699" vertical-scroll-proportion="0.596745" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRevue.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="23" selection-start="1071" selection-end="1074" vertical-scroll-proportion="0.26501766" vertical-offset="495" max-vertical-offset="1515">
+          <folding>
+            <element signature="e#6#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="23" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="7" selection-start="673" selection-end="673" vertical-scroll-proportion="-13.75" vertical-offset="45" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profil/revue/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="36" selection-start="625" selection-end="625" vertical-scroll-proportion="0.29151943" vertical-offset="0" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
