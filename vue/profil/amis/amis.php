@@ -44,8 +44,8 @@
                     include_once('../vue/class/amis/amis.class.php');
 
                     $liste = new ListeAcTitre($mesAmis);
-                    foreach($liste_personne_qui_suivent_l_utilisateur as $personne_qui_suit_l_utilisateur){
-                        $liste->ajoute(new Amis($personne_qui_suit_l_utilisateur));
+                    foreach($liste_amis_utilisateur as $ami){
+                        $liste->ajoute(new Amis($ami));
                     }
                     $liste->affiche('listeAmisSection', 'ami');
                 ?>
@@ -58,8 +58,8 @@
                     include_once('../vue/class/amis/amis.class.php');
 
                     $liste = new ListeAcTitre($personneQueJeSuit);
-                    foreach($liste_personne_qui_suivent_l_utilisateur as $personne_qui_suit_l_utilisateur){
-                        $liste->ajoute(new Amis($personne_qui_suit_l_utilisateur));
+                    foreach($liste_personne_que_suit_l_utilisateur as $personne_que_suit_l_utilisateur){
+                        $liste->ajoute(new Amis($personne_que_suit_l_utilisateur));
                     }
                     $liste->affiche('listeGensSuivisSection', 'ami');
                 ?>

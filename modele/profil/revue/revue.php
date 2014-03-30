@@ -9,9 +9,29 @@
  *          3°  nombre de personne qui ont voté drole pour cette revus
  *          4°  nombre de personne qui ont voté cool pour cette revus
  *          5°  nombre de personne qui fait un compliement pour cette revus
- *          6°  Date de publication 
+ *          6°  Date de publication
  *
  */
+
+    // les memes info que dans liste.php
+/* Un restaurant est composé de restaurant représenté sous la forme d'un tableau avec comme élément :
+	  * 		1° Le nom du restaurant
+         * 		2° La photo du restaurant
+         * 		3° la note du restaurant
+         * 		4° Le prix du restaurant
+         *		5° Le nombre d'Avis sur ce restaurant
+         * 		6° Liste de toutes les cathégorie dans le quel rentre le restaurant
+         * 		7° Le quartier dans le quel est le restaurant
+         * 		8° Sa rue
+         * 		9° Sa ville // 12 et 13 doivent former l'adresse
+         * 		10° Son numéro de telephone
+         * 		11° Lien vers la page de ce restaurant
+         * 		12° La liste des événement à venir
+         * 				Un evenement est un tableau:
+         * 					1° la date
+         * 					2° ce qui s'y passe
+         * 					3° Le lien vers cette événement
+	 */
 
     function get_liste_revues(){
 

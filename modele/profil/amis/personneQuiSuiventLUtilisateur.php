@@ -1,11 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lauriane
- * Date: 3/26/14
- * Time: 1:46 PM
+
+
+/*
+ * liste d'amis qui suivent l'utilisateur
+ * Un amis est un tableau composer de:
+ *      1° sa photo de profil
+ *      2° son speudo
+ *      3° La ville ou il habite
+ *      4° Le nombre de revus qu'il a fait
+ *      5° Le lien pour son profil
+ *
  */
-    function get_personne_qui_suivent_l_utilisateur(){
+
+
+function get_personne_qui_suivent_l_utilisateur(){
 
         $liste_personne_qui_suivent_l_utilisateur = '{
                 "amis0": [
