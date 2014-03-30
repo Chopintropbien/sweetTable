@@ -1,36 +1,32 @@
+<?php include('../vue/profil/navigateur/francais.php'); ?>
+
 <nav id="navProfil">
 	<ul>
-		<a href="http://localhost/Meittopi/php/vue/menuPrincipal/profil/monProfil.php">
-			<li class="rechercheProfil" id = "profilNav"></li>
+		<a href="http://localhost/meittopi/profil/monProfil.php">
+			<li class="rechercheProfil" id = "profilNav"><?php echo $monProfil; ?></li>
 		</a>
 		
-		<a href=" http://localhost/Meittopi/php/vue/menuPrincipal/profil/listes.php"> 
-			<li class="rechercheProfil"  id = "listeNav">  </li> 
+		<a href="http://localhost/meittopi/profil/revue.php">
+			<li class="rechercheProfil"  id = "listeNav"> <?php echo $mesRevue; ?> </li>
 		</a>
 		
-		<a href=" http://localhost/Meittopi/php/vue/menuPrincipal/profil/amis.php"> 
-			<li class="rechercheProfil" id = "amisNav">  </li>
+		<a href=" http://localhost/meittopi/profil/liste.php">
+			<li class="rechercheProfil" id = "amisNav"> <?php echo $mesListe; ?> </li>
+		</a>
+
+		<a href="http://localhost/meittopi/profil/evenement.php">
+			 <li class="rechercheProfil" id = "evenementNav">  <?php echo $lesEvenement; ?></li>
 		</a>
 		
-<!--
-		<a href=" http://localhost/Meittopi/php/vue/menuPrincipal/profil/sortie.php">   pour quand il y aura plus de trafique
-			<li class="rechercheProfil" id = "sortieNav"> </li>
-		</a>
--->
-		<a href=" http://localhost/Meittopi/php/vue/menuPrincipal/profil/evenement.php">
-			 <li class="rechercheProfil" id = "evenementNav">  </li> 
+		<a href="http://localhost/meittopi/profil/amis.php">
+			 <li class="rechercheProfil" id = "suivisNav"> <?php echo $mesAmis; ?> </li>
 		</a>
 		
-		<a href=" http://localhost/Meittopi/php/vue/menuPrincipal/profil/suivis.php">
-			 <li class="rechercheProfil" id = "suivisNav">  </li> 
-		</a>
-		
-		<a href="http://localhost/Meittopi/php/vue/menuPrincipal/profil/compliments.php"> 
-			<li class="rechercheProfil" id = "complimentNav">   </li>
+		<a href="http://localhost/meittopi/profil/compliment.php">
+			<li class="rechercheProfil" id = "complimentNav"> <?php echo $mesCompliment; ?>  </li>
 		</a>
 		
 	</ul>
 
 </nav>
 
-<script src = "http://localhost/meittopi/vue/profil/navigateur/francais/navigateur.js"></script>

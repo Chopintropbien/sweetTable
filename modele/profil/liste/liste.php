@@ -1,31 +1,47 @@
 <?php 
 function get_listeDeListe(){
 
-	/* La liste de restaurant est composé de restaurant représenté sous la forme d'un tableau avec comme élément : 
-	 * 		1° Le nom du restaurant 
-	 * 		2° La photo du restaurant
-	 * 		3° la note du restaurant
-	 * 		4° Le prix du restaurant
-	 *		5° Le nombre d'Avis sur ce restaurant
-	 * 		6° Liste de toutes les cathégorie dans le quel rentre le restaurant
-	 * 		7° La liste des amis qui aime ce restaurant, 
-	 * 		8° La liste des amis qui aime moyennement ce restaurant
-	 * 		9° La liste des amis qui n'aime pas ce restaurant
-	 * 				Chaque amis est lui même représenté sous la forme d'un tableau avec 
-	 * 					1° Son speudo
-	 * 					2° Le nombre d'avis qu'il a mis sur le restaurant
-	 * 					3° Les infomations dur le lien de sa page profil	
-	 * 					4° Les information pour le lien vers ses avis
-	 * 		10° La liste des événement à venir 
-	 * 				Un evenement est un tableau: 
-	 * 					1° la date
-	 * 					2° ce qui s'y passe
-	 * 					3° Le lien vers cette événement
-	 * 		11° Le quartier dans le quel est le restaurant
-	 * 		12° Sa rue
-	 * 		13° Sa ville // 12 et 13 doivent former l'adresse 
-	 * 		14° Son numéro de telephone
-	 * 		15° Lien vers la page de ce restaurant
+    /*
+     * La liste des liste qu'a fait l'utilisateur est donc une suite de liste composer de:
+     *  1° Le titre de la liste
+     *  2° D'une liste des elements commenté
+     */
+
+    /*
+     * Un evenement commenté se compose
+     *  1° d'un element: restaurant, amis, sortie, ect
+     *  2° Du commentaire de la personne sur cette element (s'il y en a pas, mettre une string vide)
+     *  3° Du type de l'élément (pour que je sache qu'est ce que tu m'envois et pour que je puisse appeler la bonne fonction)
+     *         J'ai pensé a une énumération maias il faut que je regarde comment ca marche en php
+     *          Pendant ce temps j'ai mis ca en string et les differents type sont:
+     *              - restaurant
+     *              - ami
+     *              - evenement
+     *              - discution
+     *          A voir si on en rajoute d'autre.
+     */
+
+// pendant ce temps je n'ai que fait pour les restau. Et la liste d'un restaurant est celle ci dessous
+    // c'est la meme que la liste des restau pour les revus
+
+
+	/* Un restaurant est composé de restaurant représenté sous la forme d'un tableau avec comme élément :
+	  * 		1° Le nom du restaurant
+         * 		2° La photo du restaurant
+         * 		3° la note du restaurant
+         * 		4° Le prix du restaurant
+         *		5° Le nombre d'Avis sur ce restaurant
+         * 		6° Liste de toutes les cathégorie dans le quel rentre le restaurant
+         * 		7° Le quartier dans le quel est le restaurant
+         * 		8° Sa rue
+         * 		9° Sa ville // 12 et 13 doivent former l'adresse
+         * 		10° Son numéro de telephone
+         * 		11° Lien vers la page de ce restaurant
+         * 		12° La liste des événement à venir
+         * 				Un evenement est un tableau:
+         * 					1° la date
+         * 					2° ce qui s'y passe
+         * 					3° Le lien vers cette événement
 	 */
 	 
 	
@@ -44,20 +60,17 @@ function get_listeDeListe(){
 									"3",
 									"100",
 									["Italien", "Pizza"],
-									[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-									[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-									[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-									[["Diamche", "tout à 13 fr sdfv s ds sfv sf df vgs ver cdfgbfgb sd bs d", ""]],
 									"Malley",
 									"Chemin de Malley 12",
 									"1007 Lausanne",
 									"04 50 62 29 24",
-									""
+									"",
+									[["Diamche", "tout à 13 fr sdfv s ds sfv sf df vgs ver cdfgbfgb sd bs d", ""]]
 									],
 									"voici mon commentaire at oui cest vriament trop bien",
 									"restaurant"
 								],
-								
+
 								[
 									[
 									"Chez J\'aime ",
@@ -66,18 +79,16 @@ function get_listeDeListe(){
 									"3",
 									"100",
 									["Italien", "Pizza"],
-									[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-									[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-									[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-									[["Diamche", "tout à 13 fr sdfv s ds sfv sf df vgs ver cdfgbfgb sd bs d", ""]],
 									"Malley",
 									"Chemin de Malley 12",
 									"1007 Lausanne",
 									"04 50 62 29 24",
-									""
+									"",
+									[["Diamche", "tout à 13 fr sdfv s ds sfv sf df vgs ver cdfgbfgb sd bs d", ""]]
 									],
 									"",
 								    "restaurant"
+
 								]
 							 ]
 						]

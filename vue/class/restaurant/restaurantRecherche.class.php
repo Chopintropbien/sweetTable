@@ -1,6 +1,7 @@
 <?php
 
 include_once('vue/class/restaurant/restaurantRevue.class.php');
+include_once('../vue/class/restaurant/restaurantRevue.class.php');
 	class RestaurantRecherche extends RestaurantRevue{
 		private $listeAmisQuiAime;
 		private $listeAmisQuiBof;
@@ -9,7 +10,6 @@ include_once('vue/class/restaurant/restaurantRevue.class.php');
 		
 		public function __construct($restaurantJSON){
 			if(is_array($restaurantJSON)){
-                echo 'q<sezdf';
 				parent::__construct($restaurantJSON);
 				$this->listeAmisQuiAime = $restaurantJSON[12];
 				$this->listeAmisQuiBof = $restaurantJSON[13];
@@ -19,7 +19,8 @@ include_once('vue/class/restaurant/restaurantRevue.class.php');
 		}
 		
 		public function affiche($i){
-			include('francais/restaurantRecherche.php');
+			include('vue/class/restaurant/francais/restaurantRecherche.php');
+            include('../vue/class/restaurant/francais/restaurantRecherche.php');
                 parent::affiche($i);
 
 				echo '<section>'; // tableau des amis qui aimes ou pas

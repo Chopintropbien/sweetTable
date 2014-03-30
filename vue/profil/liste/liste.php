@@ -32,7 +32,8 @@
 						<a href="http://localhost/Meittopi/php/vue/menuPrincipal/profil/ajouterListe.php"> <h6 class="ajous" id = "ajous"> + ajouter une liste</h6> </a>
 						
 						
-						<?php 
+						<?php
+
 							include_once('../vue/class/liste/listeDeListe.class.php');
 							include_once('../vue/class/liste/listeCommente.class.php');
 							include_once('../vue/class/restaurant/restaurantRecherche.class.php');
@@ -41,7 +42,7 @@
 							foreach($listeDeListeJSON as $listeJSON){
 								$liste = new ListeCommente($listeJSON[0]);
 								foreach($listeJSON[1] as $choseCommenteJSON){
-									$liste->ajoute(new RestaurantRecherche($choseCommenteJSON[0]), $choseCommenteJSON[1], $choseCommenteJSON[2]);
+									$liste->ajoute(new RestaurantRevue($choseCommenteJSON[0]), $choseCommenteJSON[1], $choseCommenteJSON[2]);
 								}
                                 $listeDeListe->ajoute($liste);
 							}

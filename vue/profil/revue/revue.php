@@ -34,7 +34,8 @@
                 include_once('../vue/class/revue/revueAValider.class.php');
                 include_once('../vue/class/restaurant/restaurantRevue.class.php');
 
-                $liste = new ListeAcTitre("voici mon titre");
+                include('../vue/profil/revue/francais.php');
+                $liste = new ListeAcTitre($titre);
                 foreach($listeRevueJSON as $revueJSON){
                     if($revueJSON[0]){
                         $liste->ajoute(new Revue(new RestaurantRevue($revueJSON[1]), $revueJSON[2]));
