@@ -8,4 +8,6 @@
 
 include('../modele/profil/compliment/compliment.php');
 
+$listeCompliement = get_compliment();
+
 include('../vue/profil/compliment/compliment.php');

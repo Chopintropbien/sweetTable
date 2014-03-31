@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="http://localhost/meittopi/vue/profil/compliment/compliment.css"/>
 
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/listeAcTitre.class.css"/>
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/compliment/compliment.class.css"/>
 
 
     <title id="titre">  </title>
@@ -27,6 +28,19 @@
         <?php include("../vue/profil/navigateur/navigateur.php"); ?>
 
         <section id="section">
+
+            <?php
+                include ('../vue/profil/compliment/francais.php');
+                include_once('../vue/class/liste/listeAcTitre.class.php');
+                include_once('../vue/class/compliment/compliment.class.php');
+
+                $liste = new ListeAcTitre($titre);
+                foreach($listeCompliement as $compliement){
+                    $liste->ajoute(new Compliment($compliement));
+                }
+                 $liste->affiche('compliment', 'compliment');
+            ?>
+
 
         </section>
 

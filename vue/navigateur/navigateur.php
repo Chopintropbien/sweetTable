@@ -1,16 +1,16 @@
-	<a href="http://localhost/Meittopi/php/vue/menuPrincipal/acceuil/accueil.php" id="lien">
+	<a href="http://localhost/meittopi/accueil.php" id="lien">
 		<!-- mettre celui pour modifier le site -->
 		<img src="http://localhost/Meittopi/image/logoSweetTable.png" alt="SweetTable" id="logo"/>
 	</a>
 
 	<section id="bloc">
 		<ul>
-			<a href="http://localhost/Meittopi/php/vue/menuPrincipal/rechercher/rechercher.php"> <li id="menu">   </li> </a>
-			<a href="http://localhost/Meittopi/php/vue/menuPrincipal/profil/monProfil.php"> <li class="menu" id="profilNavigateurPrincipal">  </li> </a> 
-			<a href="http://localhost/Meittopi/php/vue/menuPrincipal/rechercherAmis/rechercherAmis.php"> <li class="menu" id="amisNavigateurPrincipal"> </li> </a> 
-			<a href="http://localhost/Meittopi/php/vue/menuPrincipal/laisserUnAvis/laisserUnAvis.php"> <li class="menu" id="avisNavigateurPrincipal">  </li> </a>
-			<a href="http://localhost/Meittopi/php/vue/menuPrincipal/discution/discution.php"> <li class="menu" id="discutionNavigateurPrincipal"> </li> </a>
-			<a href="http://localhost/Meittopi/php/vue/menuPrincipal/votreAvis/votreAvis.php"> <li class="menu" id="votreAvisNavigateurPrincipal">  </li> </a>			
+			<a href="http://localhost/meittopi/rechercher.php"> <li id="menu">   </li> </a>
+			<a href="http://localhost/meittopi/profil/monProfil.php"> <li class="menu" id="profilNavigateurPrincipal">  </li> </a>
+			<a href="http://localhost/meittopi/rechercher-amis.php"> <li class="menu" id="amisNavigateurPrincipal"> </li> </a>
+			<a href="http://localhost/meittopi/laisser-un-avis.php"> <li class="menu" id="avisNavigateurPrincipal">  </li> </a>
+			<a href="http://localhost/meittopi/discution.php"> <li class="menu" id="discutionNavigateurPrincipal"> </li> </a>
+			<a href="http://localhost/meittopi/votre-avis.php"> <li class="menu" id="votreAvisNavigateurPrincipal">  </li> </a>
 		</ul>
 		
 		<ul>
