@@ -13,9 +13,9 @@
  *  3° La date a la quel a été fait le compliement
  *  4° Le compliment
  *  5° Le restaurant sur le quel a été ecrit la revus que la personne a compliementé
- *  6° Le lien pour la personne
+ *  6° Le lien pour la personne  #@chiffa: Question: c'est celui qui fait le compliment ou celui a qui le recoit
  *  7° Le lien pour la revus sur le quel a été faite le compliement
- *  8° Le lien pour le restaurant dont était sujet la revue
+ *  8° Le lien pour le restaurant dont était sujet la revue # @chiffa: Question: c'est pas la repetition du 5?
  */
 
 function get_compliment(){
