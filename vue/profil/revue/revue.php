@@ -30,7 +30,7 @@
         <section id="section">
             <?php
                 include_once('../vue/class/liste/listeAcTitre.class.php');
-                include_once('../vue/class/revue/revue.class.php');
+                include_once('../vue/class/revue/maRevue.class.php');
                 include_once('../vue/class/revue/revueAValider.class.php');
                 include_once('../vue/class/restaurant/restaurantRevue.class.php');
 
@@ -38,7 +38,7 @@
                 $liste = new ListeAcTitre($titre);
                 foreach($listeRevueJSON as $revueJSON){
                     if($revueJSON[0]){
-                        $liste->ajoute(new Revue(new RestaurantRevue($revueJSON[1]), $revueJSON[2]));
+                        $liste->ajoute(new MaRevue(new RestaurantRevue($revueJSON[1]), $revueJSON[2]));
                     }
                     elseif(!$revueJSON[0]) {
                         $liste->ajoute(new RevueAValider(new RestaurantRevue($revueJSON[1])));

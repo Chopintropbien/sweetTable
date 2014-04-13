@@ -16,6 +16,7 @@ class RevueAValider {
 
     public function affiche($i){
         include('../vue/class/revue/francais/revueAValider.php');
+        include('vue/class/revue/francais/revueAValider.php');
         echo '<article class="restaurant">';
             $this->restaurant->affiche($i);
         echo '</article>';

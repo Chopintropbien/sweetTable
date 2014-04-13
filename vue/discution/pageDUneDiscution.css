@@ -1,0 +1,18 @@
+
+/* titre */
+#partiePrincipale >h1{
+    font-size: 150%;
+    margin-top: 5%;
+    text-indent: 3%;
+
+}
+
+#discution{
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    margin-top: 1%;
+    margin-left: 3%;
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+}

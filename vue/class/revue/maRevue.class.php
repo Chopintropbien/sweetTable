@@ -6,7 +6,7 @@
  * Time: 10:05 AM
  */
 
-class Revue {
+class MaRevue {
     private $restaurant;
     private $commentaire;
     private $nbvoteUtile;
@@ -38,6 +38,7 @@ class Revue {
     
     public function afficheCommentaireEtVote($i){
         include('../vue/class/revue/francais/revue.php');
+        include('vue/class/revue/francais/revue.php');
 		echo '<section>';
             echo '<ul id="listeGauche">';
                 // nombre de vote util
