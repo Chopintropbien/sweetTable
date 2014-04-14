@@ -1,0 +1,55 @@
+/* photo */
+.personne> img{
+    display: inline-block;
+    vertical-align: top;
+    width: 18%;
+    margin-right: 2%;
+}
+/* partie droit de la photo */
+.personne> article{
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+}
+/* nom de la personne */
+.personne> article>h6{
+    margin-bottom: 1%;
+}
+.personne> article>h6:hover{
+    text-decoration: underline;
+}
+
+/* le lieu d'habitation et le nombre de revu */
+.personne> article > p{
+    text-indent: 2%;
+    color: gray;
+}
+
+/* nombre d'amis en commun */
+.personne>article>div{
+    color: royalblue;
+    margin-top: 1%;
+}
+.personne>article>div:hover{
+    text-decoration: underline;
+}
+
+/* carre checké ou pas si on est amis ou pas avec la personne */
+.personne>section{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+.personne>section>img{
+    width: 25px;
+    margin-top: 18%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.personne>section>p{
+    margin-top: 18%;
+    display: inline-block;
+    margin-left: 7%;
+    vertical-align: middle;
+}
+

@@ -7,7 +7,7 @@
 		<ul>
 			<a href="http://localhost/meittopi/rechercher.php"> <li id="menu">   </li> </a>
 			<a href="http://localhost/meittopi/profil/monProfil.php"> <li class="menu" id="profilNavigateurPrincipal">  </li> </a>
-			<a href="http://localhost/meittopi/rechercher-amis.php"> <li class="menu" id="amisNavigateurPrincipal"> </li> </a>
+			<a href="http://localhost/meittopi/amis/rechercher-amis.php"> <li class="menu" id="amisNavigateurPrincipal"> </li> </a>
 			<a href="http://localhost/meittopi/laisser-un-avis.php"> <li class="menu" id="avisNavigateurPrincipal">  </li> </a>
 			<a href="http://localhost/meittopi/discution.php"> <li class="menu" id="discutionNavigateurPrincipal"> </li> </a>
 			<a href="http://localhost/meittopi/votre-avis.php"> <li class="menu" id="votreAvisNavigateurPrincipal">  </li> </a>

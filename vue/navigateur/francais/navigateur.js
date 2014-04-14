@@ -4,7 +4,7 @@
 		// les onglets de navigation
 	document.getElementById('menu').innerHTML = 'Rechercher';
 	document.getElementById('profilNavigateurPrincipal').innerHTML = 'Profil';
-	document.getElementById('amisNavigateurPrincipal').innerHTML = 'Rechecher des amis ';
+	document.getElementById('amisNavigateurPrincipal').innerHTML = 'Amis';
 	document.getElementById('avisNavigateurPrincipal').innerHTML = 'Laisser un avis';
 	document.getElementById('discutionNavigateurPrincipal').innerHTML = 'Discution';
 	document.getElementById('votreAvisNavigateurPrincipal').innerHTML = 'Votre avis compte!';

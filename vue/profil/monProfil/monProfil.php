@@ -35,6 +35,7 @@
                     ?>
 
                         <!-- afficher les notifications -->
+
                     <?php
                         include_once('../vue/class/liste/listeAcTitre.class.php');
                         include_once('../vue/class/notification/notification.class.php');

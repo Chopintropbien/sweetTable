@@ -1,17 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lauriane
- * Date: 3/26/14
- * Time: 2:37 PM
- */
 
 class Amis{
-    private $photo;
-    private $speudo;
-    private $villeDHabitation;
-    private $nombreRevus;
-    private $lien;
+    protected  $photo;
+    protected $speudo;
+    protected $villeDHabitation;
+    protected $nombreRevus;
+    protected $lien;
 
     public function __construct($json){
         //TODO: mettre les fonctions de securite

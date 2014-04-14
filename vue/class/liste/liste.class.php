@@ -9,7 +9,7 @@ class Liste{
 	}
 	
 	public function affiche($idListe, $classLi){
-		echo '<ul id="' . $idListe . '">';
+		echo '<ul id="' . $idListe . '" class="liste">';
 		$nbElement = count($this->liste);
 		for($i = 0; $i < $nbElement ; $i++){
 			echo '<li class="'.$classLi.'">';
