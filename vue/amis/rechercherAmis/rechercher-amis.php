@@ -54,7 +54,7 @@
 
             <!-- section de droite -->
             <section id="sectionDroite">
-                
+
                 <!-- afficher les notifications -->
 
                 <?php
