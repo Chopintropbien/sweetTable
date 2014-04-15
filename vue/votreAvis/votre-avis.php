@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/liste.class.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/propositionAmelioration/propositionAmelioration.class.css"/>
 
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/profil/profilParticipationAmelioration.class.css"/>
+
     <title id="titre">  </title>
 </head>
 
@@ -22,6 +24,7 @@
 
     <section id="partiePrincipale">
 
+        <!-- liste des amelioration -->
         <?php
         include_once('vue/class/propositionAmelioration/propositionAmelioration.class.php');
         include_once('vue/class/liste/liste.class.php');
@@ -33,6 +36,29 @@
         $liste->affiche('listeAmelioration', 'amelioration');
 
         ?>
+
+        <aside>
+
+            <!-- profil de participation -->
+            <?php
+            include_once('vue/class/profil/profilParticipationAmelioration.class.php');
+
+            $profilAmelioration = new ProfilParticipationAmelioration($profilParticipationJSON);
+
+            $profilAmelioration->affiche();
+
+            ?>
+
+            <article id="aQuoiSertCettePage">
+                <h4> A quoi sert cette page? </h4>
+                <p> Cliquer ici -> <img src="http://localhost/Meittopi/image/color_icons_red_help.png" alt="?"/></p>
+
+            </article>
+
+
+        </aside>
+
+
 
     </section>
 </section>

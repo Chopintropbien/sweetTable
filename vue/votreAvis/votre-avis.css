@@ -1,4 +1,65 @@
 #listeAmelioration{
-    width: 50%;
-    margin: 2%;
+    width: 55%;
+    margin: 2.5%;
+    display: inline-block;
 }
+
+/* partie de la page a droite */
+#partiePrincipale>aside{
+    width: 34%;
+    display: inline-block;
+    margin-top: 2.5%;
+
+}
+#profilAmelioration{
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+    padding: 2% 0% 2% 2%;
+}
+
+/* a quoi sert cette page? */
+#aQuoiSertCettePage{
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+    margin-top: 6%;
+    padding: 3%;
+}
+
+#aQuoiSertCettePage> h4{
+    text-align: center;
+    font-size: 100%;
+}
+
+#aQuoiSertCettePage> p{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 37%;
+    margin-top: 1%;
+}
+#aQuoiSertCettePage> p>img{
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
