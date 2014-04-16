@@ -1,11 +1,14 @@
 
 /* imgage de présentation */
-.amelioration > div {
+.amelioration > ul {
     display: inline-block;
     vertical-align: top;
     width: 16%;
 }
-.amelioration > div img{
+.amelioration > div>li{
+    width: 100%;
+}
+.amelioration > div> img{
     width: 100%;
 }
 
@@ -44,7 +47,7 @@
 }
 .amelioration aside ul li {
     margin-left: 2%;
-    margin-top: 3%;
+    margin-top: 15%;
     margin-bottom: 9%;
 }
 .amelioration aside ul li div{
@@ -90,4 +93,13 @@
 }
 .amelioration aside ul li .enDevellopementTitre {
     font-size: 120%;
+}
+
+/* ecrit par */
+.amelioration > p{
+    text-align: right;
+    margin-right: 3%;
+}
+.amelioration > p a:hover{
+    text-decoration: underline;
 }

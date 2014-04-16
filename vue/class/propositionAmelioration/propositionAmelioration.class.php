@@ -1,20 +1,20 @@
 <?php
 
 class PropositionAmelioration {
-    private $photo;
-	private $titre;
-	private $description;
-	private $nbPersonnePour;
-	private $nbPersonnePourMax;
-	private $nbPersonneContre;
-	private $nbPersonneContreMax;
-	private $nbDon;
-	private $nbDonMax;
-	private $utilisateurAime;
-	private $utilisateurAimePas;
-	private $utilisateurDon;
-	private $lienAmelioration;
-	private $lienDon;
+    protected $photo;
+    protected $titre;
+    protected $description;
+    protected $nbPersonnePour;
+    protected $nbPersonnePourMax;
+    protected $nbPersonneContre;
+    protected $nbPersonneContreMax;
+    protected $nbDon;
+    protected $nbDonMax;
+    protected $utilisateurAime;
+    protected $utilisateurAimePas;
+    protected $utilisateurDon;
+    protected $lienAmelioration;
+    protected $lienDon;
 
     public function __construct($json){
 		$this->photo = $json[0];
@@ -32,15 +32,17 @@ class PropositionAmelioration {
         $this->lienAmelioration = $json[12];
         $this->lienDon = $json[14];
     }
+    public function affiche(){
+        // photo
+        $this->affichePhoto('');
 
-    public function affiche($i){
+        // reste
+        $this->toutSaufPhoto('');
+    }
+    public function toutSaufPhoto($i){
         include('vue/class/propositionAmelioration/francais/propositionAmelioration.php');
+        include('../vue/class/propositionAmelioration/francais/propositionAmelioration.php');
 
-		//photo 
-		echo '<a href="'.$this->lienAmelioration.'">';
-			echo '<img src="'.$this->photo.'">';
-		echo '</a>';
-		
 		// partie de description de la propostion
 		echo '<article>';
 			echo '<a href="'.$this->lienAmelioration.'">';
@@ -126,7 +128,14 @@ class PropositionAmelioration {
 		echo '</aside>';
 
     }
-
+    public function affichePhoto($i){
+        //photo
+        echo '<div>';
+            echo '<a href="'.$this->lienAmelioration.'">';
+                echo '<img src="'.$this->photo.'">';
+            echo '</a>';
+        echo '</div>';
+    }
 
 
 

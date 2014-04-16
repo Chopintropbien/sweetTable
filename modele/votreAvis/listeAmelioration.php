@@ -35,7 +35,7 @@ $listeAmelioration = '{
 								true,
 								false,
 								false,
-								"",
+								"http://localhost/meittopi/votre-avis/amelioration.php",
 								""
 							],
 			"amelioration1" : [
