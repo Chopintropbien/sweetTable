@@ -33,6 +33,8 @@
          * 					2° Le nombre d'avis qu'il a mis sur le restaurant
          * 					3° Les infomations dur le lien de sa page profil
          * 					4° Les information pour le lien vers ses avis
+         *      16° Latitude de ou se trouve le restaurant
+         *      17° Longitude de la ou se trouve le restaurant
          * 		
          */
 
@@ -49,12 +51,13 @@
 						"Chemin de Malley 12",
 						"1007 Lausanne",
 						"04 50 62 29 24",
-						"",
+						"http://localhost/meittopi/restaurant/restaurant.php",
 						[["Diamche", "tout à 13 fr sdfv s ds sfv sf df vgs ver cdfgbfgb sd bs d", ""]],
 						[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
 						[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-						[["Mehdi", 3, "",""], ["Andrei", 3, "",""]]
-						
+						[["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
+						46,
+						0
 						]
 
 }';

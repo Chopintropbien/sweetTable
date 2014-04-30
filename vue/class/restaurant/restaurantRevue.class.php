@@ -32,10 +32,9 @@ class RestaurantRevue {
 				$this->rue = $restaurantJSON[7];
 				$this->villeEtZip = $restaurantJSON[8];
 				$this->tel = $restaurantJSON[9];
-				$this->listeEvenement = $restaurantJSON[10]; 
-				$this->lienRestau = $restaurantJSON[11]; 
+				$this->listeEvenement = $restaurantJSON[11];
+				$this->lienRestau = $restaurantJSON[10];
 			}
-
 		}
 		
 		public function affiche($i){

@@ -5,7 +5,7 @@
 }
 
 #options{
-	margin: 2%;
+	margin: 2% 0% 2% 1.5%;
 	padding-left: 5px;
 	padding-top: 5px;
 	border: 2px #EBEAEB outset; 
@@ -30,20 +30,72 @@
 	}
 
 #rechercheRestau{
-	border: 2px #EBEAEB outset; 
+	border: 2px #EBEAEB outset;
 	background-color: #F4F4F4;
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 2%;
+    margin-left: 27.5%;
     padding: 1%;
 }
 
-#carte{
-	position: fixed;
-	margin-left: 61%;
-	width: 23%;
-	margin-right: 2.5%;
+#contientCarte{
+    position: fixed;
+    top: 144px;
+    width: 22%;
+    min-width: 220px;
+    margin-left: 1.5%;
+}
+
+
+.infoBulle{
+    background-color: white;
+    border: 2px gainsboro solid;
+    padding: 2%;
+}
+
+.infoBulle>img{
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* a droite de la photo */
+.infoBulle>section{
+    width: 73%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+/* titre du restau */
+.infoBulle>section>article>p{
+    display: inline-block;
+    vertical-align: top;
+}
+.infoBulle>section>article>h4{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+/* etoile et avis */
+.infoBulle>section>div>div{
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px red solid;
+}
+.infoBulle>section>div>p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2%;
+}
+
+/* adresse et telephone */
+.infoBulle>section>aside{
+    font-size: 90%;
+    margin-top: 2%;
 }
 
 
