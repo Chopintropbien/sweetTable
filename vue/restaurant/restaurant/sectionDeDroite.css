@@ -38,7 +38,7 @@
 
 /* adresse */
 #droite>section>article{
-
+    margin: 1.5%;
 }
 
 #droite>section>article>address{
@@ -46,8 +46,10 @@
 }
 /* tel */
 #droite>section>article>p{
-    margin-top: 1.5%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
 }
+
 
 
 

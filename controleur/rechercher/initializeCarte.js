@@ -1,6 +1,6 @@
 
 var map;
-var lat = 0;
+var lat = 1;
 var long = 0;
 
 var listeRestaurantJSON = {
@@ -20,7 +20,7 @@ var listeRestaurantJSON = {
     [["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
     [["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
     [["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-    1,
+    30,
     0
 ],
     "restau1" : [

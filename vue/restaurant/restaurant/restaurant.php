@@ -1,6 +1,3 @@
-<?php require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'googlemaps-key.php');?>
-<?php header('Content-type: text/html; charset=UTF-8'); ?>
-<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
@@ -15,23 +12,22 @@
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/liste.class.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/revue/nouvelleRevueDeQuelquUn.class.css"/>
 
-
-    <!-- script pour la carte -->
-    <script type="text/javascript"
-            src="http://www.google.com/jsapi?key=<?php echo $apiKey; ?>">
-    </script>
-
-    <script type="text/javascript"
-            src="exemple-0.js">
-    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <!-- Elément Google Maps indiquant que la carte doit être affiché en plein écran et
+    qu'elle ne peut pas être redimensionnée par l'utilisateur -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <!-- Inclusion de l'API Google MAPS -->
+    <!-- Le paramètre "sensor" indique si cette application utilise détecteur pour déterminer la position de l'utilisateur -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 
     <title>
         Acceuil
     </title>
+
 </head>
 
-<body>
+<body onload="onLoad();">
 
 <section class="global">
     <nav id="nav">
@@ -125,11 +121,11 @@
                     <p><?php echo $restaurantJSON->tel?></p>
 
                     <h4>Horraire d'ouverture</h4>
-                    <p></p>
+                    <p><?php echo $restaurantJSON->ouverture ?></p>
 
                 </article>
 
-                <div id="carte"></div>
+                <div id="carte" style="width: 100%; height: 250px;"> </div>
             </section>
 
         </section>
@@ -139,10 +135,14 @@
 
 </section>
 
-<!-- carte -->
-<script type="text/javascript">
-    init();
+<script src="http://localhost/meittopi/controleur/restaurant/restaurant/initializeCarte.js"> </script>
+
+<script>
+
+    google.maps.event.addDomListener(window, 'load', initialize("<?php echo $restaurantJSON->latitude ?>","<?php echo $restaurantJSON->longitude ?>"));
+
 </script>
+
 
 </body>
 </html>
