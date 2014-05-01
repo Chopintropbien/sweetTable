@@ -4,12 +4,16 @@
 	<html>
 		<head>
 			<meta charset="utf-8"/>
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/base.css"/>
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/menuPricipal/navigateur/navigateur.css"/>
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/menuPricipal/profil/navigateur.css"/>
-			<link rel="stylesheet" href="http://localhost/Meittopi/css/menuPricipal/profil/monProfil.css"/>
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/base.css"/>
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/profil/navigateur/navigateur.css"/>
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/navigateur/navigateur.css"/>
 
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/class/profil/profilComplet.class.css"/>
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/class/profil/profilNotification.class.css"/>
+
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/class/notification/notification.class.css"/>
+
+
 			<title id = "titre">  </title>
 		</head>
 		
@@ -49,10 +53,15 @@
 
 
 					
-				</section> 
-		
+				</section>
 
-				
-		
+
+        <script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+		<script src="http://localhost/meittopi/controleur/class/profil/profilComplet.js"> </script>
+
+        <script>
+            modificationTexteCaracteristique();
+            nouvelleZoneSaisie();
+        </script>
 		</body>
 	</html>

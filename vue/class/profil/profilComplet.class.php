@@ -26,22 +26,20 @@ class ProfilComplet extends ProfilNotification {
                 for($j = 0; $j<count($this->tableauDeCaracteristique); ++$j){
                     echo '<li>';
                         echo '<h6>'.$this->tableauDeCaracteristique[$j][0].'</h6>';
-                        echo '<input type="button" value="+" class="petiteCroix"/>';
-                        echo '<p>'.$this->tableauDeCaracteristique[$j][1].'</p>';
-                        echo '<textarea style="display: none"> </textarea>';
-                        echo  '<div style="display: none">'.$valider.' </div>';
+                        echo '<input type="button" value="+" class="petiteCroix" id="petiteCroix'.$j.'"/>';
+
+                        // texte affiché
+                        echo '<p id="texte'. $j .'">'.$this->tableauDeCaracteristique[$j][1].'</p>';
+                        // zone de saisie pour le texte
+                        echo '<textarea id="textArea'.$j.'" style="display: none"> </textarea>';
+                        echo  '<div id="buttonValider'.$j.'" class ="buttonValider" style="display: none">'.$valider.' </div>';
+                        echo  '<div id="buttonAnnuler'.$j.'" style="display: none">'.$annuler.' </div>';
                     echo '</li>';
                 }
-                    // zone de saisie
-                echo '<li id="nouveauChamp" style="display: none">';
-                    echo '<h5>'.$nouveauChamp.'</h5>';
-                    echo '<input type="text" class="nouveauTitre"/>';
-                    echo '<textarea> </textarea>';
-                    echo  '<div>'.$valider.' </div>';
-                echo '</li>';
-                    // pour ajouter un champ
-                echo '<li> <p id="ajouterUnChamp">'.$ajouterChamp.'</p> </li>';
             echo '</ul>';
+
+            // pour ajouter un champ
+            echo '<div> <p id="ajouterUnChamp">'.$ajouterChamp.'</p> </div>';
 
         echo '</article>';
     }

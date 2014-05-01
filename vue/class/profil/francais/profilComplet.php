@@ -9,3 +9,4 @@
 $nouveauChamp = 'Nouveau champ';
 $ajouterChamp = 'Ajouter un  champ';
 $valider = 'Valider';
+$annuler = 'Annuler';

@@ -1,0 +1,85 @@
+#profil_profil{
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+    width: 40%;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 4.5%;
+    vertical-align: top;
+    margin-top: 8%;
+    overflow: auto;
+}
+
+
+#infoPersonnelles{
+    margin-top: 10px;
+    width: 77%;
+    margin-left: 22%;
+
+}
+
+#infoPersonnelles li{
+    margin: 1.5%;
+}
+#infoPersonnelles li input{
+    display: inline-block;
+}
+
+#infoPersonnelles li h6{
+    font-size: 100%;
+    text-decoration: underline;
+    margin-bottom: 0.7%;
+    display: inline-block;
+}
+
+#infoPersonnelles li p{
+    text-indent: 2%;
+}
+/* partie pour modifier les information */
+#infoPersonnelles li h5{
+    margin: 4% 0% 0.5% 0%;
+}
+#infoPersonnelles li input.nouveauTitre{
+    padding: 0.5%;
+}
+#infoPersonnelles li textarea{
+    display: block;
+    width: 90%;
+    max-width: 99%;
+    padding: 0.5%;
+    margin: 1% 0% 2% 0%;
+}
+/* validation  et annulation*/
+#infoPersonnelles li div{
+    display: inline-block;
+}
+#infoPersonnelles li div:hover{
+    text-decoration: underline;
+}
+/* validation */
+.buttonValider{
+    margin-left: 60%;
+    margin-right: 3%;
+}
+
+
+/* pour ajouter un champ */
+#ajouterUnChamp{
+    color: #305EC6;
+    text-align: right;
+    margin-top: 3%;
+    margin-right: 2%;
+}
+#ajouterUnChamp:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
