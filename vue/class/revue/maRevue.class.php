@@ -73,8 +73,13 @@ class MaRevue {
 
         echo '<div>';
             echo '<h4>'.$votreCommentaire.'</h4>';
-            echo '<p>'.$this->commentaire.'</p>';
-            echo '<div>'. $modifiercommentaire.'</div>';
+            echo '<p id="texteCommentaire'.$i.'" >'.$this->commentaire.'</p>';
+            echo '<textarea id="textareaCommentaire'.$i.'" style="display: none;"></textarea>';
+
+
+            /* modifier et valider */
+            echo '<div id="modifiercommentaire'.$i.'">'. $modifiercommentaire.'</div>';
+            echo '<input type="button" value="'.$valider.'" style="display: none;" id=validerommentaire'.$i.'"/>';
         echo '</div>';
 
 	}

@@ -57,7 +57,12 @@
 
 
         <script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+        <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js"> </script>
+        <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js"> </script>
+
 		<script src="http://localhost/meittopi/controleur/class/profil/profilComplet.js"> </script>
+
+
 
         <script>
             modificationTexteCaracteristique();

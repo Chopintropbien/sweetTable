@@ -3,90 +3,23 @@
 
 // permet de modifier ce qu'on a deja saisie pour une caraterisque
 function modificationTexteDUneCaracteristique(i){
-    var texteContenant = document.getElementById('texte' + i);
 
-    // transforme la balise p en texteare, tout en gardant le texte dedant si on click sur le balise p
-    addEvent(texteContenant, 'click',function(){
-        var i = this.id[5];
+    modifierCommentaire('texte',
+        'texte',
+        'textArea',
+        'buttonAnnuler',
+        'buttonValider',
+        '', i);
 
-        var texte = this.innerHTML;
-        this.style.display = 'none';
-
-        var textArea =  document.getElementById('textArea' + i);
-        var buttonValider = document.getElementById('buttonValider' + i);
-        var buttonAnnuler = document.getElementById('buttonAnnuler' + i);
-
-        textArea.style.display = 'block';
-        textArea.value = texte;
-
-        buttonValider.style.display = 'inline-block';
-        buttonAnnuler.style.display = 'inline-block';
-
-
-    });
-
-    var buttonValider = document.getElementById('buttonValider' + i);
-
-    // transforme la balise textearea en p, tout en gardant le texte dedant si on click sur le button valider
-    addEvent(buttonValider, 'click',function(){ //TODO: ajouter l'envoie au serveur
-        var i = this.id[13];
-
-        var textArea =  document.getElementById('textArea' + i);
-        var texte = textArea.value;
-
-        this.style.display = 'none';
-        textArea.style.display = 'none';
-        document.getElementById('buttonAnnuler' + i).style.display = 'none';
-
-        var texteContenant = document.getElementById('texte' + i);
-
-        texteContenant.style.display = 'block';
-        texteContenant.innerHTML = texte;
-
-    });
-
-    var buttonAnnuler = document.getElementById('buttonAnnuler' + i);
-    // annule les modification
-    addEvent(buttonAnnuler, 'click',function(){
-        if(confirm("Etes-vous sûr d'annuler?")){ // TODO: Francais
-            var i = this.id[13];
-
-            // efface tout
-            this.style.display = 'none';
-            document.getElementById('textArea' + i).style.display = 'none';
-            document.getElementById('buttonValider' + i).style.display = 'none';
-
-            // affiche tout
-            document.getElementById('texte' + i).style.display = 'block';
-        }
-
-    });
-
-    var petiteCroix = document.getElementById('petiteCroix' + i);
-    // si on click sur la petite crois, on efface la caracteristique
-
-    addEvent(petiteCroix, 'click',function(){
-        if(confirm("Etes-vous sûr de suprimer cette partie?")){ // TODO: Francais
-            var i =  0;
-            while(document.getElementById('texte' + i)){ ++i} // compte combien il y a de caraterisque (utile pour ensuite pouvoir modifier)
-
-            var parentLi = this.parentNode;
-            parentLi.parentNode.removeChild(parentLi);
-        }
-        //TODO: envoyer au serveur
-
-
-    });
-
+    supprimerParentNode('petiteCroix', i);
 
 }
 
 // permet de modifier ce qu'on a deja saisie pour tout la page
 function modificationTexteCaracteristique(){
-
     var i =  0;
-    while(document.getElementById('texte' + i)){
-        modificationTexteDUneCaracteristique(i);
+    while(document.getElementById(i + 'texte')){
+        modificationTexteDUneCaracteristique(i)
         ++i;
     }
 
@@ -113,9 +46,9 @@ function nouvelleZoneSaisie(){
         nouvelleLi.innerHTML = contenantLi;
 
         var i =  0;
-        while(document.getElementById('texte' + i)){ ++i} // compte combien il y a de caraterisque (utile pour ensuite pouvoir modifier)
+        while(document.getElementById(i + 'texte')){ ++i} // compte combien il y a de caraterisque (utile pour ensuite pouvoir modifier)
 
-        nouvelleLi.id = 'nouvelleLi' +i;
+        nouvelleLi.id = i + 'nouvelleLi';
 
         document.getElementById('infoPersonnelles').appendChild(nouvelleLi);
 
@@ -127,9 +60,9 @@ function nouvelleZoneSaisie(){
         addEvent(validerNouvelleCaracteristique, 'click',function(){
 
             var i =  0;
-            while(document.getElementById('texte' + i)){ ++i} // compte combien il y a de caraterisque (utile pour ensuite pouvoir modifier)
+            while(document.getElementById(i + 'texte')){ ++i} // compte combien il y a de caraterisque (utile pour ensuite pouvoir modifier)
 
-            var nouvelleLi = document.getElementById('nouvelleLi' + i);
+            var nouvelleLi = document.getElementById(i + 'nouvelleLi');
             var nouveauTitre = document.getElementById('nouveauTitre').value;
             var nouveauTexte = document.getElementById('nouveauTexte').value;
 
@@ -141,15 +74,15 @@ function nouvelleZoneSaisie(){
             }
             else{
                 var nouveauContenantLi = '<h6>'+ nouveauTitre +'</h6>';
-                nouveauContenantLi += '<input type="button" value="+" class="petiteCroix" id="petiteCroix'+ i +'"/>';
+                nouveauContenantLi += '<input type="button" value="+" class="petiteCroix" id="'+ i +'petiteCroix"/>';
 
                 // texte affiché
-                nouveauContenantLi += '<p id="texte'+ i +'">'+ nouveauTexte +'</p>';
+                nouveauContenantLi += '<p id="'+ i +'texte">'+ nouveauTexte +'</p>';
 
                 // zone de saisie pour le texte
-                nouveauContenantLi += '<textarea id="textArea'+ i +'" style="display: none" > </textarea>';
-                nouveauContenantLi += '<div id="buttonValider'+ i +'" style="display: none" class ="buttonValider"> Valider </div>'; // TODO: francais
-                nouveauContenantLi += '<div id="buttonAnnuler'+ i +'" style="display: none"> Annuler </div>'; // TODO: francais
+                nouveauContenantLi += '<textarea id="'+ i +'textArea" style="display: none" > </textarea>';
+                nouveauContenantLi += '<div id="'+ i +'buttonValider" style="display: none" class ="buttonValider"> Valider </div>'; // TODO: francais
+                nouveauContenantLi += '<div id="'+ i +'buttonAnnuler" style="display: none"> Annuler </div>'; // TODO: francais
 
                     nouvelleLi.innerHTML = nouveauContenantLi;
 
@@ -167,9 +100,9 @@ function nouvelleZoneSaisie(){
         addEvent(annulerNouvelleCaracteristique, 'click',function(){
             if(confirm("Etes-vous sûr d'annuler?")){ // TODO: Francais
                 var i =  0;
-                while(document.getElementById('texte' + i)){ ++i} // compte combien il y a de caraterisque (utile pour ensuite pouvoir modifier)
+                while(document.getElementById(i + 'texte')){ ++i} // compte combien il y a de caraterisque (utile pour ensuite pouvoir modifier)
 
-                var nouvelleLi = document.getElementById('nouvelleLi' + i);
+                var nouvelleLi = document.getElementById(i + 'nouvelleLi');
                 nouvelleLi.parentNode.removeChild(nouvelleLi);
 
                 document.getElementById('ajouterUnChamp').style.display = 'block';

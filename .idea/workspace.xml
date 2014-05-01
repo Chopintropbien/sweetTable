@@ -26,19 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="monProfil.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/profil/monProfil/monProfil.php">
+      <file leaf-file-name="modifierCommentaire.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="102" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="1095">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="revue.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/profil/revue/revue.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="4" selection-start="224" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="960">
+            <state line="78" column="0" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
@@ -47,7 +38,7 @@
       <file leaf-file-name="profilComplet.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/class/profil/profilComplet.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="81" selection-start="977" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="765">
+            <state line="34" column="59" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-13.75" vertical-offset="180" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -56,16 +47,18 @@
       <file leaf-file-name="profilComplet.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controleur/class/profil/profilComplet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="73" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.763986" vertical-offset="448" max-vertical-offset="2775">
-              <folding />
+            <state line="76" column="101" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.7692308" vertical-offset="690" max-vertical-offset="1770">
+              <folding>
+                <marker date="1398957244976" expanded="true" signature="3139:3152" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profilComplet.class.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/class/profil/profilComplet.class.css">
+      <file leaf-file-name="monProfil.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/profil/monProfil/monProfil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="21" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1365">
+            <state line="61" column="0" selection-start="2481" selection-end="2481" vertical-scroll-proportion="-31.5" vertical-offset="159" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -81,15 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/vue/votreAvis/pageDUneAmelioration/pageDUneAmelioration.php" />
-        <option value="$PROJECT_DIR$/vue/votreAvis/pageDUneAmelioration/pageDUneAmelioration.css" />
-        <option value="$PROJECT_DIR$/vue/class/propositionAmelioration/commentaireAmelioration.class.css" />
-        <option value="$PROJECT_DIR$/identification-echouee.php" />
-        <option value="$PROJECT_DIR$/controleur/identifiacationEchouee/identificationEchouee.php" />
-        <option value="$PROJECT_DIR$/vue/identificationEchouee/francais.php" />
-        <option value="$PROJECT_DIR$/vue/identificationEchouee/identificationEchouee.css" />
-        <option value="$PROJECT_DIR$/vue/connexion/navigateur.css" />
-        <option value="$PROJECT_DIR$/vue/identificationEchouee/identificationEchouee.php" />
         <option value="$PROJECT_DIR$/controleur/connexion/connexion.php" />
         <option value="$PROJECT_DIR$/connexion.php" />
         <option value="$PROJECT_DIR$/vue/connexion/formulaireInscription.css" />
@@ -103,7 +87,6 @@
         <option value="$PROJECT_DIR$/vue/class/revue/revueDeQuelquUn.class.php" />
         <option value="$PROJECT_DIR$/vue/class/revue/francais/nouvelleRevueDeQuelquUn.php" />
         <option value="$PROJECT_DIR$/vue/acceuil/acceuil.css" />
-        <option value="$PROJECT_DIR$/vue/class/revue/nouvelleRevueDeQuelquUn.class.css" />
         <option value="$PROJECT_DIR$/modele/acceuil/acceuil.php" />
         <option value="$PROJECT_DIR$/vue/acceuil/acceuil.php" />
         <option value="$PROJECT_DIR$/test.php" />
@@ -127,10 +110,20 @@
         <option value="$PROJECT_DIR$/vue/restaurant/restaurant/sectionDeDroite.css" />
         <option value="$PROJECT_DIR$/controleur/addEvent.js" />
         <option value="$PROJECT_DIR$/vue/class/notification/notification.class.css" />
-        <option value="$PROJECT_DIR$/vue/profil/monProfil/monProfil.php" />
         <option value="$PROJECT_DIR$/vue/class/profil/francais/profilComplet.php" />
         <option value="$PROJECT_DIR$/vue/class/profil/profilComplet.class.css" />
+        <option value="$PROJECT_DIR$/vue/profil/revue/revue.php" />
+        <option value="$PROJECT_DIR$/vue/class/revue/francais/revue.php" />
+        <option value="$PROJECT_DIR$/vue/class/revue/nouvelleRevueDeQuelquUn.class.css" />
+        <option value="$PROJECT_DIR$/vue/class/revue/revue.class.css" />
+        <option value="$PROJECT_DIR$/vue/class/revue/maRevue.class.php" />
+        <option value="$PROJECT_DIR$/controleur/class/revue/maRevue.js" />
+        <option value="$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/ajouterChamp.js" />
+        <option value="$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/commenter.js" />
         <option value="$PROJECT_DIR$/vue/class/profil/profilComplet.class.php" />
+        <option value="$PROJECT_DIR$/vue/profil/monProfil/monProfil.php" />
+        <option value="$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js" />
+        <option value="$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js" />
         <option value="$PROJECT_DIR$/controleur/class/profil/profilComplet.js" />
       </list>
     </option>
@@ -144,7 +137,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
-    <option name="width" value="1311" />
+    <option name="width" value="1287" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -173,7 +166,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -362,7 +354,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="profil" />
+              <option name="myItemId" value="revue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="revue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="francais" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,10 +403,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="profil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="francais" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,12 +474,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rechercher" />
+              <option name="myItemId" value="fonctionJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controleur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonctionJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rentreeUtilisateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controleur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controleur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profil" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,11 +552,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controleur/fonctionJS" />
       <recent name="$PROJECT_DIR$/controleur/restaurant/restaurant" />
       <recent name="$PROJECT_DIR$/vue" />
       <recent name="$PROJECT_DIR$/controleur" />
       <recent name="$PROJECT_DIR$/modele" />
-      <recent name="$PROJECT_DIR$/vue/class/liste" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/controleur" />
@@ -563,15 +640,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="0" width="1311" height="728" extended-state="4" />
-    <editor active="true" />
+    <frame x="49" y="0" width="1287" height="728" extended-state="4" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24711697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22213438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23609991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39836067" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -600,7 +677,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24711697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25059855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23609991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -625,56 +702,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue/connexion/formulaireInscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="40" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.26056337" vertical-offset="377" max-vertical-offset="1485" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/connexion/formulaireInscriptionVerificationChamp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="33" selection-start="60" selection-end="60" vertical-scroll-proportion="-0.5202703" vertical-offset="323" max-vertical-offset="2940" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/connexion/francais/formulaireInscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="373" selection-end="373" vertical-scroll-proportion="0.39612675" vertical-offset="0" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/connexion/francais/navigateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="95" selection-end="95" vertical-scroll-proportion="0.1056338" vertical-offset="0" max-vertical-offset="568" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/connexion/navigateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="373" selection-end="373" vertical-scroll-proportion="0.23767605" vertical-offset="0" max-vertical-offset="568" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/connexion/connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="770" selection-end="770" vertical-scroll-proportion="0.5809859" vertical-offset="0" max-vertical-offset="568" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/rechercher/option.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4710" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/acceuil/acceuil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/revue/maRevue.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.45604396" vertical-offset="249" max-vertical-offset="1245" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/revue/francais/nouvelleRevueDeQuelquUn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="85" selection-end="85" vertical-scroll-proportion="0.111317255" vertical-offset="0" max-vertical-offset="539" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/class/revue/revueAValider.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
@@ -733,11 +760,6 @@
     <entry file="file://$PROJECT_DIR$/modele/acceuil/acceuil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/revue/nouvelleRevueDeQuelquUn.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.13464992" vertical-offset="90" max-vertical-offset="2835" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/class/revue/nouvelleRevueDeQuelquUn.class.php">
@@ -845,48 +867,111 @@
         <state line="39" column="36" selection-start="807" selection-end="807" vertical-scroll-proportion="0.6315789" vertical-offset="225" max-vertical-offset="795" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/profil/monProfil/monProfil.php">
+    <entry file="file://$PROJECT_DIR$/vue/class/profil/francais/profilComplet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="102" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="1095">
+        <state line="11" column="8" selection-start="184" selection-end="192" vertical-scroll-proportion="0.16483517" vertical-offset="0" max-vertical-offset="546" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/profil/profilComplet.class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="21" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/revue/nouvelleRevueDeQuelquUn.class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="0" selection-start="3875" selection-end="3989" vertical-scroll-proportion="0.6802842" vertical-offset="2122" max-vertical-offset="2685" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/revue/francais/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="305" selection-end="313" vertical-scroll-proportion="0.24064171" vertical-offset="0" max-vertical-offset="561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/revue/maRevue.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="51" selection-start="2492" selection-end="2511" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="1395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="16" selection-start="2078" selection-end="2078" vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/objet_XMLHttpRequest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/addEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profil/revue/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="24" selection-start="2442" selection-end="2442" vertical-scroll-proportion="0.8181818" vertical-offset="414" max-vertical-offset="1080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/commenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/ajouterChamp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/class/revue/maRevue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controleur/addEvent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/profil/francais/profilComplet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="184" selection-end="192" vertical-scroll-proportion="0.16483517" vertical-offset="0" max-vertical-offset="546" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/profil/revue/revue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="224" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="960">
+        <state line="6" column="1" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/profil/profilComplet.class.css">
+    <entry file="file://$PROJECT_DIR$/vue/profil/monProfil/monProfil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1365">
+        <state line="61" column="0" selection-start="2481" selection-end="2481" vertical-scroll-proportion="-31.5" vertical-offset="159" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/class/profil/profilComplet.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="81" selection-start="977" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="765">
+        <state line="34" column="59" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-13.75" vertical-offset="180" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.025641026" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controleur/class/profil/profilComplet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="73" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.763986" vertical-offset="448" max-vertical-offset="2775">
-          <folding />
+        <state line="76" column="101" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.7692308" vertical-offset="690" max-vertical-offset="1770">
+          <folding>
+            <marker date="1398957244976" expanded="true" signature="3139:3152" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

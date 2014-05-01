@@ -51,6 +51,14 @@
 
     </section>
 
+    <script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+    <script src="http://localhost/meittopi/controleur/class/revue/maRevue.js"> </script>
+
+    <script>
+        modifierRevus();
+    </script>
+
+
 </body>
 </html>
 

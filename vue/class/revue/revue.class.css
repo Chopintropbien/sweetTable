@@ -90,6 +90,15 @@
         text-align: justify;
         margin-top: 0.5%;
     }
+
+    /* textarea */
+    .revue > div>textarea{
+        width: 80%;
+        max-width: 98%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+
         /* modifier votre commentaire */
     .revue > div>div{
         text-align: right;
@@ -98,4 +107,25 @@
     }
     .revue > div>div:hover{
         text-decoration: underline;
+    }
+
+    /* valider commentaire */
+    .revue > div>input{
+        font-weight: bold;
+        text-align: right;
+        background-color: #FBAE5B;
+        border: 1px #FF8400 outset;
+        box-shadow: 0px 0px 0px #FF8400;
+        border-radius: 5px;
+        padding: 0.2% 1% 0.2% 1%;
+        cursor: pointer;
+        font-size: 98%;
+        margin-left: 80%;
+        margin-top: 1%;
+    }
+    .revue > div>input:active{
+        position: relative;
+        top: 1px;
+        left: 1px;
+
     }

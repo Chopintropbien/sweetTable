@@ -12,3 +12,4 @@ $votesCool = ' votes cools';
 $compliment = ' compliment';
 $votreCommentaire= 'Votre commentaire:';
 $modifiercommentaire = 'Modifier votre commentaire';
+$valider = 'Valider';
