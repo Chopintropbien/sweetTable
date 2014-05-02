@@ -111,6 +111,7 @@
 
     /* valider commentaire */
     .revue > div>input{
+        display: inline-block;
         font-weight: bold;
         text-align: right;
         background-color: #FBAE5B;
@@ -120,7 +121,6 @@
         padding: 0.2% 1% 0.2% 1%;
         cursor: pointer;
         font-size: 98%;
-        margin-left: 80%;
         margin-top: 1%;
     }
     .revue > div>input:active{
@@ -128,4 +128,9 @@
         top: 1px;
         left: 1px;
 
+    }
+
+    .revue > div .validerCommentaire{
+        margin-left: 60%;
+        margin-right: 2%;
     }

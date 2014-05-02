@@ -56,6 +56,9 @@ function modifierCommentaire(idButtonModifierCommentaire,
         texteContenant.style.display = 'block';
         texteContenant.innerHTML = texte;
 
+        var buttonModifierCommentaire = document.getElementById(i + idButtonModifierCommentaire);
+        buttonModifierCommentaire.style.display = 'block';
+
     });
 
 
@@ -73,6 +76,9 @@ function modifierCommentaire(idButtonModifierCommentaire,
 
             // affiche tout
             document.getElementById(i + idParagrpaheCommentaire).style.display = 'block';
+
+            var buttonModifierCommentaire = document.getElementById(i + idButtonModifierCommentaire);
+            buttonModifierCommentaire.style.display = 'block';
         }
 
     });

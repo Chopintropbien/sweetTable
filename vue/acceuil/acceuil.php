@@ -28,11 +28,10 @@
 
     <section id="partiePrincipale">
 
-    <h2 id="mettopi"></h2>
+    <h2 id="mettopi"> Meittopi a Lausanne</h2>
     <hr>
     <section id="partieGauche">
-    <h2></h2>
-
+    <h2>Activités récentes</h2>
 
 
     <?php

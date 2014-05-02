@@ -1,6 +1,6 @@
-<?php 
-function getListeEvenement(){
-//~ $JSON = file_get_contents("http://localhost:5000/user/chiffa");
+<?php
+
+// le meme que dans profil/evenement
 
 /* Un evenement est aussi un tableau mais compose de:
  *  1° Le nom de la personne de la personne qui organise l'événement
@@ -19,12 +19,13 @@ function getListeEvenement(){
  *  10° Mettre si la réponse de l'utilisateur à l'invitation (0 → pas repondu, 1-> non, 2 → peut-être, 3-> oui )
  *  11° Les information qui permettront des retrouver le lien de la personne qui a creer l'evenement
  *  12° Les information qui permettront des retrouver le lien de l'événement
- */ 
+ */
 
-	  
-$listeEvenementJSON = '{
+function get_evenement(){
+
+    $evenement = '{
 			"evenement0" : [
-							"Andreï Kucharavy",	
+							"Andreï Kucharavy",
 							"http://localhost/Meittopi/image/profil_vide.png",
 							["http://localhost/Meittopi/image/profil_vide.png","http://localhost/Meittopi/image/profil_vide.png"],
 							"Sorie chez j aime comme tous les diamnche!!!!!!",
@@ -35,28 +36,11 @@ $listeEvenementJSON = '{
 							"Alors, comme d ab, on va chez jaime et on mange plein de pizzaaaaaaaaaaa",
 							1,
 							"ee",
-							"http://localhost/meittopi/unEvenement.php"
-							],
-			"evenement1" : [
-							"Andreï Kucharavy",	
-							"http://localhost/Meittopi/image/profil_vide.png",
-							["http://localhost/Meittopi/image/profil_vide.png","http://localhost/Meittopi/image/profil_vide.png"],
-							"Sorie chez j aime comme tous les diamnche!!!!!!",
-							"il y a 2 min",
-							"14/02/2014",
-							[["Mehdi", 0, "sss"], ["Lauriane", 2, "def"]],
-							"Je veux absolument que tu viennes!!!!! J aimerais vraiment te voir, s il te plais vien!!!!!!!!!!!!!!",
-							"Alors, comme d ab, on va chez jaime et on mange plein de pizzaaaaaaaaaaa",
-							3,
-							"ee",
-							"http://localhost/meittopi/unEvenement.php"
+							"sss"
 							]
 	}';
 
-	return json_decode($listeEvenementJSON);
+    return json_decode($evenement);
+
+
 }
-
-
-
-
-?>

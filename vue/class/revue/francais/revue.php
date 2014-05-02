@@ -13,3 +13,4 @@ $compliment = ' compliment';
 $votreCommentaire= 'Votre commentaire:';
 $modifiercommentaire = 'Modifier votre commentaire';
 $valider = 'Valider';
+$annuler = 'Annuler';

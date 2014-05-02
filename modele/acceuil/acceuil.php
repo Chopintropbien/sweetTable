@@ -67,7 +67,7 @@ function get_liste_acceuil(){
 							"Alors, comme d ab, on va chez jaime et on mange plein de pizzaaaaaaaaaaa",
 							1,
 							"ee",
-							"sss"
+							"http://localhost/meittopi/unEvenement.php"
 							],
 			"evenement0" : [
 							"Andreï Kucharavy",
@@ -81,7 +81,7 @@ function get_liste_acceuil(){
 							"Alors, comme d ab, on va chez jaime et on mange plein de pizzaaaaaaaaaaa",
 							3,
 							"ee",
-							"sss"
+							"http://localhost/meittopi/unEvenement.php"
 							]
 
 }';

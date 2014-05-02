@@ -29,7 +29,7 @@
 							"14/02/2014",
 							[["Mehdi", "sss"], ["Lauriane", "def"]],
 							2,
-							"sss"
+							"http://localhost/meittopi/unEvenement.php"
 							],
 					"evenementResume1" : [
 							"http://localhost/Meittopi/image/profil_vide.png",
@@ -37,7 +37,7 @@
 							"14/02/2014",
 							[["Mehdi", "sss"], ["Lauriane", "def"]],
 							2,
-							"sss"
+							"http://localhost/meittopi/unEvenement.php"
 							]
         }';
 

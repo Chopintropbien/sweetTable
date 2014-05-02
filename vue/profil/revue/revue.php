@@ -52,10 +52,12 @@
     </section>
 
     <script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+    <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js"> </script>
+    <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js"> </script>
     <script src="http://localhost/meittopi/controleur/class/revue/maRevue.js"> </script>
 
     <script>
-        modifierRevus();
+        modifierEtEditerRevus();
     </script>
 
 

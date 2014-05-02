@@ -1,28 +1,24 @@
 
-function modifierRevus(){
+function modifierEtEditerRevus(){
 
     var i = 0;
-    while(document.getElementById('modifiercommentaire' + i)){
+    while(document.getElementById(i + 'modifiercommentaire')){
 
-        var modifiercommentaire = document.getElementById('modifiercommentaire' + i);
-        addEvent(modifiercommentaire, 'click',function(){
-            var i = this.id[19];
+        modifierCommentaire('modifiercommentaire',
+            'texteCommentaire',
+            'textareaCommentaire',
+            'annulerCommentaire',
+            'validerCommentaire',
+            '',
+            i);
 
-            var texteCommentaire = document.getElementById('texteCommentaire'+ i);
-            var textareaCommentaire = document.getElementById('textareaCommentaire'+ i);
-
-            var commentaire = texteCommentaire.innerHTML;
-
-            texteCommentaire.style.display = 'none';
-            textareaCommentaire.style.display = 'block';
-            textareaCommentaire.value = commentaire;
-
-        });
-
+        editerRevus(i);
 
         ++i;
     }
+}
 
+function editerRevus(i){
 
 
 }
