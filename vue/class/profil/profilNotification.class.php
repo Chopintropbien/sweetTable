@@ -34,10 +34,12 @@ class ProfilNotification {
         $this->nbCompliment = $json[9];
         $this->nbFollower = $json[10];
         $this->nbLienPourProfilPlusComplet = $json[11];
+
     }
 
     public function affiche(){
         include('../vue/class/profil/francais/profilNotification.php');
+        include('vue/class/profil/francais/profilNotification.php');
 
         echo '<aside id="profil">';
                 // partie du haut avec le speudo et la ville

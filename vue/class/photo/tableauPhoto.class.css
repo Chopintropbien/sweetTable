@@ -1,0 +1,25 @@
+
+
+/* les phtoto */
+#tablePhoto  img{
+    width: 60%;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+/* le sous titre */
+#tablePhoto p{
+    text-align: center;
+
+}
+
+/* le lien de l'auteur */
+#tablePhoto  p > a{
+    color: royalblue;
+}
+
+#tablePhoto p > a:hover{
+    text-decoration: underline;
+}

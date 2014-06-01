@@ -79,7 +79,7 @@
                 foreach($listePersonneSuggestionJSON as $personneSuggestionJSON){
                     $listePersonneSuggestion->ajoute(new PersonneQuOnRecherche($personneSuggestionJSON));
                 }
-                $listePersonneSuggestion->affiche('personneSuggestion', 'personne');
+                $listePersonneSuggestion->afficheDifferenteListe('personneSuggestion', 'personne', 'propostionAmi');
 
                 ?>
 
@@ -89,6 +89,13 @@
 
 
     </section>
+
+    <script src="http://localhost/meittopi/controleur/fonctionJS/addEvent.js"> </script>
+    <script src="http://localhost/meittopi/controleur/class/amis/personneQuOnRecherche.js"> </script>
+
+    <script>
+        imageCheckAjouterAmi();
+    </script>
 
 
 </body>

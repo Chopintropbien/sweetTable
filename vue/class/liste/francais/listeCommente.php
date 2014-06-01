@@ -11,5 +11,6 @@ $evenement = 'Un événement';
 $discution = 'Une discution';
 $rechercher = 'Rechercher';
 $valider = 'Valider';
+$annuler = 'Annuler';
 
 ?>

@@ -45,6 +45,7 @@
 .commentaire> article{
     text-align: right;
 }
+/* button enregistrer */
 .commentaire> article> input{
     background-color: #FBAE5B;
     border: 1px #FF8400 outset;
@@ -59,6 +60,15 @@
     top: 0.5px;
     left: 0.5px;
 }
+/* button annuler */
+.commentaire> article > p{
+    margin-right: 3%;
+}
+.commentaire> article > p:hover{
+    text-decoration: underline;
+}
+
+
 /*  Element de la liste*/
 .elementCommente{
     width: 65.5%;

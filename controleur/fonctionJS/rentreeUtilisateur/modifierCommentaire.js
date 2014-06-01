@@ -30,6 +30,7 @@ function modifierCommentaire(idButtonModifierCommentaire,
 
         textArea.style.display = 'block';
         textArea.value = texte;
+        textArea.focus();
 
         buttonValider.style.display = 'inline-block';
         buttonAnnuler.style.display = 'inline-block';

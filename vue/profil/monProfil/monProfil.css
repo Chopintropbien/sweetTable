@@ -1,0 +1,8 @@
+#notification{
+    display: inline-block;
+    width: 25%;
+    margin-top: 8%;
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+    padding: 1%;
+}

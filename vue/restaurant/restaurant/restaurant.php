@@ -44,9 +44,8 @@
             <div>
                 <div> <!-- note -->
                     <?php
-                    for($j=0; $j<$restaurantJSON->note; ++$j){
-                    echo '<canvas width="23" height="23"></canvas>';
-                    }
+                    include_once('../vue/class/noteEtoile/noteEtoile.class.php');
+                    NoteEtoile::afficheEtoile($restaurantJSON->note, 45);
                     ?>
                 </div>
                 <p> <?php echo $restaurantJSON->nbAvis ?> </p> <!-- nb d'avis sur ce restaurant -->
@@ -68,7 +67,17 @@
                 }
                 echo '<p>'.$cathegorie.'</p>';
 
-                echo ' <span id="croixApparitionElement">+</span>';
+                echo ' <span id="0croixApparitionElement">+</span>';
+
+                // evenement caché
+                echo '<aside id="0evenement" style="display: none;">';
+                $listeEvenement = count($restaurantJSON->evenements);
+                for($j=0; $j<$listeEvenement; ++$j){
+                    echo '<a> <h6>'.$restaurantJSON->evenements[$j][0].':</h6>'.$restaurantJSON->evenements[$j][1].'</a>';
+                }
+
+                echo '</aside>';
+
                 ?>
 
             </section>
@@ -81,7 +90,8 @@
                 <img src=" <?php echo $restaurantJSON->listePhotos[0] ?> "/>
                 <img src=" <?php echo $restaurantJSON->listePhotos[1] ?> "/>
                 <img src=" <?php echo $restaurantJSON->listePhotos[2] ?> "/>
-                <p><a href="<?php echo $restaurantJSON->lienPhoto?>"> Voir toutes les photos </a></p>
+                <!-- <p><a href="<?php echo $restaurantJSON->lienPhoto?>"> Voir toutes les photos </a></p> -->
+                <p><a href="http://localhost/meittopi/restaurant/photo.php"> Voir toutes les photos </a></p>
             </section>
 
 
@@ -108,7 +118,7 @@
 
             <!-- button -->
             <div>
-                <input type="button" value="Ecrire une revue" id="ecrireUneRevus"/>
+                <a href = "http://localhost/meittopi/restaurant/ecrire-une-revue.php" id="ecrireUneRevus"> Ecrire une revue</a>
                 <input type="button" value="Ajouter des photos" id="ajouterPhotos"/>
 
             </div>
@@ -135,12 +145,37 @@
 
 </section>
 
+<!-- carte -->
 <script src="http://localhost/meittopi/controleur/restaurant/restaurant/initializeCarte.js"> </script>
+<script>
+    google.maps.event.addDomListener(window, 'load', initialize("<?php echo $restaurantJSON->latitude ?>","<?php echo $restaurantJSON->longitude ?>"));
+</script>
+
+<!-- pour les etoile -->
+<script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineEtoile.js"> </script>
+<script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineDemiEtoile.js"> </script>
+<script src="http://localhost/meittopi/controleur/class/noteEtoile/noteEtoile.js"></script>
 
 <script>
+    noteEtoile();
+</script>
 
-    google.maps.event.addDomListener(window, 'load', initialize("<?php echo $restaurantJSON->latitude ?>","<?php echo $restaurantJSON->longitude ?>"));
+<!-- evenement revus -->
+<script src="http://localhost/meittopi/controleur/addEvent.js"></script>
+<script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js"></script>
+<script src="http://localhost/meittopi/controleur/class/revue/nouvelleRevueDeQuelquUn.js"></script>
 
+<script>
+    evenementButtonEtCompliment();
+</script>
+
+<!-- affiche plus d'info sur le restau -->
+<script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+<script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/faireApparaitreDisparaitreEnCliquant.js"> </script>
+<script src="http://localhost/meittopi/controleur/class/restaurant/restaurantRevue.js"></script>
+
+<script>
+    afficheEvenement();
 </script>
 
 

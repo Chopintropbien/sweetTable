@@ -27,20 +27,35 @@
 
             <?php include("../vue/amis/inviterAmis/francais.php"); ?>
 
-            <h1> <?php echo $titre; ?> </h1>
-            <input type="text" placeholder="<?php echo $adresseMailN; ?> 1"/>
-            <input type="text" placeholder="<?php echo $adresseMailN; ?> 2"/>
-            <input type="text" placeholder="<?php echo $adresseMailN; ?> 3">
-            <p> <?php echo $ajouterEmail; ?> </p>
+            <form action="envoyerMail.php" method="post">
+                <h1> <?php echo $titre; ?> </h1>
+                <section id="contenantEmail">
+                    <input type="text" placeholder="<?php echo $adresseMailN; ?> 1" id="1adressEmail" name="1adressEmail"/>
+                    <input type="text" placeholder="<?php echo $adresseMailN; ?> 2" id="2adressEmail" name="2adressEmail"/>
+                    <input type="text" placeholder="<?php echo $adresseMailN; ?> 3" id="3adressEmail" name="3adressEmail"/>
+                </section>
 
-            <h4><?php echo $message; ?></h4>
-            <textarea> <?php echo $messageAEnvoyer; ?></textarea>
-            <input type="button" value="<?php echo $envoyer; ?>" id="envoieMail"/>
+                <p id="ajouterEmail"> <?php echo $ajouterEmail; ?> </p>
+
+                <h4><?php echo $message; ?></h4>
+
+                <textarea name="mail"> <?php echo $messageAEnvoyer; ?></textarea>
+                <input type="submit" value="<?php echo $envoyer; ?>" id="envoieMail"/>
+            </form>
 
         </section>
 
 
     </section>
+
+    <script src="http://localhost/meittopi/controleur/fonctionJS/addEvent.js"> </script>
+    <script src="http://localhost/meittopi/controleur/amis/inviterAmis/inviter-amis.js"> </script>
+
+    <script>
+        ajouterAdresseEmail();
+    </script>
+
+
 
 
 </body>

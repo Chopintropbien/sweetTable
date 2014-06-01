@@ -1,5 +1,7 @@
 <?php
 
+include_once('vue/class/noteEtoile/noteEtoile.class.php');
+
 class NouvelleRevueDeQuelquUn{
     private $speudo;
     private $photo;
@@ -50,7 +52,7 @@ class NouvelleRevueDeQuelquUn{
 				
 				// etoile
 				echo '<div>';
-					echo '<canvas width="23" height="23"></canvas>';
+                NoteEtoile::afficheEtoile($this->noteRestau, 23);
 				echo '</div>';
 				
 				// commentaire
@@ -75,32 +77,38 @@ class NouvelleRevueDeQuelquUn{
 
                     // pour le button votes utils
                 if($this->voteUtil){
-                    echo '<div id="utileButton'.$i.'" style=" '.$styleBoutton.' " >'.$util;
-					echo '<img src=" '.$checkImage.' "/>';
+                    echo '<div id="'.$i.'utileButton" style=" '.$styleBoutton.' " >'.$util;
+					echo '<img src="'.$checkImage.'" id="'.$i.'utileButtonCheck"/>';
 					echo '</div>';
                 }
                 else{
-                    echo '<div id="utileButton'.$i.'">'.$util.'</div>';
+                    echo '<div id="'.$i.'utileButton">'.$util;
+                    echo '<img src="'.$checkImage.'" id="'.$i.'utileButtonCheck" style=" display: none;"/>';
+                    echo '</div>';
                 }
                 
                     // pour le button votes drole
                 if($this->voteDrole){
-                    echo '<div id="utileButton'.$i.'"style=" '.$styleBoutton.' " >'.$drole;
-					echo '<img src=" '.$checkImage.' "/>';
+                    echo '<div id="'.$i.'droleButton" style=" '.$styleBoutton.' " >'.$drole;
+					echo '<img src="'.$checkImage.'" id="'.$i.'droleButtonCheck"/>';
 					echo '</div>';
                 }
                 else{
-                    echo '<div id="utileButton'.$i.'" >'.$drole.'</div>';
+                    echo '<div id="'.$i.'droleButton" >'.$drole;
+                    echo '<img src="'.$checkImage.'" id="'.$i.'droleButtonCheck" style=" display: none;"/>';
+                    echo '</div>';
                 }
                 
                     // pour le button votes cool
                 if($this->voteCool){
-                    echo '<div id="utileButton'.$i.'"style=" '.$styleBoutton.' " >'.$cool;
-					echo '<img src=" '.$checkImage.' "/>';
+                    echo '<div id="'.$i.'coolButton"style=" '.$styleBoutton.' " >'.$cool;
+					echo '<img src="'.$checkImage.'" id="'.$i.'coolButtonCheck"/>';
 					echo '</div>';
                 }
                 else{
-                    echo '<div id="utileButton'.$i.'">'.$cool.'</div>';
+                    echo '<div id="'.$i.'coolButton">'.$cool;
+                    echo '<img src="'.$checkImage.'" id="'.$i.'coolButtonCheck" style=" display: none;"/>';
+                    echo '</div>';
                 }
 
 
@@ -113,15 +121,15 @@ class NouvelleRevueDeQuelquUn{
 
 		echo '<article>';
 			//  
-			echo '<input id="ecrireCompliment1" class="ecrireCompliment" type="texte" placeholder="'.$envoyerCompliement.'" style="display: block;"/>';
-			echo '<textarea id="texteCompliment1" style="display: none;"></textarea>';
+			echo '<input id="'.$i.'ecrireCompliment" class="ecrireCompliment" type="texte" placeholder="'.$envoyerCompliement.'" style="display: block;"/>';
+			echo '<textarea id="'.$i.'texteCompliment" style="display: none;"></textarea>';
 			
 			
-			echo '<div id="buttonsCompliment1" style="display: none;">';
-				echo '<p id="annulerEcritureCompliment1" class="annulerEcritureCompliment">';
+			echo '<div id="'.$i.'buttonsCompliment">';
+				echo '<p id="'.$i.'annulerEcritureCompliment" class="annulerEcritureCompliment" style="display: none;">';
 				echo $annuler;
 				echo '</p>';
-				echo '<input id="envoyerCompliement1" class="envoyerCompliement" type="button" value="'.$envoyer.'"/>';
+				echo '<input id="'.$i.'envoyerCompliement" class="envoyerCompliement" type="button" value="'.$envoyer.'" style="display: none;"/>';
 			echo '</div>';
 		echo '</article>';	
 	}

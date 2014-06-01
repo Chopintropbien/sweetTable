@@ -60,6 +60,15 @@
         modifierEtEditerRevus();
     </script>
 
+    <!-- pour afficher les etoile -->
+    <script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineEtoile.js"> </script>
+    <script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineDemiEtoile.js"> </script>
+    <script src="http://localhost/meittopi/controleur/class/noteEtoile/noteEtoile.js"></script>
+
+    <script>
+        noteEtoile();
+    </script>
+
 
 </body>
 </html>

@@ -15,6 +15,13 @@
             $this->afficheLi($classLi);
             $this->afficheFinUl();
 		}
+        public function afficheDifferenteListe($idListe, $classLi, $idDifferanteListe){
+            echo '<ul id="' . $idListe . '" class="listeAcTitre">';
+            $this->afficheTitre();
+            echo '<hr/>';
+            $this->afficheLiPlusieurListe($classLi, $idDifferanteListe);
+            $this->afficheFinUl();
+        }
 
         protected function afficheTitre(){
             echo '<li> <h1>'. $this->titre .'</h1></li>';

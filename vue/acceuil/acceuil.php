@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/revue/nouvelleRevueDeQuelquUn.class.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/evenement/evenement.class.css"/>
 
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/profil/profilNotification.class.css"/>
+
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/notification/notification.class.css"/>
+
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/listeAcTitre.class.css"/>
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/restaurant/restaurantRecherche.class.css"/>
 
     <title>
         Acceuil
@@ -28,7 +34,7 @@
 
     <section id="partiePrincipale">
 
-    <h2 id="mettopi"> Meittopi a Lausanne</h2>
+    <h1 id="mettopi"> Meittopi a Lausanne</h1>
     <hr>
     <section id="partieGauche">
     <h2>Activités récentes</h2>
@@ -56,10 +62,65 @@
 
 
 </section>
-<section id="partieDroite"></section>
+<section id="partieDroite">
+
+    <!-- profil de notication -->
+        <?php
+        include_once('vue/class/profil/profilNotification.class.php');
+        foreach($profilJSON as $profilJSON2){
+            $profil = new ProfilNotification($profilJSON2);
+        }
+        $profil->affiche();
+        ?>
+
+    <!-- notification  -->
+        <?php
+        include_once('vue/class/liste/listeAcTitre.class.php');
+        include_once('vue/class/notification/notification.class.php');
+
+        $liste = new ListeAcTitre('Notifications');
+        foreach($listeNotificationJSON as $notificationJSON){
+            $liste->ajoute(new Notification($notificationJSON));
+        }
+        $liste->affiche('notification', '');
+        ?>
+
+    <!-- restaurant recommendé -->
+        <?php
+        include_once('vue/class/restaurant/restaurantDeBase.class.php');
+        include_once('vue/class/liste/listeAcTitre.class.php');
+        $liste = new ListeAcTitre('Recomendés pour vous');
+        foreach($listeRestauConseilJSON as $restauConseilJSON){
+            $liste->ajoute(new RestaurantDeBase($restauConseilJSON));
+        }
+        $liste->affiche('restauRecommende', 'restaurant');
+
+        ?>
+
+</section>
 </section>
 
 </section>
+
+<script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineEtoile.js"> </script>
+<script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineDemiEtoile.js"> </script>
+<script src="http://localhost/meittopi/controleur/class/noteEtoile/noteEtoile.js"></script>
+
+<script>
+    noteEtoile();
+</script>
+
+
+    <!-- evenement revus -->
+    <script src="http://localhost/meittopi/controleur/addEvent.js"></script>
+    <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js"></script>
+    <script src="http://localhost/meittopi/controleur/class/revue/nouvelleRevueDeQuelquUn.js"></script>
+
+    <script>
+        evenementButtonEtCompliment();
+    </script>
+
+
 </body>
 </html>
 

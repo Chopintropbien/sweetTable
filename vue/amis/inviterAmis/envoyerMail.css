@@ -1,0 +1,11 @@
+#section{
+    display: inline-block;
+    width: 60%;
+    margin-left: 5%;
+}
+
+#section > p{
+    font-size: 140%;
+    text-align: center;
+    margin-top: 20%;
+}

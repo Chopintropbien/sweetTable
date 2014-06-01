@@ -197,7 +197,7 @@
 	</li>
 	
 	</li>
-	<li class="avance" id="cuisinesAvancees">  
+	<li class="avance" id="cuisinesAvancees">
 	</li>				
 	<li>  
 		<h2 class = "titreOption" id="titreFonctionnalite"></h2>
@@ -299,10 +299,27 @@
 		
 	
 	</li>
-	<li class="avance" id="fonctionsAvancees"> 
+	<li class="avance" id="fonctionsAvancees">
 	</li>
 	
 	
 	
 	<script src = "http://localhost/Meittopi/php/controleur/menuPrincipal/rechercher/francais/optionNom.js"> </script>
-	<script src = "http://localhost/Meittopi/php/controleur/menuPrincipal/rechercher/option.js"> </script>
+	<script src = "http://localhost/meittopi/controleur/rechercher/option.js"> </script>
+
+    <script src="http://localhost/meittopi/controleur/fonctionJS/addEvent.js"> </script>
+    <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/faireApparaitreDisparaitreEnCliquant.js"></script>
+
+    <script>
+        // assure le bon fonctionnement des coches
+        coche('toutDistance', 'distance');
+        coche('toutPrix', 'sous');
+        coche('toutCuisine', 'cuisine');
+        coche('toutFonction', 'fonction');
+
+/*
+        var cochesFonc = document.getElementsByClassName('fonction');
+        var labelsFonc = document.getElementsByClassName('cacheFonction');
+        faireApparaitreDisparaitreEnCliquant(document.getElementById('fonctionsAvancees'), listeAAfficher);
+*/
+    </script>

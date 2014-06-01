@@ -8,6 +8,8 @@
             <link rel="stylesheet" href="http://localhost/meittopi/vue/profil/navigateur/navigateur.css"/>
             <link rel="stylesheet" href="http://localhost/meittopi/vue/navigateur/navigateur.css"/>
 
+            <link rel="stylesheet" href="http://localhost/meittopi/vue/profil/monProfil/monProfil.css"/>
+
             <link rel="stylesheet" href="http://localhost/meittopi/vue/class/profil/profilComplet.class.css"/>
 			<link rel="stylesheet" href="http://localhost/meittopi/vue/class/profil/profilNotification.class.css"/>
 

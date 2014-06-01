@@ -18,13 +18,14 @@
 	.titreOption{
 		margin-top: 5px;
 	}
-	
-	.avance{
+
+    /* afficher plus d'option */
+	#fonctionsAvancees, #cuisinesAvancees{
 		color: blue;
 		margin-top: 5px;
 		margin-bottom: 8px;
 	}
-	.avance:hover{
+	#fonctionsAvancees:hover, #cuisinesAvancees:hover{
 		text-decoration: underline;
 		
 	}

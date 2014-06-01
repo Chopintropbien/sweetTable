@@ -57,5 +57,27 @@
 
                 </section>
             </section>
+
+
+            <!-- pour afficher les etoile -->
+            <script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineEtoile.js"> </script>
+            <script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineDemiEtoile.js"> </script>
+            <script src="http://localhost/meittopi/controleur/class/noteEtoile/noteEtoile.js"></script>
+
+            <script>
+                noteEtoile();
+            </script>
+
+
+
+            <script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+            <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js"> </script>
+            <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js"> </script>
+            <script src="http://localhost/meittopi/controleur/class/liste/listeCommente.js"> </script>
+
+            <script>
+                modifierEtEditerRevus();
+            </script>
+
 		</body>
 	</html>

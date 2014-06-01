@@ -65,7 +65,7 @@
 
 			</section>
 
-
+            <!-- carte -->
             <script src="http://localhost/meittopi/controleur/rechercher/initializeCarte.js"> </script>
 
             <script>
@@ -73,6 +73,22 @@
                 google.maps.event.addDomListener(window, 'load', initialize);
 
             </script>
+
+            <!-- etoile des restau -->
+                <script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineEtoile.js"> </script>
+                <script src="http://localhost/meittopi/controleur/fonctionJS/etoile/dessineDemiEtoile.js"> </script>
+                <script src="http://localhost/meittopi/controleur/class/noteEtoile/noteEtoile.js"></script>
+
+                <script>
+                    noteEtoile();
+                </script>
+
+                <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/faireApparaitreDisparaitreEnCliquant.js"> </script>
+                <script src="http://localhost/meittopi/controleur/class/restaurant/restaurantRevue.js"></script>
+
+                <script>
+                    afficheEvenement();
+                </script>
 
 		</body>
 	</html>

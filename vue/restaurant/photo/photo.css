@@ -1,0 +1,134 @@
+
+#partiePrincipale{
+    margin-left: 2.5%;
+
+}
+
+/* lien pour ajouter des photo */
+#ajous{
+    margin-top: 2.5%;
+    margin-right: 10%;
+}
+
+/* conteneur de la section de photos*/
+#partiePrincipale > div{
+    margin-top: 2.5%;
+    margin-left: 5%;
+}
+
+/* button suivant et precedant */
+#partiePrincipale > div > input{
+    background-color: red;
+    border: 1px red outset;
+    display: inline-block;
+    vertical-align: middle;
+}
+#partiePrincipale > div > input:active{
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+/* teste entre les button */
+#partiePrincipale > div > p{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/* conteneur de la section de photos*/
+#partiePrincipale > section{
+    margin-top: 1%;
+    margin-left: 4%;
+}
+
+
+/*  contenant de l'image qu'on est train de regarder */
+#partiePrincipale > section > div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+    border: 1px grey solid;
+
+
+}
+
+/* image qu'on est train de regarder */
+#partiePrincipale > section > div >img{
+    width: 54%;
+    margin-left: 23%;
+    margin-top: 0.5%;
+
+}
+
+
+/* la partie sur de droite des renseignement sur la photo */
+#partiePrincipale > section > article{
+    width: 35%;
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+/* pour sues les label et les coche soit bien aligné*/
+#partiePrincipale > section > article label, #partiePrincipale > section > article input{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* identifiand de celui qui a poster la photo */
+#partiePrincipale > section > article > div{
+    margin-bottom: 4%;
+
+}
+/* photo de profil */
+#partiePrincipale > section > article > div > img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 13%;
+    margin-right: 1%;
+}
+/* texte qui accompagne la photo de profil */
+#partiePrincipale > section > article > div > p{
+    display: inline-block;
+    vertical-align: middle;
+}
+/* lien de personne */
+#partiePrincipale > section > article > div > p >a{
+    color: royalblue;
+}
+/* lien de personne */
+#partiePrincipale > section > article > div > p >a:hover{
+    text-decoration: underline;
+}
+
+/* questionnaire */
+#partiePrincipale > section > article > ul{
+    margin: 2% 0% 6% 5%;
+}
+/* questionnaire */
+#partiePrincipale > section > article > ul> li{
+    margin-bottom: 2%;
+}
+
+
+
+#tablePhoto{
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+
+
+
+
+
+
+
+
+

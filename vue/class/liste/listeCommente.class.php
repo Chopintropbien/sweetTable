@@ -19,13 +19,13 @@
 						//titre de la liste ou un input de saisie si c'est une nouvelle liste
                     $nouvelleListe?  $this->affiche_input_nouvelle_liste(): $this->affiche_titre_liste();
                     if(count($this->liste) != 0)  {
-                        echo '<hr/>';
+                        echo '<hr id="0ligne"/>';
                     }
 				echo '</li>';
 					// liste des choses commanté
 				$nbElement = count($this->liste);
 				for($i = 0; $i < $nbElement ; $i++){
-					echo '<li class="'.$classLi.' ">';
+					echo '<li class="'.$classLi.' "  id="'.$i.'elementListe">';
 					     echo '<div class="elementCommente">';
                              echo '<div class="'. $this->liste[$i][2] .'">';
 							    $this->liste[$i][0]->affiche($i);
@@ -34,9 +34,9 @@
 						echo '<div class="commentaire">'; 
 							$this->affiche_commantaire($i);
 						echo '</div>';
-						echo '<div class="fermerElement">  + </div>';
+						echo '<div class="fermerElement" id="'.$i.'fermerElement">  + </div>';
 					echo '</li>' ;
-					echo '<hr/>';		
+					echo '<hr/ id="'.($i+1).'ligne">';
 				}
 				echo '<li	 class="ajouterALaListe">';
 					$this->affiche_ajouter_a_la_liste();
@@ -72,16 +72,26 @@
 
 			echo '<h6> '.$commentaire.' </h6>';
 			if($this->liste[$i][1] == ''){ // s'il n'y a pas de commentaire
-				echo '<p  style="display: none;"></p>';
-				echo '<textarea> </textarea>';
-				echo '<article> <input type="button" value="'.$enregistrer.'"/> </article>';
-				echo '<div style="display: none;"> <span>'.$modifierCommentaire.' </span> </div>';
+				echo '<p  style="display: none;" id="'.$i.'texteCommentaire"></p>';
+				echo '<textarea id="'.$i.'textareaCommentaire"> </textarea>';
+
+                echo '<article>';
+                    echo '<p style="display: none;" id="'.$i.'annulerCommentaire" > '.$annuler.'</p>';
+                    echo '<input type="button" value="'.$enregistrer.'" id="'.$i.'validerCommentaire"/>';
+                echo '</article>';
+
+				echo '<div style="display: none;" id="'.$i.'modifierCommentaire"> <span>'.$modifierCommentaire.' </span> </div>';
 			}
 			else{
-				echo '<p>'.$this->liste[$i][1].'</p>';
-				echo '<textarea style="display: none;"> </textarea>';
-				echo '<article style="display: none;"> <input type="button" value="'.$enregistrer.'"/> </article>'; // fr
-				echo '<div> <span>'.$modifierCommentaire.'</span> </div>'; // fr
+				echo '<p id="'.$i.'texteCommentaire">'.$this->liste[$i][1].'</p>';
+				echo '<textarea style="display: none;" id="'.$i.'textareaCommentaire"> </textarea>';
+
+				echo '<article>';
+                    echo '<p id="'.$i.'annulerCommentaire"  style="display: none;"> '.$annuler.'</p>';
+                    echo '<input type="button" value="'.$enregistrer.'" id="'.$i.'validerCommentaire"  style="display: none;"/>';
+                echo '</article>';
+
+				echo '<div> <span id="'.$i.'modifierCommentaire">'.$modifierCommentaire.'</span> </div>';
 			}
 			
 
