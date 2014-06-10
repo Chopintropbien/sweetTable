@@ -14,7 +14,7 @@ class ProfilComplet extends ProfilNotification {
         $this->tableauDeCaracteristique = $json[12];
     }
 
-    public function affiche(){
+    public function affiche($afficheAjouterChamps){
         include('../vue/class/profil/francais/profilComplet.php');
 
         echo '<article id="profil_profil">';
@@ -26,7 +26,8 @@ class ProfilComplet extends ProfilNotification {
                 for($j = 0; $j<count($this->tableauDeCaracteristique); ++$j){
                     echo '<li>';
                         echo '<h6>'.$this->tableauDeCaracteristique[$j][0].'</h6>';
-                        echo '<input type="button" value="+" class="petiteCroix" id="'.$j.'petiteCroix"/>';
+
+                        if($afficheAjouterChamps) echo '<input type="button" value="+" class="petiteCroix" id="'.$j.'petiteCroix"/>';
 
                         // texte affiché
                         echo '<p id="'.$j.'texte">'.$this->tableauDeCaracteristique[$j][1].'</p>';
@@ -38,8 +39,12 @@ class ProfilComplet extends ProfilNotification {
                 }
             echo '</ul>';
 
+
             // pour ajouter un champ
-            echo '<div> <p id="ajouterUnChamp">'.$ajouterChamp.'</p> </div>';
+            if($afficheAjouterChamps){
+                echo '<div> <p id="ajouterUnChamp">'.$ajouterChamp.'</p> </div>';
+            }
+
 
         echo '</article>';
     }

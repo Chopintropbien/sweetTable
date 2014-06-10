@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="http://localhost/meittopi/vue/restaurant/photo/photo.css"/>
 
-    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/photo/tableauPhoto.class.css"/>
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/photo/photoDeLAuteur.class.css"/>
 
 
 
@@ -80,9 +80,15 @@
 
 
         <?php
-        include_once('../vue/class/photo/tableauPhoto.class.php');
-        $tableauPhoto = new TableauPhoto($liste_photo_JSON);
-        $tableauPhoto->affiche(5);
+        include_once('../vue/class/tableau/tableau.class.php');
+        include_once('../vue/class/photo/photoDeLAuteur.class.php');
+
+        $tableauPhoto = new Tableau();
+        foreach($liste_photo_JSON as $photo_JSON){
+            $tableauPhoto->ajoute(new PhotoDeLAuteur($photo_JSON));
+        }
+
+        $tableauPhoto->affiche(5, 'photoDeLAuteur', 'table');
 
         ?>
 

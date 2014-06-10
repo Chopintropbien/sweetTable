@@ -7,6 +7,6 @@
  */
 
 $deLaPartDe = 'De la part de ';
-$surVotre = ' sur votre ';
+$surLa = ' Sur la ';
 $revue = ' revue ';
-$sur = ' sur ';
+$de = ' de ';

@@ -79,5 +79,13 @@
                 modifierEtEditerRevus();
             </script>
 
+            <!-- evenement restaurant -->
+            <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/faireApparaitreDisparaitreEnCliquant.js"> </script>
+            <script src="http://localhost/meittopi/controleur/class/restaurant/restaurantDeBase.js"></script>
+
+            <script>
+                afficheEvenement();
+            </script>
+
 		</body>
 	</html>

@@ -26,95 +26,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="liste.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/profil/liste/liste.php">
+      <file leaf-file-name="navigateur.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="87" selection-start="3185" selection-end="3185" vertical-scroll-proportion="0.0" vertical-offset="802" max-vertical-offset="1335">
+            <state line="21" column="107" selection-start="1105" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listeCommente.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/class/liste/listeCommente.class.php">
+      <file leaf-file-name="lieu.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="44" selection-start="762" selection-end="768" vertical-scroll-proportion="-1.875" vertical-offset="270" max-vertical-offset="1965">
-              <folding>
-                <marker date="1401646502625" expanded="false" signature="1882:1896" placeholder="..." />
-                <marker date="1401646502625" expanded="false" signature="2858:2872" placeholder="..." />
-                <marker date="1401646502625" expanded="true" signature="3485:3499" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listeACommenter.class.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/class/liste/listeACommenter.class.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="705">
+            <state line="22" column="2" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listeCommente.class.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/class/liste/listeCommente.class.css">
+      <file leaf-file-name="lieu.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="19" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2655">
+            <state line="17" column="23" selection-start="569" selection-end="569" vertical-scroll-proportion="0.43074325" vertical-offset="0" max-vertical-offset="592">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supprimerChamp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js">
+      <file leaf-file-name="navigateur.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unEvenement.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/unEvenement.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="50" selection-start="57" selection-end="57" vertical-scroll-proportion="0.054945055" vertical-offset="0" max-vertical-offset="546">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listeCommente.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controleur/class/liste/listeCommente.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modifierCommentaire.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurantRevue.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRevue.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="53" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="885">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurantRevue.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controleur/class/restaurant/restaurantRevue.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="315">
+            <state line="127" column="33" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="1905" max-vertical-offset="2070">
               <folding />
             </state>
           </provider>
@@ -130,57 +72,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/faireApparaitreDisparaitreEnCliquant.js" />
-        <option value="$PROJECT_DIR$/vue/rechercher/option.php" />
-        <option value="$PROJECT_DIR$/vue/profil/amis/amis.php" />
-        <option value="$PROJECT_DIR$/vue/class/liste/liste.class.php" />
-        <option value="$PROJECT_DIR$/vue/class/liste/listeAcTitre.class.php" />
-        <option value="$PROJECT_DIR$/vue/amis/rechercherAmis/rechercher-amis.php" />
-        <option value="$PROJECT_DIR$/vue/class/amis/personneQuOnRecherche.class.php" />
-        <option value="$PROJECT_DIR$/controleur/class/amis/personneQuOnRecherche.js" />
-        <option value="$PROJECT_DIR$/vue/amis/inviterAmis/inviter-amis.css" />
-        <option value="$PROJECT_DIR$/amis/envoyerMail.php" />
-        <option value="$PROJECT_DIR$/controleur/amis/inviterAmis/inviter-amis.js" />
-        <option value="$PROJECT_DIR$/vue/amis/inviterAmis/envoyerMail.css" />
-        <option value="$PROJECT_DIR$/vue/amis/inviterAmis/envoyerMail.php" />
-        <option value="$PROJECT_DIR$/vue/amis/inviterAmis/inviter-amis.php" />
-        <option value="$PROJECT_DIR$/controleur/amis/inviterAmis/envoyerMail.php" />
-        <option value="$PROJECT_DIR$/restaurant/photo.php" />
-        <option value="$PROJECT_DIR$/controleur/restaurant/photo/photo.php" />
-        <option value="$PROJECT_DIR$/vue/class/photo/TableauPhoto.class.php" />
-        <option value="$PROJECT_DIR$/modele/restaurant/photo/photo.php" />
-        <option value="$PROJECT_DIR$/vue/class/photo/tableauPhoto.class.css" />
-        <option value="$PROJECT_DIR$/vue/restaurant/photo/photo.php" />
-        <option value="$PROJECT_DIR$/restaurant/ecrire-une-revue.php" />
-        <option value="$PROJECT_DIR$/controleur/restaurant/ecrireUneRevue/ecrireUneRevue.php" />
-        <option value="$PROJECT_DIR$/vue/restaurant/restaurant/restaurant.php" />
-        <option value="$PROJECT_DIR$/modele/acceuil/profil.php" />
-        <option value="$PROJECT_DIR$/vue/class/profil/profilNotification.class.css" />
-        <option value="$PROJECT_DIR$/vue/class/profil/profilNotification.class.php" />
-        <option value="$PROJECT_DIR$/vue/class/notification/notification.class.css" />
-        <option value="$PROJECT_DIR$/vue/profil/monProfil/monProfil.css" />
-        <option value="$PROJECT_DIR$/vue/profil/monProfil/monProfil.php" />
-        <option value="$PROJECT_DIR$/modele/acceuil/listeRestauConseille.php" />
-        <option value="$PROJECT_DIR$/controleur/acceuil/acceuil.php" />
-        <option value="$PROJECT_DIR$/vue/acceuil/acceuil.css" />
-        <option value="$PROJECT_DIR$/controleur/fonctionJS/etoile/dessineDemiEtoileDeCouleur.js" />
-        <option value="$PROJECT_DIR$/controleur/fonctionJS/etoile/dessineEtoileDeCouleur.js" />
-        <option value="$PROJECT_DIR$/controleur/fonctionJS/etoile/dessineDemiEtoileDroite.js" />
-        <option value="$PROJECT_DIR$/vue/class/noteEtoile/noteEtoile.class.php" />
-        <option value="$PROJECT_DIR$/vue/restaurant/ecrireUneRevue/ecrireUneRevue.css" />
-        <option value="$PROJECT_DIR$/vue/restaurant/ecrireUneRevue/ecrireUneRevue.php" />
+        <option value="$PROJECT_DIR$/modele/profil/monProfil/monProfil.php" />
+        <option value="$PROJECT_DIR$/modele/profilDUnePersonne/profil/profil.php" />
+        <option value="$PROJECT_DIR$/controleur/profilDUnePersonne/profil/profil.php" />
+        <option value="$PROJECT_DIR$/vue/class/profil/profilComplet.class.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/navigateur/francais.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/navigateur/navigateur.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/profil/profil.php" />
+        <option value="$PROJECT_DIR$/profilDUnePersonne/amis.php" />
+        <option value="$PROJECT_DIR$/profilDUnePersonne/compliment.php" />
+        <option value="$PROJECT_DIR$/vue/class/photo/photoDeLAuteur.php" />
+        <option value="$PROJECT_DIR$/vue/restaurant/photo/photoDeLAuteur.class.php" />
         <option value="$PROJECT_DIR$/vue/restaurant/photo/photo.css" />
-        <option value="$PROJECT_DIR$/vue/class/restaurant/restaurantDeBase.class.php" />
-        <option value="$PROJECT_DIR$/vue/class/restaurant/restaurantRevue.class.php" />
-        <option value="$PROJECT_DIR$/vue/acceuil/acceuil.php" />
-        <option value="$PROJECT_DIR$/controleur/class/restaurant/restaurantRevue.js" />
-        <option value="$PROJECT_DIR$/vue/class/liste/francais/listeCommente.php" />
-        <option value="$PROJECT_DIR$/vue/profil/liste/liste.php" />
-        <option value="$PROJECT_DIR$/vue/class/liste/listeACommenter.class.css" />
-        <option value="$PROJECT_DIR$/vue/class/liste/listeCommente.class.css" />
-        <option value="$PROJECT_DIR$/vue/class/liste/listeCommente.class.php" />
-        <option value="$PROJECT_DIR$/controleur/class/liste/listeCommente.js" />
-        <option value="$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js" />
+        <option value="$PROJECT_DIR$/modele/profilDUnePersonne/amis/amis.php" />
+        <option value="$PROJECT_DIR$/vue/class/photo/photoDeLAuteur.class.css" />
+        <option value="$PROJECT_DIR$/vue/class/amis/amis.class.css" />
+        <option value="$PROJECT_DIR$/controleur/profilDUnePersonne/amis/amis.php" />
+        <option value="$PROJECT_DIR$/modele/profilDUnePersonne/amis/amisEnCommun.php" />
+        <option value="$PROJECT_DIR$/modele/profilDUnePersonne/amis/personneQueSuitLaPersonne.php" />
+        <option value="$PROJECT_DIR$/modele/profil/amis/amis.php" />
+        <option value="$PROJECT_DIR$/vue/class/tableau/tableau.class.php" />
+        <option value="$PROJECT_DIR$/vue/restaurant/photo/photo.php" />
+        <option value="$PROJECT_DIR$/modele/profilDUnePersonne/amis/autresAmis.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/amis/amis.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/amis/amis.css" />
+        <option value="$PROJECT_DIR$/modele/profil/amis/personneQueSuitLUtilisateur.php" />
+        <option value="$PROJECT_DIR$/modele/profil/amis/personneQuiSuiventLUtilisateur.php" />
+        <option value="$PROJECT_DIR$/vue/profil/amis/amis.css" />
+        <option value="$PROJECT_DIR$/vue/profil/amis/amis.php" />
+        <option value="$PROJECT_DIR$/vue/class/revue/maRevue.class.php" />
+        <option value="$PROJECT_DIR$/vue/profil/revue/revue.php" />
+        <option value="$PROJECT_DIR$/modele/profilDUnePersonne/revue/revue.php" />
+        <option value="$PROJECT_DIR$/controleur/profilDUnePersonne/revue/revue.php" />
+        <option value="$PROJECT_DIR$/profilDUnePersonne/revue.php" />
+        <option value="$PROJECT_DIR$/controleur/profil/revue/revue.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/revue/revue.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/revue/revue.css" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/compliment/compliment.css" />
+        <option value="$PROJECT_DIR$/controleur/profilDUnePersonne/compliment/compliment.php" />
+        <option value="$PROJECT_DIR$/modele/profilDUnePersonne/compliment/compliment.php" />
+        <option value="$PROJECT_DIR$/vue/profil/compliment/compliment.php" />
+        <option value="$PROJECT_DIR$/vue/profilDUnePersonne/compliment/compliment.php" />
+        <option value="$PROJECT_DIR$/vue/class/compliment/francais/compliment.php" />
+        <option value="$PROJECT_DIR$/vue/class/compliment/compliment.class.php" />
+        <option value="$PROJECT_DIR$/vue/base.css" />
+        <option value="$PROJECT_DIR$/vue/navigateur/francais/navigateur.js" />
+        <option value="$PROJECT_DIR$/vue/navigateur/navigateur.css" />
+        <option value="$PROJECT_DIR$/controleur/navigateur/traitement.js" />
+        <option value="$PROJECT_DIR$/controleur/navigateur/traitement.php" />
+        <option value="$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php" />
+        <option value="$PROJECT_DIR$/vue/navigateur/navigateur.php" />
+        <option value="$PROJECT_DIR$/controleur/navigateur/lieu/lieu.js" />
       </list>
     </option>
   </component>
@@ -196,6 +138,28 @@
     <option name="y" value="-3" />
     <option name="width" value="1321" />
     <option name="height" value="735" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpUndefinedVariableInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -223,7 +187,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,22 +205,169 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navigateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navigateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="francais" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acceuil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navigateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controleur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meittopi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controleur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navigateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lieu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vue/restaurant/ecrireUneRevue" />
-      <recent name="$PROJECT_DIR$/vue" />
+      <recent name="$PROJECT_DIR$/vue/profilDUnePersonne" />
       <recent name="$PROJECT_DIR$/modele" />
-      <recent name="$PROJECT_DIR$/controleur/fonctionJS" />
-      <recent name="$PROJECT_DIR$/controleur/restaurant/restaurant" />
+      <recent name="$PROJECT_DIR$/vue" />
+      <recent name="$PROJECT_DIR$/controleur/class/propositionAmelioration" />
+      <recent name="$PROJECT_DIR$/vue/restaurant/ecrireUneRevue" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/controleur" />
@@ -342,14 +452,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="-3" width="1321" height="735" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24711697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22117648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2917647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39836067" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -357,19 +467,19 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39836067" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -378,10 +488,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24711697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2183642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.267451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -403,283 +513,267 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/restaurant/ecrire-une-revue.php">
+    <entry file="file://$PROJECT_DIR$/vue/amis/rechercherAmis/rechercher-amis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="29" selection-end="29" vertical-scroll-proportion="0.055658627" vertical-offset="0" max-vertical-offset="539" />
+        <state line="13" column="4" selection-start="793" selection-end="897" vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="1605" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/restaurant/ecrireUneRevue/ecrireUneRevue.php">
+    <entry file="file://$PROJECT_DIR$/vue/amis/rechercherAmis/rechercher-amis.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="150" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/restaurant/restaurant/sectionDeGauche.css">
+    <entry file="file://$PROJECT_DIR$/vue/class/amis/personneQuOnRecherche.class.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="227" selection-end="306" vertical-scroll-proportion="0.37300178" vertical-offset="0" max-vertical-offset="1890" />
+        <state line="1" column="9" selection-start="13" selection-end="21" vertical-scroll-proportion="0.02631579" vertical-offset="0" max-vertical-offset="915">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele/restaurant/ecrireUneRevue/ecrireUneRevue.php">
+    <entry file="file://$PROJECT_DIR$/vue/class/amis/personneQuOnRecherche.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
+        <state line="4" column="27" selection-start="64" selection-end="85" vertical-scroll-proportion="0.10810811" vertical-offset="0" max-vertical-offset="1215" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/restaurant/restaurant/restaurant.php">
+    <entry file="file://$PROJECT_DIR$/vue/class/amis/amis.class.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="0" selection-start="5547" selection-end="5899" vertical-scroll-proportion="0.54372627" vertical-offset="2009" max-vertical-offset="2850" />
+        <state line="33" column="13" selection-start="539" selection-end="539" vertical-scroll-proportion="0.8361486" vertical-offset="0" max-vertical-offset="690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele/profil/monProfil/monProfil.php">
+    <entry file="file://$PROJECT_DIR$/modele/amis/rechercherAmis/rechercher-amis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="91" selection-end="757" vertical-scroll-proportion="0.08211679" vertical-offset="0" max-vertical-offset="548" />
+        <state line="2" column="0" selection-start="0" selection-end="1309" vertical-scroll-proportion="0.054945055" vertical-offset="0" max-vertical-offset="765" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele/acceuil/profil.php">
+    <entry file="file://$PROJECT_DIR$/modele/profilDUnePersonne/amis/amisEnCommun.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="75" selection-end="88" vertical-scroll-proportion="0.16697589" vertical-offset="0" max-vertical-offset="539" />
+        <state line="19" column="16" selection-start="376" selection-end="4413" vertical-scroll-proportion="0.521978" vertical-offset="0" max-vertical-offset="2010" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/profil/profilNotification.class.css">
+    <entry file="file://$PROJECT_DIR$/vue/class/tableau/tableau.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="1.2307693" vertical-offset="0" max-vertical-offset="810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/profil/profilParticipationAmelioration.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/profil/profilNotification.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="29" selection-start="3735" selection-end="3735" vertical-scroll-proportion="0.22459893" vertical-offset="1329" max-vertical-offset="1890" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/profil/monProfil/monProfil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="244" selection-end="288" vertical-scroll-proportion="0.18716578" vertical-offset="0" max-vertical-offset="561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/profil/monProfil/monProfil.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/profil/monProfil/monProfil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="97" selection-start="611" selection-end="611" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1200" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/revue/revue.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/notification/notification.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/revue/maRevue.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="32.458332" vertical-offset="779" max-vertical-offset="1350" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/profil/revue/revue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/profil/revue/revue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="26" selection-start="0" selection-end="2995" vertical-scroll-proportion="0.8536122" vertical-offset="361" max-vertical-offset="1395" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/acceuil/acceuil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRecherche.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2085" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/acceuil/listeEvenRecent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="3" selection-start="1967" selection-end="3715" vertical-scroll-proportion="0.30612245" vertical-offset="450" max-vertical-offset="1440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/liste/listeAcTitre.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/acceuil/acceuil.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="825" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/acceuil/listeRestauConseille.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="49" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.48237476" vertical-offset="445" max-vertical-offset="1005" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/etoile/dessineDemiEtoile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/etoile/dessineEtoile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="255" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/addEvent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="9" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/etoile/dessineDemiEtoileGauche.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="120" selection-end="143" vertical-scroll-proportion="0.1598579" vertical-offset="0" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/noteEtoile/noteEtoile.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="51" selection-end="51" vertical-scroll-proportion="0.10948905" vertical-offset="0" max-vertical-offset="548" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/restaurant/ecrireUneRevue/ecrireUneRevue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="83" selection-start="6015" selection-end="6015" vertical-scroll-proportion="0.28342247" vertical-offset="2346" max-vertical-offset="3465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/etoile/dessineDemiEtoileDroite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="38" selection-start="914" selection-end="925" vertical-scroll-proportion="0.5641026" vertical-offset="45" max-vertical-offset="660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/restaurant/ecrireUneRevue/ecrireUneRevue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="0.07692308" vertical-offset="0" max-vertical-offset="1920" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/liste/liste.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="12" selection-end="70" vertical-scroll-proportion="0.025641026" vertical-offset="0" max-vertical-offset="585" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/restaurant/photo/photo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="17" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="2100" />
+        <state line="21" column="37" selection-start="534" selection-end="534" vertical-scroll-proportion="0.2112676" vertical-offset="195" max-vertical-offset="900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/restaurant/photo/photo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.45945945" vertical-offset="525" max-vertical-offset="1515" />
+        <state line="90" column="58" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.74594593" vertical-offset="936" max-vertical-offset="1605" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profilDUnePersonne/navigateur/navigateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="81" selection-end="90" vertical-scroll-proportion="0.054945055" vertical-offset="0" max-vertical-offset="546" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/restaurant/photo/photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="20" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.6959459" vertical-offset="1418" max-vertical-offset="2100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/liste/liste.class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="12" selection-end="70" vertical-scroll-proportion="0.025337838" vertical-offset="0" max-vertical-offset="592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profil/amis/amis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="25" selection-start="4375" selection-end="4375" vertical-scroll-proportion="0.9471831" vertical-offset="1157" max-vertical-offset="1845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profilDUnePersonne/amis/autresAmis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="29" selection-start="3380" selection-end="3380" vertical-scroll-proportion="0.6566901" vertical-offset="1172" max-vertical-offset="1740" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profilDUnePersonne/amis/personneQueSuitLaPersonne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="47" selection-end="481" vertical-scroll-proportion="0.10989011" vertical-offset="0" max-vertical-offset="1755" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profil/amis/personneQuiSuiventLUtilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="3" selection-start="442" selection-end="442" vertical-scroll-proportion="0.43772894" vertical-offset="1" max-vertical-offset="1710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profil/amis/personneQueSuitLUtilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="3" selection-start="442" selection-end="442" vertical-scroll-proportion="0.4225352" vertical-offset="0" max-vertical-offset="1725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profilDUnePersonne/amis/amis.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="227" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profil/amis/amis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="18" selection-start="3045" selection-end="3045" vertical-scroll-proportion="0.6866197" vertical-offset="780" max-vertical-offset="1440" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profilDUnePersonne/amis/amis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="66" selection-start="1746" selection-end="1758" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profil/amis/amis.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="8" selection-start="775" selection-end="775" vertical-scroll-proportion="0.6199324" vertical-offset="293" max-vertical-offset="885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/profilDUnePersonne/amis/amis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="183" selection-end="206" vertical-scroll-proportion="0.15845071" vertical-offset="0" max-vertical-offset="568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profil/revue/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="2995" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profilDUnePersonne/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="47" selection-start="54" selection-end="54" vertical-scroll-proportion="0.054945055" vertical-offset="0" max-vertical-offset="546" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/profil/revue/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="45" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0528169" vertical-offset="0" max-vertical-offset="568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profilDUnePersonne/revue/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="25" selection-start="1547" selection-end="1563" vertical-scroll-proportion="0.6216216" vertical-offset="225" max-vertical-offset="1170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/profil/revue/revue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="4" selection-start="2241" selection-end="2697" vertical-scroll-proportion="-4.9166665" vertical-offset="677" max-vertical-offset="1245" />
+        <state line="11" column="3" selection-start="580" selection-end="986" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRecherche.class.php">
+    <entry file="file://$PROJECT_DIR$/vue/class/revue/maRevue.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870" />
+        <state line="79" column="48" selection-start="2652" selection-end="2652" vertical-scroll-proportion="-46.25" vertical-offset="0" max-vertical-offset="1440" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/profilDUnePersonne/revue/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="56" selection-start="64" selection-end="64" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="180" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profilDUnePersonne/revue/revue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="140" selection-end="140" vertical-scroll-proportion="0.23684211" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profilDUnePersonne/revue/revue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="492" selection-end="588" vertical-scroll-proportion="0.23415492" vertical-offset="17" max-vertical-offset="900" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profil/revue/revue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profilDUnePersonne/compliment/compliment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="1" selection-start="155" selection-end="155" vertical-scroll-proportion="0.2533784" vertical-offset="0" max-vertical-offset="592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/profilDUnePersonne/compliment/compliment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="37" selection-start="112" selection-end="112" vertical-scroll-proportion="0.10989011" vertical-offset="0" max-vertical-offset="546" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/profil/compliment/compliment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="147" selection-end="184" vertical-scroll-proportion="0.13204226" vertical-offset="0" max-vertical-offset="568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profil/compliment/compliment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profil/compliment/compliment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="17" selection-start="1118" selection-end="1185" vertical-scroll-proportion="0.4225352" vertical-offset="225" max-vertical-offset="855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profil/compliment/compliment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/profilDUnePersonne/compliment/compliment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="41" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0528169" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/profilDUnePersonne/compliment/compliment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="17" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.60387325" vertical-offset="167" max-vertical-offset="885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/compliment/compliment.class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/compliment/compliment.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="98" selection-end="98" vertical-scroll-proportion="0.079225354" vertical-offset="0" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/class/compliment/francais/compliment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="124" selection-end="130" vertical-scroll-proportion="0.1056338" vertical-offset="0" max-vertical-offset="568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/navigateur/francais/navigateur.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="49" selection-start="683" selection-end="683" vertical-scroll-proportion="0.3293919" vertical-offset="0" max-vertical-offset="592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="4" selection-start="685" selection-end="710" vertical-scroll-proportion="0.5699482" vertical-offset="135" max-vertical-offset="2400" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="33" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="1457" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="2" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/acceuil/acceuil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="47" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.03697183" vertical-offset="1374" max-vertical-offset="1980" />
+        <state line="114" column="4" selection-start="3841" selection-end="3913" vertical-scroll-proportion="0.2972973" vertical-offset="1545" max-vertical-offset="2100" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantDeBase.class.php">
+    <entry file="file://$PROJECT_DIR$/modele/navigateur/towns.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="98" selection-end="114" vertical-scroll-proportion="0.079225354" vertical-offset="0" max-vertical-offset="1350" />
+        <state line="0" column="96" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/class/revue/maRevue.js">
+    <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="409" vertical-scroll-proportion="0.025337838" vertical-offset="0" max-vertical-offset="592">
+        <state line="21" column="107" selection-start="1105" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/class/restaurant/restaurantRevue.js">
+    <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/restaurant/restaurantRevue.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="53" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/liste/francais/listeCommente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="356" selection-end="356" vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="546" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/profil/liste/liste.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="87" selection-start="3185" selection-end="3185" vertical-scroll-proportion="0.0" vertical-offset="802" max-vertical-offset="1335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/liste/listeCommente.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="19" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2655">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/liste/listeACommenter.class.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/class/liste/listeCommente.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="44" selection-start="762" selection-end="768" vertical-scroll-proportion="-1.875" vertical-offset="270" max-vertical-offset="1965">
-          <folding>
-            <marker date="1401646502625" expanded="false" signature="1882:1896" placeholder="..." />
-            <marker date="1401646502625" expanded="false" signature="2858:2872" placeholder="..." />
-            <marker date="1401646502625" expanded="true" signature="3485:3499" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/class/liste/listeCommente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unEvenement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="50" selection-start="57" selection-end="57" vertical-scroll-proportion="0.054945055" vertical-offset="0" max-vertical-offset="546">
+        <state line="17" column="23" selection-start="569" selection-end="569" vertical-scroll-proportion="0.43074325" vertical-offset="0" max-vertical-offset="592">
           <folding />
         </state>
       </provider>

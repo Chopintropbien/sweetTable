@@ -37,7 +37,7 @@
                         foreach($profilCompletJSON as $profilJSON){
                             $profil = new ProfilComplet($profilJSON);
                         }
-                        $profil->affiche();
+                        $profil->affiche(true);
                     ?>
 
                         <!-- afficher les notifications -->

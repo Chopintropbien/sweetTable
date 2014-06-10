@@ -61,5 +61,14 @@
 
 
     </section>
+
+    <!-- vote pour ou contre -->
+    <script src="http://localhost/meittopi/controleur/fonctionJS/addEvent.js"></script>
+    <script src="http://localhost/meittopi/controleur/class/propositionAmelioration/propositionAmelioration.js"></script>
+
+    <script>
+        votePourOuContre();
+    </script>
+
 </section>
 </body>

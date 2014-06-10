@@ -1,7 +1,7 @@
 
 
 /* les phtoto */
-#tablePhoto  img{
+.photoDeLAuteur  img{
     width: 60%;
     padding-left: 10%;
     padding-bottom: 1%;
@@ -10,16 +10,16 @@
 }
 
 /* le sous titre */
-#tablePhoto p{
+.photoDeLAuteur p{
     text-align: center;
 
 }
 
 /* le lien de l'auteur */
-#tablePhoto  p > a{
+.photoDeLAuteur p > a{
     color: royalblue;
 }
 
-#tablePhoto p > a:hover{
+.photoDeLAuteur p > a:hover{
     text-decoration: underline;
 }

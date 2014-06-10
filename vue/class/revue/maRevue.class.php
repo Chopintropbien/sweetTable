@@ -14,9 +14,10 @@ class MaRevue {
     private $nbVoteCool;
     private $nbCompliment;
     private $datePublication;
+    private $afficheModifierCommentaire;
 
 
-    public function __construct($restaurant, $json){
+    public function __construct($restaurant, $json, $afficheModifierCommentaire){
         $this->restaurant = $restaurant;
         $this->commentaire = $json[0];
         $this->nbvoteUtile = $json[1];
@@ -24,6 +25,7 @@ class MaRevue {
         $this->nbVoteCool = $json[3];
         $this->nbCompliment = $json[4];
         $this->datePublication = $json[5];
+        $this->afficheModifierCommentaire = $afficheModifierCommentaire;
 
     }
 
@@ -74,13 +76,17 @@ class MaRevue {
         echo '<div>';
             echo '<h4>'.$votreCommentaire.'</h4>';
             echo '<p id="'.$i.'texteCommentaire" >'.$this->commentaire.'</p>';
-            echo '<textarea id="'.$i.'textareaCommentaire" style="display: none;"></textarea>';
+
+            if($this->afficheModifierCommentaire){
+                echo '<textarea id="'.$i.'textareaCommentaire" style="display: none;"></textarea>';
 
 
-            /* modifier et valider */
-            echo '<div id="'.$i.'modifiercommentaire">'. $modifiercommentaire.'</div>';
-            echo '<input type="button" value="'.$valider.'" style="display: none;" id="'.$i.'validerCommentaire" class="validerCommentaire"/>';
-            echo '<input type="button" value="'.$annuler.'" style="display: none;" id="'.$i.'annulerCommentaire"/>';
+                /* modifier et valider */
+                echo '<div id="'.$i.'modifiercommentaire">'. $modifiercommentaire.'</div>';
+                echo '<input type="button" value="'.$valider.'" style="display: none;" id="'.$i.'validerCommentaire" class="validerCommentaire"/>';
+                echo '<input type="button" value="'.$annuler.'" style="display: none;" id="'.$i.'annulerCommentaire"/>';
+            }
+
 
         echo '</div>';
 

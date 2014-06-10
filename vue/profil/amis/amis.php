@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/listeAcTitre.class.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/amis/amis.class.css"/>
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/amis/personneQuOnRecherche.class.css"/>
 
 
     <title id="titre">  </title>
@@ -36,45 +37,44 @@
 
 
 
-
+            <?php
+            include_once('../vue/class/tableau/tableau.class.php');
+            include_once('../vue/class/amis/amis.class.php');
+            include_once('../vue/class/amis/personneQuOnRecherche.class.php');
+            ?>
 
             <!-- liste des amis -->
-                <?php
-                    include_once('../vue/class/liste/listeAcTitre.class.php');
-                    include_once('../vue/class/amis/amis.class.php');
-
-                    $liste = new ListeAcTitre($mesAmis);
-                    foreach($liste_amis_utilisateur as $ami){
-                        $liste->ajoute(new Amis($ami));
-                    }
-                    $liste->affiche('listeAmisSection', 'ami');
-                ?>
-
+            <h2> Mes amis </h2>
+            <?php
+            $tableauAmis = new Tableau();
+            foreach($liste_amis_utilisateur as $ami_JSON){
+                $tableauAmis->ajoute(new Amis($ami_JSON));
+            }
+            $tableauAmis->affiche(3, 'amis', 'mesAmis');
+            ?>
 
 
             <!-- liste des gens que la personne suis -->
-                <?php
-                    include_once('../vue/class/liste/listeAcTitre.class.php');
-                    include_once('../vue/class/amis/amis.class.php');
+            <h2> Les peronnes que je suis </h2>
+            <?php
+            $tableauPersonneSuivis = new Tableau();
+            foreach($liste_personne_que_suit_l_utilisateur as $ami_JSON){
+                $tableauPersonneSuivis->ajoute(new PersonneQuOnRecherche($ami_JSON));
+            }
+            $tableauPersonneSuivis->affiche(2, 'personne', 'personnesuivis');
+            ?>
 
-                    $liste = new ListeAcTitre($personneQueJeSuit);
-                    foreach($liste_personne_que_suit_l_utilisateur as $personne_que_suit_l_utilisateur){
-                        $liste->ajoute(new Amis($personne_que_suit_l_utilisateur));
-                    }
-                    $liste->affiche('listeGensSuivisSection', 'ami');
-                ?>
+            <!-- liste des gens qui suivent l'utilisateur -->
+            <h2> Les personnes qui me suivent </h2>
+            <?php
+            $tableauPersonneQuiMeSuivent = new Tableau();
+            foreach($liste_personne_qui_suivent_l_utilisateur as $personne_JSON){
+                $tableauPersonneQuiMeSuivent->ajoute(new PersonneQuOnRecherche($personne_JSON));
+            }
 
-			<!-- liste des gens qui suivent l'utilisateur -->
-               <?php
-                    include_once('../vue/class/liste/listeAcTitre.class.php');
-                    include_once('../vue/class/amis/amis.class.php');
+            $tableauPersonneQuiMeSuivent->affiche(2, 'personne', 'personneQuiMeSuivent');
+            ?>
 
-                    $liste = new ListeAcTitre($personneQuiMeSuive);
-                    foreach($liste_personne_qui_suivent_l_utilisateur as $personne_qui_suit_l_utilisateur){
-                        $liste->ajoute(new Amis($personne_qui_suit_l_utilisateur));
-                    }
-                    $liste->affiche('listePersonneQuiNousSuis', 'ami');
-                ?>
 
         </section>
 

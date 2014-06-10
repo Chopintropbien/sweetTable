@@ -1,0 +1,40 @@
+#gauche{
+   display: inline-block;
+   vertical-align: top;
+   width: 75%;
+   margin-left: 5%;
+}
+
+
+#gauche > h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 300%;
+
+}
+
+/* titres des listes */
+#gauche > h2{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-size: 130%;
+}
+
+
+#amisEnCommun, #autreAmis, #personneSuivis{
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+}
+
+#amisEnCommun td{
+    width: 34.5%;
+    padding: 0.7%;
+}
+
+
+#autreAmis td, #personneSuivis td{
+    width: 40%;
+    padding: 1.5%;
+}

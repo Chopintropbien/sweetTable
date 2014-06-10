@@ -67,6 +67,14 @@
 
 				</section>
 
+                <!-- suprimer evenenement -->
+                <script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+                <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js"> </script>
+                <script src="http://localhost/meittopi/controleur/class/evenement/evenementResume.js"> </script>
+
+                <script>
+                    supprimerEvenement();
+                </script>
 
 		</body>
 	</html>

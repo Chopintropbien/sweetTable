@@ -33,21 +33,23 @@ class RestaurantRevue extends RestaurantDeBase{
 			}
 		}
 		
-		public function affiche($i){
+		protected  function affichePartieDroitePhoto($i){
 			include('francais/restaurantRecherche.php');
-			
-			echo '<img src="'.$this->photo .'"></img>';
-			echo '<section>'; // a droite de la photo
 
-                $this->affichePartieDroitePhoto($i);
+                parent::affichePartieDroitePhoto($i);
 				
 				echo '<aside>'; // coordonné restau
 					echo '<p>'. $this->quartier .'</p>';
 					echo '<adress>'.$this->rue.'<br/>'.$this->villeEtZip.'<br/>'.$this->tel.'</adress>';
 				echo '</aside>';
 
+		}
 
+        public function affiche($i){
+            echo '<img src="'.$this->photo .'"></img>';
+            echo '<section>'; // a droite de la photo
+                $this->affichePartieDroitePhoto($i);
             echo '</section>';
 
-		}
+        }
 } 

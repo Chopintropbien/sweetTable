@@ -2,7 +2,8 @@
 
 include_once('vue/class/restaurant/restaurantRevue.class.php');
 include_once('../vue/class/restaurant/restaurantRevue.class.php');
-	class RestaurantRecherche extends RestaurantRevue{
+
+class RestaurantRecherche extends RestaurantRevue{
 		private $listeAmisQuiAime;
 		private $listeAmisQuiBof;
 		private $liseAmisQuiAimePas;
@@ -21,7 +22,10 @@ include_once('../vue/class/restaurant/restaurantRevue.class.php');
 		public function affiche($i){
 			include('vue/class/restaurant/francais/restaurantRecherche.php');
             include('../vue/class/restaurant/francais/restaurantRecherche.php');
-                parent::affiche($i);
+
+            echo '<img src="'.$this->photo .'"></img>';
+            echo '<section>'; // a droite de la photo
+                parent::affichePartieDroitePhoto($i);
 
 				echo '<section>'; // tableau des amis qui aimes ou pas
 					echo '<ul>'; //  avis positif

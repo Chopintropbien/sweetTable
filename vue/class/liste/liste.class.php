@@ -33,7 +33,7 @@ class Liste{
             $this->liste[$i]->affiche($i);
             echo '</li>' ;
             if($i != $nbElement-1){
-                echo '<hr/>';
+                echo '<hr id="'.($i+1).'ligne"/>';
             }
         }
     }
@@ -45,7 +45,7 @@ class Liste{
             $this->liste[$i]->affiche($i, $idDifferanteListe);
             echo '</li>' ;
             if($i != $nbElement-1){
-                echo '<hr/>';
+                echo '<hr id="'.($i+1).'ligne"/>';
             }
         }
     }

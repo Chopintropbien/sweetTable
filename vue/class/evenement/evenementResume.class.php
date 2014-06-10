@@ -28,7 +28,7 @@ class EvenementResume {
         include('../vue/class/evenement/francais/evenementResume.php');
 
         echo '<img src="'.$this->photo.'" />'; // photo de l'evenement
-        echo '<input type="button" class="petiteCroix"value ="+"/>';
+        echo '<input type="button" class="petiteCroix"value ="+" id="'.$i.'supprimerEvenement"/>';
         echo '<article>';
             echo '<a><h6>'.$this->titre.'</h6></a>';
             echo '<time>'.$this->dateEvenement.'</time>';

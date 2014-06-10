@@ -36,7 +36,7 @@ class Compliment {
             echo '<time>'.$this->date.'</time>'; // date
             echo '<h4>'.$deLaPartDe.'<a>'.$this->speudo.'</a></h4>'; // titre
             echo '<p>'.$this->compliment.'</p>'; // compliment
-            echo '<div> <span> => </span>'.$surVotre.'<a>'.$revue.'</a>'.$sur.'<a>'.$this->restauConcerne.'</a></div>';
+            echo '<div> <span> => </span>'.$surLa.'<a>'.$revue.'</a>'.$de.'<a>'.$this->restauConcerne.'</a></div>';
 
         echo '</article>';
     }

@@ -32,12 +32,12 @@ class PropositionAmelioration {
         $this->lienAmelioration = $json[12];
         $this->lienDon = $json[14];
     }
-    public function affiche(){
+    public function affiche($i){
         // photo
-        $this->affichePhoto('');
+        $this->affichePhoto($i);
 
         // reste
-        $this->toutSaufPhoto('');
+        $this->toutSaufPhoto($i);
     }
     public function toutSaufPhoto($i){
         include('vue/class/propositionAmelioration/francais/propositionAmelioration.php');
@@ -71,9 +71,9 @@ class PropositionAmelioration {
 				echo '<li>';
 					echo '<div>';
 						echo '<p>'.$pour.'</p>';
-						echo '<canvas title="5/10" width="100" height="10" id="canvasnbPour0"></canvas>';
+						echo '<canvas title="5/10" width="100" height="10" id="'.$i.'canvasnbPour"></canvas>';
 					echo '</div>';
-					echo '<img class="pouceHaut" src="'.$photoPouceHaut.'">';
+					echo '<img class="pouceHaut" id="'.$i.'pouceHaut" src="'.$photoPouceHaut.'">';
 				echo '</li>';
 
                 // colorie le pouce en vert si l'utilisateur a voté pour
@@ -87,9 +87,9 @@ class PropositionAmelioration {
                 echo '<li>';
                     echo '<div>';
                         echo '<p>'.$contre.'</p>';
-                        echo '<canvas title="5/10" width="100" height="10" id="canvasnbPour0"></canvas>';
+                        echo '<canvas title="5/10" width="100" height="10" id="'.$i.'canvasnbContre"></canvas>';
                     echo '</div>';
-                    echo '<img class="pouceBas" src="'.$photoPouceBas.'">';
+                    echo '<img class="pouceBas"  id="'.$i.'pouceBas" src="'.$photoPouceBas.'">';
                 echo '</li>';
 			}
 

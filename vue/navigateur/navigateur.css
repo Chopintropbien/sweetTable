@@ -1,11 +1,5 @@
 
-#bloc{
-	display: inline-block;
-	width: 75%;
-	vertical-align: top;
-	height: 100%;
-}
-#lien{
+#lienAccueil{
 	display: inline-block;
 	width: 20%;
 	margin-left: 1%;
@@ -17,9 +11,21 @@
 	width: 100%;
 	min-width: 170px;
 	display: inline-block;
+
 }
 
-.menu{
+/* partie a droite du logo */
+#bloc{
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    height: 100%;
+    width: 75%;
+    margin-left: 1%;
+}
+
+/* le navigateur */
+#bloc > nav > ul > a >li{
 	padding: 0.5% 1.0% 0.5% 1.0%;
 	margin-bottom: 1%;
 	margin-top: 0.5%;
@@ -27,8 +33,8 @@
 	display: inline-block; 
 	border-left: 1px #FFB664 solid;
 }
-	
-#menu{
+
+#bloc > nav > ul > a > #rechercherNav{
 	padding-left: 2%;
 	padding-right: 1.3%; 
 	padding-top: 0.5%; 
@@ -37,31 +43,90 @@
 	margin-top: 0.5%;
 	margin-left: 5%;
 	text-align: center;
-	display: inline-block; 
+	display: inline-block;
+    border-left: none;
 }
-	
-.menu:hover, #menu:hover{
+
+#bloc > nav > ul > a > li:hover, #menu:hover{
 	background-color: #FF8E15;
 }
 
 
-.recherche{
-	padding-left: 1%;
-	padding-right: 1%; 
-	padding-bottom: 0.2%;
-	display: inline-block; 
-	width: 25%;
-	margin-top: 0.5%;
-	margin-bottom: 1%;
+/* la liste contenant les barre de recherche */
+
+
+
+#bloc > ul > li{
+    display: inline-block;
+    margin-top: 0.5%;
+    width: 4%;
+}
+#bloc > ul > #rechercherLi{
+    width: 294px;
+    position: relative;
+    top: 2px;
+
+}
+#bloc > ul > #ouLi{
+    width: 294px;
+    position: relative;
+    top: 2px;
+}
+
+#bloc > ul > #loupeLi{
+    margin-left: 1%;
+}
+
+#bloc > ul > li >label{
+    padding: 4px;
+    padding-bottom: 3px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    font-weight: bold;
+    border: 1px silver inset;
+    border-right: 0px;
+    box-shadow: 1px 1px 5px silver;
 }
 
 
-.barreDeRecherche{
-	width: 100%;
+
+#bloc > ul > li >input{
+    padding: 3px;
+    display: inline-block;
+    vertical-align: top;
+    border: 0px ;
+    position: relative;
+    right: 4px;
+    border: 1px silver inset;
+    border-left: 0px;
+    box-shadow: 2px 1px 3px silver;
+}
+#bloc > ul > li > #rechercher{
+    width: 180px;
+}
+#bloc > ul > li > #ou{
+    width: 210px;
 }
 
-#loupe{
-	width: 5%;
+
+/* les div pour afficher les contenu des recherches des ajax */
+
+#ajaxRecheche, #ajaxOu{
+    width: 277px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    padding: 3px;
+    border: 1px silver inset;
+    border-top: 0px;
+    padding: 4px;
 }
 
+
+#ajaxRecheche > hr, #ajaxOu > hr{
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
 

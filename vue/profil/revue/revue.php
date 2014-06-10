@@ -38,7 +38,7 @@
                 $liste = new ListeAcTitre($titre);
                 foreach($listeRevueJSON as $revueJSON){
                     if($revueJSON[0]){
-                        $liste->ajoute(new MaRevue(new RestaurantRevue($revueJSON[1]), $revueJSON[2]));
+                        $liste->ajoute(new MaRevue(new RestaurantRevue($revueJSON[1]), $revueJSON[2], true));
                     }
                     elseif(!$revueJSON[0]) {
                         $liste->ajoute(new RevueAValider(new RestaurantRevue($revueJSON[1])));
@@ -67,6 +67,14 @@
 
     <script>
         noteEtoile();
+    </script>
+
+    <!-- evenement restaurant -->
+    <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/faireApparaitreDisparaitreEnCliquant.js"> </script>
+    <script src="http://localhost/meittopi/controleur/class/restaurant/restaurantDeBase.js"></script>
+
+    <script>
+        afficheEvenement();
     </script>
 
 
