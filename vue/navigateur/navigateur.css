@@ -114,7 +114,6 @@
 
 #ajaxRecheche, #ajaxOu{
     width: 277px;
-    height: 100px;
     background-color: white;
     position: absolute;
     z-index: 1;
@@ -129,4 +128,11 @@
     margin-bottom: 1%;
     margin-top: 1%;
 }
+#ajaxRecheche > li:hover, #ajaxOu > li:hover{
+    background-color: lightblue;
+}
+#ajaxRecheche > li.selected, #ajaxOu > li.selected{
+    background-color: lightblue;
+}
+
 

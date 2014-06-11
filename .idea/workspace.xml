@@ -26,37 +26,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="navigateur.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="107" selection-start="1105" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="825">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lieu.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="2" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+            <state line="2" column="29" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lieu.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="navigateur.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="31" selection-start="1461" selection-end="1467" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lieu.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="23" selection-start="569" selection-end="569" vertical-scroll-proportion="0.43074325" vertical-offset="0" max-vertical-offset="592">
+            <state line="37" column="19" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigateur.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="navigateur.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="33" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="1905" max-vertical-offset="2070">
+            <state line="130" column="39" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.7212838" vertical-offset="1523" max-vertical-offset="2160">
               <folding />
             </state>
           </provider>
@@ -117,12 +117,12 @@
         <option value="$PROJECT_DIR$/vue/class/compliment/compliment.class.php" />
         <option value="$PROJECT_DIR$/vue/base.css" />
         <option value="$PROJECT_DIR$/vue/navigateur/francais/navigateur.js" />
-        <option value="$PROJECT_DIR$/vue/navigateur/navigateur.css" />
         <option value="$PROJECT_DIR$/controleur/navigateur/traitement.js" />
         <option value="$PROJECT_DIR$/controleur/navigateur/traitement.php" />
-        <option value="$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php" />
         <option value="$PROJECT_DIR$/vue/navigateur/navigateur.php" />
+        <option value="$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php" />
         <option value="$PROJECT_DIR$/controleur/navigateur/lieu/lieu.js" />
+        <option value="$PROJECT_DIR$/vue/navigateur/navigateur.css" />
       </list>
     </option>
   </component>
@@ -459,7 +459,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24711697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2917647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31529412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39836067" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -467,11 +467,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -489,9 +489,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24711697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.267451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -740,20 +740,6 @@
         <state line="31" column="4" selection-start="685" selection-end="710" vertical-scroll-proportion="0.5699482" vertical-offset="135" max-vertical-offset="2400" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="33" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="1457" max-vertical-offset="2070">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="2" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/acceuil/acceuil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="4" selection-start="3841" selection-end="3913" vertical-scroll-proportion="0.2972973" vertical-offset="1545" max-vertical-offset="2100" />
@@ -764,16 +750,30 @@
         <state line="0" column="96" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="107" selection-start="1105" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="825">
+        <state line="30" column="31" selection-start="1461" selection-end="1467" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controleur/navigateur/lieu/lieu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="569" selection-end="569" vertical-scroll-proportion="0.43074325" vertical-offset="0" max-vertical-offset="592">
+        <state line="37" column="19" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/navigateur/navigateur.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="39" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.7212838" vertical-offset="1523" max-vertical-offset="2160">
           <folding />
         </state>
       </provider>
