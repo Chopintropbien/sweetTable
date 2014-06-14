@@ -50,4 +50,11 @@
 
     </section>
 </section>
+
+<script src="http://localhost/meittopi/controleur/fonctionJS/objet_XMLHttpRequest.js"> </script>
+<script src="http://localhost/meittopi/controleur/fonctionJS/addEvent.js"> </script>
+<script src="http://localhost/meittopi/controleur/class/discution/discutionComplete.js"> </script>
+
+
+
 </body>

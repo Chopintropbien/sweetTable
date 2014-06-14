@@ -2,7 +2,7 @@
 
 $lettreTape = $_POST['lieu'];
 
-$data = unserialize(file_get_contents('../../../modele/navigateur/towns.txt')); // Récupération de la liste complète des villes
+$data = unserialize(file_get_contents('../../modele/navigateur/towns.txt')); // Récupération de la liste complète des villes
 $dataLen = count($data);
 sort($data);
 

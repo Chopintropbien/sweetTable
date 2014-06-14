@@ -13,7 +13,7 @@ class ListeACommenter extends ListeAcTitre{
         echo '<ul id="' . $idListe . '" class="listeACommenter">';
         $this->afficheTitre();
         echo '<hr/>';
-        $this->afficheLi($classLi);
+        $this->afficheLi($classLi, $idListe);
         echo '<hr/>';
         $this->afficheZoneCommentaire();
         $this->afficheFinUl();

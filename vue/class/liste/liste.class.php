@@ -10,13 +10,13 @@ class Liste{
 	
 	public function affiche($idListe, $classLi){
 		$this->afficheDebutUl($idListe);
-        $this->afficheLi($classLi);
+        $this->afficheLi($classLi, $idListe);
         $this->afficheFinUl();
 	}
     // s'il y a plusieur liste sur la meme page $idDifferanteListe differencie les deux liste. Util pour le js
     public function afficheDifferenteListe($idListe, $classLi, $idDifferanteListe){
         $this->afficheDebutUl($idListe);
-        $this->afficheLiPlusieurListe($classLi, $idDifferanteListe);
+        $this->afficheLiPlusieurListe($classLi, $idDifferanteListe, $idListe);
         $this->afficheFinUl();
     }
 
@@ -26,10 +26,10 @@ class Liste{
     protected  function afficheFinUl(){
         echo '</ul>';
     }
-    protected function afficheLi($classLi){
+    protected function afficheLi($classLi, $idListe){
         $nbElement = count($this->liste);
         for($i = 0; $i < $nbElement ; $i++){
-            echo '<li class="'.$classLi.'">';
+            echo '<li class="'.$classLi.'" id="'.$i.$idListe.'">';
             $this->liste[$i]->affiche($i);
             echo '</li>' ;
             if($i != $nbElement-1){
@@ -38,10 +38,10 @@ class Liste{
         }
     }
 
-    protected function afficheLiPlusieurListe($classLi, $idDifferanteListe){
+    protected function afficheLiPlusieurListe($classLi, $idDifferanteListe, $idListe){
         $nbElement = count($this->liste);
         for($i = 0; $i < $nbElement ; $i++){
-            echo '<li class="'.$classLi.'">';
+            echo '<li class="'.$classLi.'" id="'.$i.$idListe.'">';
             $this->liste[$i]->affiche($i, $idDifferanteListe);
             echo '</li>' ;
             if($i != $nbElement-1){

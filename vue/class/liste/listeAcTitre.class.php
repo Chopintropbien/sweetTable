@@ -12,14 +12,14 @@
             echo '<ul id="' . $idListe . '" class="listeAcTitre">';
             $this->afficheTitre();
             echo '<hr id="0ligne"/>';
-            $this->afficheLi($classLi);
+            $this->afficheLi($classLi, $idListe);
             $this->afficheFinUl();
 		}
         public function afficheDifferenteListe($idListe, $classLi, $idDifferanteListe){
             echo '<ul id="' . $idListe . '" class="listeAcTitre">';
             $this->afficheTitre();
             echo '<hr id="0ligne"/>';
-            $this->afficheLiPlusieurListe($classLi, $idDifferanteListe);
+            $this->afficheLiPlusieurListe($classLi, $idDifferanteListe, $idListe);
             $this->afficheFinUl();
         }
 

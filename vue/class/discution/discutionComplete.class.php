@@ -83,7 +83,9 @@ class DiscutionComplete {
 
 		echo '<li class="ecrireReponse">';
 			echo '<h5 >'.$quenPensezVous.'</h5>';
-			echo '<textarea></textarea>';
+			// gif d'attente
+            echo '<img src="http://localhost/Meittopi/image/paciente.gif" id="gifDAttente" style="display: none;">';
+			echo '<textarea id="textarea"></textarea>';
 			echo '<input id="repondre" class="repondre" value="'.$repondre.'" type="button">';
 		echo '</li>';
 		

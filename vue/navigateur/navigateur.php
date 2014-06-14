@@ -45,5 +45,8 @@
 	<script src="http://localhost/meittopi/vue/navigateur/francais/navigateur.js">  </script>
 
     <script src="http://localhost/meittopi/controleur/addEvent.js"></script>
-    <script src=" http://localhost/meittopi/controleur/navigateur/lieu/lieu.js">  </script>
+    <script src="http://localhost/meittopi/controleur/fonctionJS/autoComplexion.js">  </script>
+    <script>
+        autoComplexion('ou', 'ajaxOu', 'http://localhost/meittopi/controleur/navigateur/lieu.php');
+    </script>
 

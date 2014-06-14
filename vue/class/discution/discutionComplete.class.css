@@ -105,6 +105,12 @@ hr{
     max-width: 99%;
     padding: 1%;
 }
+/* gif d'attente */
+#discution> li> img{
+    position: absolute;
+    left: 62%;
+    margin-top: 2%;
+}
 #discution> li> input{
     margin-top: 2%;
     float: right;

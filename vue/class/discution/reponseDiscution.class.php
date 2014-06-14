@@ -32,8 +32,8 @@ class ReponseDiscution {
 			echo '<p>'.$this->texte.'</p>';
 			echo '<time>'.$this->dateDeCreation.'</time>';
 			echo '<section>';
-				echo '<a class="compliement" href="a">'.$envoyerCompliment.'</a>';
-				echo '<a class="message" href="a">'.$envoyerMessage.'</a>';
+				echo '<a href="a">'.$envoyerCompliment.'</a>';
+				echo '<a href="a">'.$envoyerMessage.'</a>';
 				echo '<a class="contenueIndesirable" href="a">'.$signalerContenueInnaproprié.'</a>';
 			echo '</section>';
 		echo '</article>';

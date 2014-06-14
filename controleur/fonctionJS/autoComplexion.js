@@ -1,16 +1,21 @@
 
-(function() {
+function autoComplexion(idInput, idTagResultatRecherche, lienFichierSelectionResultat) {
 
-    var lieuRecherche = document.getElementById('ou');
-    var resultatRecherche = document.getElementById('ajaxOu');
+    var lieuRecherche = document.getElementById(idInput);
+    var resultatRecherche = document.getElementById(idTagResultatRecherche);
     var selectedResult = -1;
+    var previusSelectedResult = -1;
     var selectedClass = 'selected';
     var ancienneLettreTappe;
     var previousRequest;
 
+    addEvent(document, 'click', function(){
+        resultatRecherche.style.display = 'none';
+    });
+
     function getResults(text){
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://localhost/meittopi/controleur/navigateur/lieu/lieu.php');
+        xhr.open('POST', lienFichierSelectionResultat);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onreadystatechange = function() { // On gère ici une requête asynchrone
             if (xhr.readyState == 4) { // TODO: ajouter  && xhr.status == 200
@@ -32,10 +37,28 @@
             for(var i = 0; i < responseTableau.length; ++i){
                 var li = resultatRecherche.appendChild(document.createElement('li'));
                 li.innerHTML = responseTableau[i];
+                li.id = i + 'liAjax';
 
                 addEvent(li, 'click', function(){
                     choiceResult(this);
                 });
+
+                addEvent(li, 'mouseover', function(){
+                    if(selectedResult != -1){
+                        previusSelectedResult = selectedResult;
+                        document.getElementById(previusSelectedResult + 'liAjax').className = '';
+                    }
+                    selectedResult = parseInt(this.id[0]);
+                    this.className = selectedClass;
+                    lieuRecherche.value = this.innerHTML;
+                });
+
+                addEvent(li, 'mouseout', function(){
+                    selectedResult = -1;
+                    this.className = '';
+                    lieuRecherche.value = ancienneLettreTappe;
+                });
+
             }
         }
     }
@@ -110,13 +133,5 @@
             previousRequest = getResults(this.value);
             selectedResult = -1;
         }
-
-
-
-
     });
-
-
-
-
-})();
+};

@@ -5,7 +5,7 @@
 }
 
 /* les inputs de recherche */
-div{
+#section > div{
     text-align: center;
     margin: 1% 2% 4% 0%;
 }
