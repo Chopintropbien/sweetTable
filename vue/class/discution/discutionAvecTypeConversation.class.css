@@ -46,6 +46,7 @@
 #partiePrincipale table td.conversation h4{
     font-size: 115%;
     padding-bottom: 1%;
+    color: royalblue;
 }
 #partiePrincipale table td.conversation h4:hover{
     font-size: 115%;

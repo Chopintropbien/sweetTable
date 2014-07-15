@@ -12,7 +12,6 @@
                 <a href="http://localhost/meittopi/amis/rechercher-amis.php"> <li id="amisNavigateurPrincipal"> </li> </a>
                 <a href="http://localhost/meittopi/laisser-un-avis.php"> <li id="avisNavigateurPrincipal">  </li> </a>
                 <a href="http://localhost/meittopi/discution.php"> <li id="discutionNavigateurPrincipal"> </li> </a>
-                <a href="http://localhost/meittopi/votre-avis.php"> <li id="votreAvisNavigateurPrincipal">  </li> </a>
             </ul>
         </nav>
 		

@@ -66,11 +66,13 @@
 			</section>
 
             <!-- carte -->
+            <script src="http://localhost/meittopi/vue/class/noteEtoile/noteEtoile.js"> </script>
             <script src="http://localhost/meittopi/controleur/rechercher/initializeCarte.js"> </script>
 
             <script>
 
-                google.maps.event.addDomListener(window, 'load', initialize);
+                google.maps.event.addDomListener(window, 'load', initialize('carte'));
+
 
             </script>
 

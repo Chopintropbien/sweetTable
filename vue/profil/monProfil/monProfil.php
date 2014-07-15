@@ -58,7 +58,8 @@
 				</section>
 
 
-        <script src="http://localhost/meittopi/controleur/addEvent.js"> </script>
+        <script src="http://localhost/meittopi/controleur/fonctionJS/addEvent.js"> </script>
+        <script src="http://localhost/meittopi/controleur/fonctionJS/objet_XMLHttpRequest.js"> </script>
         <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/modifierCommentaire.js"> </script>
         <script src="http://localhost/meittopi/controleur/fonctionJS/rentreeUtilisateur/supprimerChamp.js"> </script>
 

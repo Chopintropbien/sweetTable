@@ -6,21 +6,35 @@
     <link rel="stylesheet" href="http://localhost/meittopi/vue/base.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/connexion/navigateur.css"/>
 
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/connexion/connexion.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/connexion/formulaireInscription.css"/>
 
     <title id="titre"> </title>
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script src="http://localhost/meittopi/controleur/connexion/facebook/api.js"> </script>
+
 <section class="global">
     <nav id="nav">
         <?php include("vue/connexion/navigateur.php"); ?>
     </nav>
 
     <section id="pageConnection">
-        <?php include("vue/connexion/formulaireInscription.php"); ?>
+        <section id="gauche">
+            <?php include("vue/connexion/connexionVia.php"); ?>
+        </section>
+        <section id="droite">
+            <?php include("vue/connexion/formulaireInscription.php"); ?>
+        </section>
+
     </section>
 
 
 </body>
+
+<script src="http://localhost/meittopi/controleur/connexion/facebook/initialise.js"> </script>
+
+
 </html>

@@ -7,7 +7,6 @@
 	document.getElementById('amisNavigateurPrincipal').innerHTML = 'Amis';
 	document.getElementById('avisNavigateurPrincipal').innerHTML = 'Laisser un avis';
 	document.getElementById('discutionNavigateurPrincipal').innerHTML = 'Discution';
-	document.getElementById('votreAvisNavigateurPrincipal').innerHTML = 'Votre avis compte!';
 	
 		// les inputs de recherche
 	document.getElementById('rechercher').placeholder = 'Une pizzeria, restau chic,...';

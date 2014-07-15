@@ -1,7 +1,6 @@
 <?php
 
 
-
 include ('modele/acceuil/listeEvenRecent.php');
 $listeAcceuil = get_liste_acceuil();
 

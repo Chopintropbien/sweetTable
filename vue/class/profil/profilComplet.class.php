@@ -31,6 +31,9 @@ class ProfilComplet extends ProfilNotification {
 
                         // texte affiché
                         echo '<p id="'.$j.'texte">'.$this->tableauDeCaracteristique[$j][1].'</p>';
+
+                        // gif d'attente
+                        echo '<img src="http://localhost/Meittopi/image/paciente.gif" id="'.$j.'gifDAttente" style="display: none;">';
                         // zone de saisie pour le texte
                         echo '<textarea id="'.$j.'textArea" style="display: none"> </textarea>';
                         echo  '<div id="'.$j.'buttonValider" class ="buttonValider" style="display: none">'.$valider.' </div>';

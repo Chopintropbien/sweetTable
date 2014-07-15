@@ -73,19 +73,23 @@
 /* titre du restau */
 .infoBulle>section>article>p{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
 }
-.infoBulle>section>article>h4{
+.infoBulle>section>article>a>h4{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     margin-left: 2%;
+    color: royalblue;
+    font-size: 120%;
+}
+.infoBulle>section>article>a>h4:hover{
+    text-decoration: underline;
 }
 
 /* etoile et avis */
 .infoBulle>section>div>div{
     display: inline-block;
     vertical-align: middle;
-    border: 1px red solid;
 }
 .infoBulle>section>div>p{
     display: inline-block;

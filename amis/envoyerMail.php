@@ -1,5 +1,4 @@
 <?php
 
-include('../controleur/amis/inviterAmis/envoyerMail.php');
+include('../controleur/amis/envoyerMail/envoyerMail.php');
 
-include('../vue/amis/inviterAmis/envoyerMail.php');

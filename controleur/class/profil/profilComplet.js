@@ -9,7 +9,7 @@ function modificationTexteDUneCaracteristique(i){
         'textArea',
         'buttonAnnuler',
         'buttonValider',
-        '', i);
+        'http://localhost/meittopi/modele/profil/monProfil/modifierChamp.php', i);
 
     supprimerParentNode('petiteCroix', i);
 

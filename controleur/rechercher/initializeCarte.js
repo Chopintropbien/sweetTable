@@ -7,7 +7,7 @@ var listeRestaurantJSON = {
 "restau0" : [
     "Chez J\'aime ",
     "http://localhost/Meittopi/image/profil_vide.png",
-    "4.5",
+    "1",
     "3",
     "100",
     ["Italien", "Pizza"],
@@ -20,7 +20,7 @@ var listeRestaurantJSON = {
     [["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
     [["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
     [["Mehdi", 3, "",""], ["Andrei", 3, "",""]],
-    30,
+    4,
     0
 ],
     "restau1" : [
@@ -47,7 +47,7 @@ var listeRestaurantJSON = {
 
 
 
-function initialize() {
+function initialize(id) {
     var myLatlng = new google.maps.LatLng(lat,long);
     var mapOptions = {
         zoom: 4,
@@ -74,15 +74,13 @@ function initialize() {
 
 	            contenant += '<article>'; // tire restau
 		            contenant += '<p>'+ (parseInt(this.get("id")[6]) + 1) + '. </p>'; //TODO: bien garder ici la former restau1
-		            contenant += '<h4>'+listeRestaurantJSON[this.get("id")][0]+' </h4>';
+		            contenant += '<a href="'+listeRestaurantJSON[this.get("id")][0]+'"> <h4>'+listeRestaurantJSON[this.get("id")][0]+' </h4></a>';
 	            contenant += '</article>';
 	            
 	            contenant += '<div>'; // etoile et nobre d'avis
 		            contenant += '<div>'; // note
 					// note restau
-		            for(var i = 0; i<listeRestaurantJSON[this.get("id")][2]; ++i){
-		                contenant += '<canvas width="19" height="19"></canvas>';
-		            }
+                     contenant += canvas_etoile(listeRestaurantJSON[this.get("id")][2], 19, id);
 		            contenant += '</div>';
 		            contenant += '<p>'+ listeRestaurantJSON[this.get("id")][4] + ' avis</p>'; //TODO: francais
 	            contenant += '</div>';
@@ -107,11 +105,11 @@ function initialize() {
             infoBulle += '</div>';
 
             document.getElementById('infoBulle').innerHTML = infoBulle;
+            colorier_etoile(id);
         });
 
     }
 
-
-
 }
+
 

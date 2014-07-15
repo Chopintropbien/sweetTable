@@ -1,0 +1,14 @@
+
+#pageConnection{
+    width: 100%;
+}
+#gauche{
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+}
+#droite{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}

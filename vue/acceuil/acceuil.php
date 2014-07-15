@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/listeAcTitre.class.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/restaurant/restaurantRecherche.class.css"/>
+    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/photo/publication_photo.class.css"/>
 
     <title>
         Acceuil
@@ -45,6 +46,7 @@
     include_once('vue/class/liste/liste.class.php');
     include_once('vue/class/revue/nouvelleRevueDeQuelquUn.class.php');
     include_once('vue/class/evenement/evenement.class.php');
+    include_once('vue/class/photo/publication_photo.class.php');
 
     $liste = new Liste();
     //TODO: quand andrei aura fini l'api, refaire les conditions
@@ -52,10 +54,12 @@
         if(count($element) == 13){
             $liste->ajoute(new NouvelleRevueDeQuelquUn($element));
         }
-        else{
+        elseif(count($element) == 12) {
             $liste->ajoute(new Evenement($element));
         }
-
+        else{
+            $liste->ajoute(new Publication_photo($element));
+        }
     }
     $liste->affiche('listeEvenement','evenement');
     ?>

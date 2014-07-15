@@ -37,6 +37,19 @@ function get_liste_acceuil(){
  *  12° Les information qui permettront des retrouver le lien de l'événement
  */
 
+
+ /* Une publication de photo de est un tableau composé de
+    1° Le nom de la personne qui a publier les photos
+    2° La photo de profil de cette personne
+    3° Le lien de la personne
+    4° Quand ca été publié.
+    6° le restau sur le quel sont les photo
+    7° Le lien de ce restau
+    8 - 9 -10 ° Un tableau avec:
+            - le scr de la photo
+            - le lien pour retrouver la photo.
+ */
+
     //TODO: enlever la 13° ligne de revue0;
 
     $liste_acceuil = '{
@@ -69,6 +82,17 @@ function get_liste_acceuil(){
 							"ee",
 							"http://localhost/meittopi/unEvenement.php"
 							],
+			"photo" : [
+			             "Andreï Kucharavy",
+					     "http://localhost/Meittopi/image/profil_vide.png",
+					     "lien",
+					     "Chez jaime",
+					     "lien",
+					     "14/02/2014",
+					     ["http://localhost/Meittopi/image/profil_vide.png", "dd"],
+					     ["http://localhost/Meittopi/image/profil_vide.png", "dd"],
+					     ["http://localhost/Meittopi/image/profil_vide.png", "dd"]
+			        ],
 			"evenement0" : [
 							"Andreï Kucharavy",
 							"http://localhost/Meittopi/image/profil_vide.png",

@@ -1,7 +1,7 @@
 <?php include('vue/connexion/francais/navigateur.php'); ?>
 
 <img src="http://localhost/Meittopi/image/logoSweetTable.png" alt="SweetTable" id="logo"/>
-<form action="" method="post"  id="tableau">
+<form action="http://localhost/meittopi/acceuil.php" method="post"  id="tableau">
 
     <table>
         <tr>

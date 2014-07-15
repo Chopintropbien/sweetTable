@@ -1,7 +1,7 @@
 
 <?php include('vue/connexion/francais/formulaireInscription.php'); ?>
 
-<form action="../../javascript/nonAuthentifier/inscription.js" method="post" id="inscription" >
+<form action="http://localhost/meittopi/controleur/connexion/inscription.php" method="post" id="inscription" >
 
     <table>
         <tr>

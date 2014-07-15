@@ -70,3 +70,7 @@ else{
     $messageAffiche = 'Un probleme à enpêcher l\'envoie des mail';
 }
 
+
+
+include('../vue/amis/envoyerMail/envoyerMail.php');
+

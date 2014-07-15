@@ -15,7 +15,7 @@
 
     addEvent(buttonRepondre, 'click', function(){
 
-        if(/[^ \n\t]/.test(textarea.value)){
+        if(/[^ \n\t]/.test(value)){
             var photoAuteur = 'http://localhost/Meittopi/image/profil_vide.png',
                 speudoAuteur = 'Andrei',
                 lienAuteur = 'dd';//TODO:
@@ -48,7 +48,7 @@
                     // partie a droite
 
                     var article = nouvelleLi.appendChild(document.createElement('article'));
-                    article.appendChild(document.createElement('p')).innerHTML = xhr.responseText;
+                    article.appendChild(document.createElement('p')).innerHTML = xhr.responseText.replace(/\n/g, "<"+"br/>");
                     article.appendChild(document.createElement('time')).innerHTML = dateDePublication;
 
                     var section = article.appendChild(document.createElement('section')); // avis sur la discution

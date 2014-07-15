@@ -24,7 +24,7 @@
     <section id="partiePrincipale">
 
         <h1 id="ouSePasseLesDiscutions">  </h1>
-        <a class="ajous" id="ajous" href="http://localhost/Meittopi/php/vue/menuPrincipal/discution/ajouterDiscution.php">+ Nouvelle discution</a>
+        <a class="ajous" id="ajous" href="http://localhost/meittopi/discution/nouvelle-discution.php">+ Nouvelle discution</a>
 
         <!-- liste des categorie des discutions-->
         <?php include('vue/discution/listeCategorieDiscution.php'); ?>
