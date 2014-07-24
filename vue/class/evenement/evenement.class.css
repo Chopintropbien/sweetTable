@@ -22,6 +22,7 @@
     overflow: auto;
     font-weight: normal;
     margin-bottom: 2%;
+    font-size: 110%;
 }
 .evenement> article> h6> a{
     font-size: 14px;
@@ -65,12 +66,22 @@
     font-size: 15px;
     text-decoration: underline;
 }
-/* la date de l'evenement */
-.evenement> article> section> section> time{
-    color: gray;
-    display: block;
+/* la date et lieu de l'evenement */
+.evenement> article> section> section> section{
+    margin-top: 1.5%;
+}
+/* date */
+.evenement> article> section> section> section> time{
     margin: 0.5% 0% 0% 0%;
 }
+/* lieu */
+.evenement> article> section> section> section> a{
+    color: royalblue;
+}
+.evenement> article> section> section> section> a:hover{
+    text-decoration: underline;
+}
+
 
 /* liste des gens invité */
 .evenement> article> section> section> article{

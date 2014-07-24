@@ -34,10 +34,26 @@
 #evenementAuQuelOnParticipe >li> article> a> h6:hover{
     text-decoration: underline;
 }
-/* date de l'evenement */
-#evenementAuQuelOnParticipe >li> article>time{
-    color: gray;
+
+
+/* la date et lieu de l'evenement */
+#evenementAuQuelOnParticipe >li> article> section{
+    margin-top: 1.5%;
 }
+/* date */
+#evenementAuQuelOnParticipe >li> article> section> time{
+    margin: 0.5% 0% 0% 0%;
+    font-size: 92%;
+}
+/* lieu */
+#evenementAuQuelOnParticipe >li> article> section> a{
+    color: royalblue;
+}
+#evenementAuQuelOnParticipe >li> article> section> a:hover{
+    text-decoration: underline;
+}
+
+
 /* les lien pour les personnes qui participient */
 #evenementAuQuelOnParticipe >li> article>p> a {
     color: #305EC6;

@@ -1,43 +1,35 @@
-td{
+
+#droite >form> table{
     width: 400px;
+    margin-left: 0px;
+    padding-left: 0px;
+
 }
 
-tr{
+
+
+#droite >form>table td{
     width: 400px;
-}
-table{
-    width: 400px;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
-h1{
+#droite >form>table tr{
+    width: 400px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+
+#droite >form>table tr td >h1{
     font-size: xx-large;
 }
-#agauche{
-    display: inline-block;
-    width: 600px;
-    position: relative;
-    top: 35px;
-    left: 35px;
-}
 
-td{
-    width: 400px;
-}
-
-tr{
-    width: 400px;
-}
-
-h1{
-    size: xx-large;
-}
-
-table{
-    width: 400px;
-}
 
 #inscription{
     margin-top: 7%;
+
 }
 
 .grandChamp, .grandChamp:focus {
@@ -46,6 +38,7 @@ table{
     margin-top: 5px;
     margin-bottom: 5px;
     text-indent: 5px;
+
 
 }
 

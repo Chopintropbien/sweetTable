@@ -37,7 +37,7 @@ class ProfilNotification {
 
     }
 
-    public function affiche(){
+    public function affiche($petit = false){
         include('../vue/class/profil/francais/profilNotification.php');
         include('vue/class/profil/francais/profilNotification.php');
 
@@ -73,6 +73,15 @@ class ProfilNotification {
                             echo '<img src="http://localhost/Meittopi/image/profil/cool.png"/>';
                             echo '<p>'.$this->nbVoteCool.$votesCool.'</p>';
                         echo '</li>';
+
+                        // si la zone pour le profil est petite
+                        if($petit){
+                            // nombre de revus
+                            echo '<li>';
+                                echo '<img src="http://localhost/Meittopi/image/profil/revue.png"/>';
+                                echo '<p>'.$this->nbRevus.$revus.'</p>';
+                            echo '</li>';
+                        }
                     echo '</ul>';
 
 						// lsite du millieu (amis)
@@ -92,21 +101,32 @@ class ProfilNotification {
                             echo '<img src="http://localhost/Meittopi/image/profil/follower.png"/>';
                             echo '<p>'.$this->nbFollower.$followers.'</p>';
                         echo '</li>';
+                        // si la zone pour le profil est petite
+                        if($petit){
+                            // nombre de sortie
+                            echo '<li>';
+                                echo '<img src="http://localhost/Meittopi/image/profil/sortie.png"/>';
+                                echo '<p>'.$this->nbEvenementOrganise.$sortie.'</p>';
+                            echo '</li>';
+                        }
                     echo '</ul>';
 
+                    if(!$petit){
+
 						// liste de droite (revue)
-                    echo '<ul>';
+                        echo '<ul>';
 							// nombre de revus
-                        echo '<li>';
-                            echo '<img src="http://localhost/Meittopi/image/profil/revue.png"/>';
-                            echo '<p>'.$this->nbRevus.$revus.'</p>';
-                        echo '</li>';
+                            echo '<li>';
+                                echo '<img src="http://localhost/Meittopi/image/profil/revue.png"/>';
+                                echo '<p>'.$this->nbRevus.$revus.'</p>';
+                            echo '</li>';
 							// nombre de sortie
-                        echo '<li>';
-                            echo '<img src="http://localhost/Meittopi/image/profil/sortie.png"/>';
-                            echo '<p>'.$this->nbEvenementOrganise.$sortie.'</p>';
-                        echo '</li>';
-                    echo '</ul>';
+                            echo '<li>';
+                                echo '<img src="http://localhost/Meittopi/image/profil/sortie.png"/>';
+                                echo '<p>'.$this->nbEvenementOrganise.$sortie.'</p>';
+                            echo '</li>';
+                        echo '</ul>';
+                    }
                     
                     
                 echo '<section>';

@@ -48,3 +48,55 @@
 #restauRecommende{
     margin-top: 8%;
 }
+#pasDeRecommendation{
+    margin-top: 8%;
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+    padding: 2%;
+}
+#pasDeRecommendation>h4{
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 105%;
+}
+#pasDeRecommendation>p{
+    text-align: justify;
+    margin-bottom: 1%;
+}
+/* lien pour comment ca fonctionne et ecrire une revue*/
+#pasDeRecommendation>div{
+    margin-left: 3%;
+}
+#pasDeRecommendation>div>a{
+    color: royalblue;
+}
+#pasDeRecommendation>div>a:hover{
+    text-decoration: underline;
+}
+
+#uservoice{
+
+    margin-top: 8%;
+    border: 2px #EBEAEB outset;
+    background-color: #F4F4F4;
+    padding: 2%;
+}
+#uservoice>h4{
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 105%;
+}
+#uservoice>p{
+    text-align: justify;
+}
+#uservoice>p>mark{
+    background-color: transparent;
+    font-weight: bold;
+}
+#uservoice>p>a{
+    color: royalblue;
+    font-weight: bold;
+}
+#uservoice>p>a:hover{
+    text-decoration: underline;
+}

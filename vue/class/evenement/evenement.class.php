@@ -13,6 +13,7 @@ class Evenement{
 	private $reponseUtilisateurInvitation;
 	private $lienPersoneCreerEvenement;
 	private $lienEvenement;
+    private $lieu;
 
 
 
@@ -33,6 +34,7 @@ class Evenement{
 			$this->reponseUtilisateurInvitation = $json[9];
 			$this->lienPersoneCreerEvenement = htmlspecialchars($json[10]);
 			$this->lienEvenement = $json[11];
+            $this->lieu = 'Chez j aime';
 		}
 	}
 
@@ -58,7 +60,11 @@ class Evenement{
 
 				echo '<section>'; // section à droite des photos de l'evenement
 					echo '<a href="'.$this->lienEvenement.'">'. $this->titreEvenement .'</a>'; // titre evenement
-					echo '<time>'. $this->dateEvenement.'</time>';
+					echo '<section>';
+                        echo '<time>Le '. $this->dateEvenement.', chez </time>';
+                        echo '<a>'. $this->lieu.'</a>';
+                    echo ' </section>';
+                    /*
 					echo '<article>'; // liste des invité
 						$nbInvité = count($this->listeInvite);
 						for($j=0; $j< 6 and $j< $nbInvité; ++$j){
@@ -90,6 +96,8 @@ class Evenement{
 
 						}
 					echo'</article>';
+                    */
+
 					echo '<p>'. $this->description .'</p>';
 					echo '<div>'; // est ce que l'utilisateur participe?
 						echo '<p>'.$participe.'</p>';
@@ -107,7 +115,7 @@ class Evenement{
 			echo '</section>';
 
 				// message perso
-			echo '<p> <strong>' . $this->speudo .':</strong> '. $this->messagePerso .'</p>';
+			//echo '<p> <strong>' . $this->speudo .':</strong> '. $this->messagePerso .'</p>';
 
 		echo '</article>';
 

@@ -40,21 +40,6 @@
                         $profil->affiche(true);
                     ?>
 
-                        <!-- afficher les notifications -->
-
-                    <?php
-                        include_once('../vue/class/liste/listeAcTitre.class.php');
-                        include_once('../vue/class/notification/notification.class.php');
-
-                        $liste = new ListeAcTitre('Notifications');
-                        foreach($listeNotificationJSON as $notificationJSON){
-                            $liste->ajoute(new Notification($notificationJSON));
-                        }
-                        $liste->affiche('notification', '');
-                    ?>
-
-
-					
 				</section>
 
 

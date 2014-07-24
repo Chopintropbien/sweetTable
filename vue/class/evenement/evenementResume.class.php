@@ -22,6 +22,7 @@ class EvenementResume {
         $this->listeGensQuiParticipe = $json[3];
         $this->particiation = $json[4];
         $this->lienEvenement = $json[5];
+        $this->lieu = 'Chez j aime';
     }
 
     public function affiche($i){
@@ -31,7 +32,11 @@ class EvenementResume {
         echo '<input type="button" class="petiteCroix"value ="+" id="'.$i.'supprimerEvenement"/>';
         echo '<article>';
             echo '<a><h6>'.$this->titre.'</h6></a>';
-            echo '<time>'.$this->dateEvenement.'</time>';
+            echo '<section>';
+                echo '<time>Le '. $this->dateEvenement.', chez </time>';
+                echo '<a>'. $this->lieu.'</a>';
+            echo ' </section>';
+        /*
             echo '<p>'. $avec;
             for($j = 0; $j < count($this->listeGensQuiParticipe); ++$j){ // liste des gens qui participe
                 echo'<a>'.$this->listeGensQuiParticipe[$j][0].'</a>';
@@ -40,6 +45,7 @@ class EvenementResume {
                 }
             }
             echo '</p>';
+        */
             switch($this->particiation){
                 case 2:
                     $reponseInviter = $peutEtre ;

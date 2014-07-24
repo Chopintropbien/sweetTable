@@ -15,8 +15,6 @@
 
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/profil/profilNotification.class.css"/>
 
-    <link rel="stylesheet" href="http://localhost/meittopi/vue/class/notification/notification.class.css"/>
-
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/liste/listeAcTitre.class.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/restaurant/restaurantRecherche.class.css"/>
     <link rel="stylesheet" href="http://localhost/meittopi/vue/class/photo/publication_photo.class.css"/>
@@ -69,37 +67,42 @@
 <section id="partieDroite">
 
     <!-- profil de notication -->
-        <?php
-        include_once('vue/class/profil/profilNotification.class.php');
-        foreach($profilJSON as $profilJSON2){
-            $profil = new ProfilNotification($profilJSON2);
-        }
-        $profil->affiche();
-        ?>
-
-    <!-- notification  -->
-        <?php
-        include_once('vue/class/liste/listeAcTitre.class.php');
-        include_once('vue/class/notification/notification.class.php');
-
-        $liste = new ListeAcTitre('Notifications');
-        foreach($listeNotificationJSON as $notificationJSON){
-            $liste->ajoute(new Notification($notificationJSON));
-        }
-        $liste->affiche('notification', '');
-        ?>
+    <?php
+    include_once('vue/class/profil/profilNotification.class.php');
+    foreach($profilJSON as $profilJSON2){
+        $profil = new ProfilNotification($profilJSON2);
+    }
+    $profil->affiche(true);
+    ?>
 
     <!-- restaurant recommendé -->
-        <?php
-        include_once('vue/class/restaurant/restaurantDeBase.class.php');
-        include_once('vue/class/liste/listeAcTitre.class.php');
-        $liste = new ListeAcTitre('Recomendés pour vous');
-        foreach($listeRestauConseilJSON as $restauConseilJSON){
-            $liste->ajoute(new RestaurantDeBase($restauConseilJSON));
-        }
-        $liste->affiche('restauRecommende', 'restaurant');
+    <?php
+    include_once('vue/class/restaurant/restaurantDeBase.class.php');
+    include_once('vue/class/liste/listeAcTitre.class.php');
+    $liste = new ListeAcTitre('Recomendés pour vous');
+    foreach($listeRestauConseilJSON as $restauConseilJSON){
+        $liste->ajoute(new RestaurantDeBase($restauConseilJSON));
+    }
+    $liste->affiche('restauRecommende', 'restaurant');
 
-        ?>
+    ?>
+
+    <article id="pasDeRecommendation">
+        <h4>Recomendés pour vous</h4>
+        <hr/>
+        <p>Vous n'avez pas encore assez écrit de  revus pour que Meittopi puisse vous faire des recommendations.</p>
+        <div> <span> -> </span> <a>Ecrire une revue.</a> </div>
+        <div> <span> -> </span> <a>Comment Meittopi fonctionne?</a> </div>
+    </article>
+
+    <article id="uservoice">
+        <h4> Votre avis est important!</h4>
+        <hr/>
+        <p> Meittopi est un <mark> tout nouveau  </mark> site qui vient tout juste d'être lancé. <br/>
+            Nous aimerions avoir votre avis pour pouvour faire un sorte qu'il corresponde encore plus à <mark>vos besoin</mark> ! <br/>
+            Alors rendez-vous sur <a> uservoice </a>!
+        </p>
+    </article>
 
 </section>
 </section>

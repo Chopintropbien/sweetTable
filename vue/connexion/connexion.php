@@ -23,9 +23,28 @@
 
     <section id="pageConnection">
         <section id="gauche">
-            <?php include("vue/connexion/connexionVia.php"); ?>
+            <article>
+
+                <span id="prevSpan" class="0"> < </span> <!-- pour savoir quel img est afficher-->
+
+                <img src="http://localhost/Meittopi/image/profil_vide.png" id="0slide"/>
+                <img src="" id="1slide" style="display:none;"/>
+                <img src="http://localhost/Meittopi/image/profil_vide.png" id="2slide" style="display:none;"/>
+                <img src="" id="3slide" style="display:none;"/>
+                <img src="http://localhost/Meittopi/image/profil_vide.png" id="4slide" style="display:none;"/>
+                <img src="" id="5slide" style="display:none;"/>
+
+                <span id="suivSpan"> > </span>
+
+            </article>
+
         </section>
         <section id="droite">
+
+
+
+            <h1> Connexion via :</h1>
+            <div class="fb-login-button" id="facebook" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"> </div>
             <?php include("vue/connexion/formulaireInscription.php"); ?>
         </section>
 
@@ -35,6 +54,8 @@
 </body>
 
 <script src="http://localhost/meittopi/controleur/connexion/facebook/initialise.js"> </script>
+<script src="http://localhost/meittopi/controleur/connexion/slide.js"> </script>
+
 
 
 </html>

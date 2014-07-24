@@ -5,10 +5,59 @@
 #gauche{
     display: inline-block;
     vertical-align: top;
-    width: 58%;
+    width: 54%;
+    margin-left: 0%;
+    margin-top: 3%;
+    margin-right: 3%;
 }
+#gauche>article{
+    text-align: center;
+}
+#gauche>article>span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 150%;
+    cursor: pointer;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: red;
+    border: 2px red outset;
+}
+#gauche>article>span:active{
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+#gauche>article>img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 73%;
+    min-width: 400px;
+    height: 450px;
+    margin: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #droite{
     display: inline-block;
     vertical-align: top;
     width: 40%;
+    margin-top: 3%;
+}
+#droite>h1{
+    font-size: xx-large;
+}
+#droite>div{
+    margin-top: 2%;
 }

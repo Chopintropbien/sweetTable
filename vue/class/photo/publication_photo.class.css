@@ -19,7 +19,7 @@
 .publicationPhoto article > time{
     float: right;
     color: gray;
-
+    font-size: 85%;
 }
 
 /* titre de la publication*/
