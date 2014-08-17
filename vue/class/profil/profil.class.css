@@ -1,0 +1,11 @@
+#profil{
+    text-align: center;
+}
+
+#profil>img{
+    width: 50%;
+}
+#profil>h2{
+    margin-left: 3%;
+    font-size: 150%;
+}

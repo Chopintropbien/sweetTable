@@ -1,0 +1,83 @@
+
+#partieGauche,
+#partieDroite{
+    display: inline-block;
+    vertical-align: top;
+}
+#partieGauche> h2,
+#partieDroite> h2{
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+
+/* partie de gauche */
+#partieGauche{
+    width: 57%;
+    margin-right: 3%;
+
+}
+
+/* article de la presentation de sweetTable */
+#partieGauche > article{
+
+}
+#partieGauche > article>h2{
+
+}
+
+/* paragraphe */
+#partieGauche > article> p{
+    text-align: justify;
+    display: block;
+    min-height: 120px;
+}
+#partieGauche > article>p> img{
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    width: 110px;
+}
+
+
+
+
+/* partie de droite */
+#partieDroite{
+    display: inline-block;
+    vertical-align: top;
+    width: 39%;
+}
+#partieDroite > table{
+    margin-bottom: 2%;
+}
+
+#partieDroite > table tr td{
+    padding: 0.4%;
+}
+
+
+/*photo et nom */
+#partieDroite > table tr:first-child{
+    text-align: center;
+}
+#partieDroite> table img{
+    width: 105px;
+}
+#partieDroite> table h5{
+    margin-bottom: 1%;
+    font-size: 110%;
+}
+
+
+/* description*/
+#partieDroite> table h6{
+    margin-bottom: 0.7%;
+}
+#partieDroite> table ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
+}

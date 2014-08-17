@@ -1,0 +1,120 @@
+#partieGauche{
+    display: inline-block;
+    vertical-align: top;
+    width: 59%;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+/* en haut a gauche pour le titre et les infos sur le restaurant */
+
+#partieGauche>div{
+    font-size: 160%;
+}
+
+/* titre restau */
+#partieGauche>div>h1{
+    color: #305EC6;
+    font-size: 150%;
+}
+
+/* etoile*/
+#partieGauche> div> div> div {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* nb d'avis */
+#partieGauche> div> div> p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3%;
+    font-size: 95%;
+    color: gray;
+}
+
+/* pris du restaurant*/
+#partieGauche> div> section> div{
+    display: inline-block;
+    vertical-align: middle;
+}
+/* type de restaurant*/
+#partieGauche> div> section> p{
+    display: inline-block;
+    margin-left: 2%;
+    vertical-align: middle;
+}
+#partieGauche> div> section> span{
+    margin-left: 3%;
+    border: 1px gray solid;
+    font-size: 50%;
+    vertical-align: middle;
+    padding: 0% 0.8% 0% 0.8%;
+    cursor: pointer;
+}
+
+
+/* Evenement*/
+#partieGauche> div> aside{
+    margin-top: 1%;
+}
+#partieGauche> div> aside> a:hover{
+    text-decoration: underline;
+    text-align: justify;
+}
+#partieGauche> div> aside> a> h6{
+    float: left;
+    margin-right: 2%;
+    color: #305EC6;
+}
+
+
+
+
+/* les photos */
+#partieGauche> section{
+    margin-top: 5%;
+    width: 100%;
+}
+#partieGauche> section>img{
+    width: 31%;
+    margin-right: 1.5%;
+}
+#partieGauche> section>p{
+    text-align: right;
+    margin-right: 5%;
+}
+#partieGauche> section>p>a{
+    color: #305EC6;
+}
+#partieGauche> section>p>a:hover{
+    text-decoration: underline;
+}
+
+
+/* liste des revus */
+#partieGauche> ul{
+    margin-top: 5%;
+    width: 93%;
+    padding: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

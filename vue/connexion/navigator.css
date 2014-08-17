@@ -1,0 +1,46 @@
+
+/* specifique au nav de connexion*/
+
+#main_nav >form{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    min-width: 510px;
+    text-align: left;
+
+}
+
+#main_nav >form> table{
+    width: 510px;
+    float: right;
+}
+#main_nav >form >table td{
+    padding-right: 10px;
+}
+
+/* connexion button*/
+#main_nav >form >table td button{
+    padding: 2px 2px;
+}
+#main_nav >form >table td input[type='email'],
+#main_nav >form >table td input[type='password']{
+    padding: 1px 3px;
+    width: 200px;
+}
+
+/* partie du bas */
+#main_nav >form >table td.moinsImportant> input[type='checkbox'],
+#main_nav >form >table td.moinsImportant> label,
+#main_nav >form >table td.moinsImportant{
+    vertical-align: middle;
+    color: #962E00;
+    font-size: 90%;
+}
+#main_nav >form >table td.moinsImportant:last-child:hover{
+    text-decoration: underline;
+}
+
+
+
+
+

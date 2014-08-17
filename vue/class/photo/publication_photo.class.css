@@ -1,71 +1,29 @@
-.publicationPhoto{
-    font-size: 115%;
-}
-
-/* pour Revue  et Evenement */
-.publicationPhoto img{
-    display: inline-block;
-    width: 10%;
-    vertical-align: top;
-}
-
-.publicationPhoto article{
-    display: inline-block;
-    width: 82.5%;
-    vertical-align: top;
-    margin-left: 1%;
-
-}
-.publicationPhoto article > time{
-    float: right;
-    color: gray;
-    font-size: 85%;
-}
-
-/* titre de la publication*/
-.publicationPhoto article h6{
-    overflow: auto;
-    font-weight: normal;
-    margin-bottom: 2%;
-}
-.publicationPhoto article h6 a:hover{
-    text-decoration: underline;
-    color: #305EC6;
-}
-.publicationPhoto article h6 a strong{
-    font-size: 14px;
-    color: #305EC6;
-}
-
-.publicationPhoto article h6 a mark{
-    background-color: transparent;
-    color: #305EC6;
-}
-.publicationPhoto article h6 a mark:hover{
-    background-color: transparent;
-    color: #305EC6;
-    text-decoration: underline;
-}
-
 
 /* premiere photo */
-.publicationPhoto article > a> img{
+.publication_photo article > a> img{
     display: inline-block;
     vertical-align: top;
     margin-right: 1.5%;
     width: 41.3%;
     cursor: pointer;
+    margin-top: 1%;
 }
 
 /* deusieme et troisieme photo*/
-.publicationPhoto article > section{
+.publication_photo article > section{
     display: inline-block;
     vertical-align: top;
     width: 20%;
+    margin-top: 1%;
 }
-.publicationPhoto article > section > a> img{
+.publication_photo article > section > a> img{
     display: block;
     width: 100%;
     margin-bottom: 7%;
     cursor: pointer;
+}
+
+/* titre utilisateur */
+.publication_photo article h5{
+    margin-bottom: 0.5%;
 }

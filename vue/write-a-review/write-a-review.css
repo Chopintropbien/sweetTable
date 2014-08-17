@@ -1,0 +1,71 @@
+
+#body>h2{
+    font-size: 200%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+/* zone de recherche */
+#body>table{
+    width: 65%;
+    min-width: 640px;
+    border-spacing:0;
+    margin: auto;
+}
+
+/* input de recherche */
+#body>table tr td{
+    padding-right: 2.3%;
+    padding-bottom: 0.5%;
+    vertical-align: top;
+}
+
+#body>table tr td label{
+    font-size: 118%;
+
+}
+#body>table tr td input{
+    height: 25px;
+    font-size: 117%;
+}
+#body>table tr td input[type='submit']{
+    height: 27px;
+}
+/* recherche de l'ajax */
+#body>table tr td ul{
+    border-top: 0px;
+    padding: 1% 0%;
+}
+
+/* input et ajax */
+#body>table tr td input,
+#body>table tr td ul{
+    text-indent: 1%;
+    display: block;
+    width: 100%;
+}
+
+
+
+/* button rechercher */
+#body>section>input{
+    display: inline-block;
+    vertical-align: middle;
+    height: 28px;
+    font-size: 105%;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 0.3%;
+}
+
+
+
+
+/* liste des resultats de restaurant */
+#resultat_restau_revue{
+    padding-top: 3.5%;
+    margin: auto;
+    width: 50%;
+}

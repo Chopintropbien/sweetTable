@@ -1,0 +1,147 @@
+
+/* commun au nav de connexion et au nav de navigation */
+#main_nav{
+    text-align: center;
+
+}
+
+/* logo part */
+#main_nav> a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    margin-right: 2%;
+    margin-top: 0.4%;
+    min-width: 170px;
+}
+#main_nav> a > img{
+    width: 100%;
+}
+
+/* specifique au nav de navigation*/
+
+
+/* right of the logo */
+#main_nav> section{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* navigator */
+#main_nav> section > nav{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#main_nav> section > nav >a{
+    display: inline-block;
+    padding: 0.3% 1.8%;
+    border-left: 1px #FFB664 solid;
+}
+#main_nav> section > nav> a:first-child{
+    border: 0px #FFB664 solid;
+}
+#main_nav> section > nav >a:hover{
+    background-color: #FF8E15;
+}
+
+
+
+/* search input */
+#main_nav> section >ul{
+    margin-bottom: 5px;
+}
+#main_nav> section >ul >li{
+    display: inline-block;
+}
+#main_nav> section >ul >li>label{
+    vertical-align: top;
+    display: inline-block;
+    padding: 4px;
+    padding-bottom: 3px;
+
+    background-color: white;
+    font-weight: bold;
+    border: 1px silver inset;
+    border-right: 0px;
+    box-shadow: 1px 1px 5px silver;
+}
+#main_nav> section >ul >li>input[type="search"]{
+    padding: 4px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    right: 5px;
+    border-left: 0px;
+}
+
+
+/* button search*/
+
+#main_nav> section >ul >li>button{
+    display: inline-block;
+    vertical-align: sub;
+    position: relative;
+    top: 2px;
+    padding: 5px;
+}
+
+
+
+/* more link */
+#main_nav> div{
+    float: right;
+    padding: 1px 4px;
+    margin-right: 10px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+#main_nav> div:hover{
+    background-color: #FF8E15;
+}
+/* list of link*/
+#main_nav> div> ul{
+    display: none;
+}
+#main_nav> div:hover> ul{
+    display: block;
+    position: absolute;
+    right: 0px;
+    background: white;
+    padding: 5px;
+    border: 1px silver inset;
+}
+#main_nav> div:hover> ul>a>li{
+    display: block;
+    color: #305EC6;
+    cursor: pointer;
+}
+#main_nav> div:hover> ul>a>li:hover{
+    text-decoration: underline;
+}
+
+
+
+/* ul for ajax search */
+
+#ajax_search, #ajax_where{
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    padding: 3px;
+    border-top: 0px;
+    padding: 4px;
+    text-align: left;
+}
+#ajax_search{
+    width: 304px;
+}
+#ajax_where{
+    width: 275px;
+}
+
+
+
+
+

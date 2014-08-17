@@ -1,6 +1,8 @@
-.liste{
-    border: 2px #EBEAEB outset;
-    background-color: #F4F4F4;
-    padding: 1%;
-    vertical-align: top;
+
+.liste > hr{
+    margin: 2% 0%;
+}
+.liste >li> h2{
+    text-align: center;
+    font-size: 190%;
 }

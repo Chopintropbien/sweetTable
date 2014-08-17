@@ -1,0 +1,77 @@
+
+/* partie de gauche */
+#partieGauche{
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-right: 3%;;
+    width: 53%;
+    display: inline-block;
+    vertical-align: top;
+}
+#partieGauche > h2{
+    font-size: 150%;
+    margin-bottom: 2%;
+}
+
+
+
+/* partie de droite */
+#partieDroite{
+    width: 38%;
+    margin-top: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* profil */
+#partieDroite> #profil{
+    width: 60%;
+    margin: auto;
+}
+
+/* pas encore de recommendation*/
+#partieDroite> #pas_encore_recommendation{
+    margin-top: 5%;
+}
+/* explication */
+#partieDroite> #pas_encore_recommendation> section> p{
+    font-size: 85%;
+    text-align: justify;
+    margin-bottom: 3%;
+}
+#partieDroite> #pas_encore_recommendation> section> p> a{
+    margin-left: 3%;
+    color: #305EC6;
+    cursor: pointer;
+}
+#partieDroite> #pas_encore_recommendation> section> p> a:hover{
+    text-decoration: underline;
+}
+
+/* button ecrire une revue */
+#partieDroite> #pas_encore_recommendation> section> div{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+/* canvas */
+#partieDroite> #pas_encore_recommendation> div{
+    text-align: center;
+}
+
+
+
+
+
+
+
+#partieDroite> #restau_recommendation{
+    padding-top: 8%;
+    margin: auto;
+    width: 60%;
+    min-width: 200px;
+}
+/* titre de  la  liste de recommendation */
+#partieDroite> #restau_recommendation>li>h2{
+    font-size: 160%;
+}

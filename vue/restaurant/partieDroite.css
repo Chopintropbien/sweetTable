@@ -1,0 +1,60 @@
+
+#partieDroite{
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+
+/* zone des buttons */
+#partieDroite>div{
+}
+
+#partieDroite> div> a{
+    font-size: 130%;
+    padding: 0.5% 1% 0.5% 1%;
+    vertical-align: middle;
+}
+
+#partieDroite> div> button{
+    vertical-align: middle;
+    margin-left: 3%;
+    padding: 1% 0.5%;
+}
+
+
+/* information localisation*/
+#partieDroite>section{
+    margin-top: 25%;
+    border: 1px darkgray solid;
+    width: 80%;
+}
+
+/* carte */
+#partieDroite>section>div{
+
+}
+
+/* adresse */
+#partieDroite>section>article{
+    margin: 1.5%;
+}
+
+#partieDroite>section>article>address{
+    display: block;
+}
+/* tel */
+#partieDroite>section>article>p{
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+

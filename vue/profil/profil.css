@@ -1,0 +1,20 @@
+
+#body{
+    text-align: center;
+}
+
+/* profil de la personne */
+#profil{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+
+#revue{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 50%;
+    margin-left: 3%;
+}

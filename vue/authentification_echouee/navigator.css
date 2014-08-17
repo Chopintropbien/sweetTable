@@ -1,0 +1,17 @@
+
+#header{
+    margin-bottom: 5%;
+}
+
+/* specifique au nav de connexion*/
+
+
+
+#main_nav >form{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    min-width: 510px;
+    text-align: left;
+
+}

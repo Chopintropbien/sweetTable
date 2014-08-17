@@ -1,7 +1,7 @@
 
 <?php include('vue/connexion/francais/formulaireInscription.php'); ?>
 
-<form action="http://localhost/meittopi/controleur/connexion/inscription.php" method="post" id="inscription" >
+<form action="home.php" method="post" id="inscription" >
 
     <table>
         <tr>
@@ -78,14 +78,13 @@
             </td>
         </tr>
         <tr>
-            <td><input type="button" value="<?php echo $inscription; ?>" id="creerUnCompte" /> </td>
+            <td><input type="button" value="<?php echo $inscription; ?>" id="creerUnCompte" class="important_button" /> </td>
         </tr>
     </table>
 </form>
 
 <!-- script de verification si le formulaire est bien remplie -->
-<script src = "http://localhost/meittopi/vue/objetXMLHttpRequest.js"> </script>
-<script src = "http://localhost/meittopi/vue/connexion/formulaireInscriptionVerificationChamp.js"> </script>
+<script src = "<?php echo $GLOBALS['host'];?>/controller/connexion/formulaireInscriptionVerificationChamp.js"> </script>
 
 
 

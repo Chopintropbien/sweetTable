@@ -1,0 +1,63 @@
+
+
+.publication{
+    font-size: 115%;
+}
+
+/* pour Revue  et Evenement */
+.publication img{
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+}
+
+.publication article{
+    display: inline-block;
+    width: 88.5%;
+    vertical-align: top;
+    margin-left: 1%;
+
+}
+.publication article > time{
+    float: right;
+    color: gray;
+    font-size: 83%;
+}
+
+/* titre de la publication */
+.publication article h5{
+    font-size: 105%;
+    margin-bottom: 0.5%;
+}
+
+/* celui qui a fait la publication*/
+.publication article h6{
+    overflow: auto;
+    font-weight: normal;
+    margin-bottom: 0.5%;
+    font-size: 90%;
+}
+/* personne qui a fait la publication */
+.publication article h6 a:hover{
+    text-decoration: underline;
+}
+.publication article h6 a strong{
+    margin-right: 5px;
+    color: #305EC6;
+}
+/* texte entre les deux */
+.publication article h6 span{
+    color: grey;
+}
+
+/* retaurant sur lequel porte la publication*/
+.publication article h6 a mark{
+    margin-left: 5px;
+    background-color: transparent;
+    color: #305EC6;
+}
+.publication article h6 a mark:hover{
+    text-decoration: underline;
+}
+
+

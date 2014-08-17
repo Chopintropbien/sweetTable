@@ -1,0 +1,15 @@
+
+/* etoile */
+.publication_revue article > div{
+    width: 40%;
+
+}
+.publication_revue article div canvas{
+    display: inline-block;
+    margin-left: 2%;
+}
+.publication_revue article p{
+    text-align: justify;
+    margin: 0.5% 0% 0% 0%;
+}
+

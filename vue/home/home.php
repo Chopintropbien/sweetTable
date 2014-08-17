@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/template/template.css"/>
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/navigator/navigator.css"/>
+
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/home/home.css"/>
+
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/profil/profil.class.css"/>
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/restaurant/restaurant.class.css"/>
+
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/liste/liste.class.css"/>
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/photo/publication_photo.class.css"/>
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/revue/publication_revue.class.css"/>
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/publication/publication.class.css"/>
+
+    <title> SweetTable </title>
+</head>
+
+<body>
+
+<section id="header">
+    <?php include("vue/navigator/navigator.php"); ?>
+</section>
+
+<section id="body">
+    <h1 id="mettopi"> Meittopi a Lausanne</h1>
+
+    <hr/>
+
+    <section id="partieGauche">
+        <h2>Activités récentes</h2>
+
+        <?php
+        include_once('vue/class/liste/liste.class.php');
+        include_once('vue/class/publication/publication.class.php');
+        include_once('vue/class/photo/publication_photo.class.php');
+        include_once('vue/class/revue/publication_revue.class.php');
+
+        $liste = new Liste();
+        //TODO: quand andrei aura fini l'api, refaire les conditions
+        foreach($liste_publication_JSON as $element_JSON){
+            if(count($element_JSON) == 9){
+                $liste->ajoute(new Publication_Revue($element_JSON));
+            }
+
+            else{
+                $liste->ajoute(new Publication_photo($element_JSON));
+            }
+        }
+        $liste->affiche('publication','publication');
+        ?>
+
+
+    </section>
+
+    <section id="partieDroite">
+
+        <?php
+        include_once('vue/class/profil/profil.class.php');
+        $profil = new Profil();
+        $profil->affiche('profil');
+        ?>
+
+        <!-- si il n'y a pas assez de revue pour la recommendation-->
+
+        <article id="pas_encore_recommendation">
+
+            <h5> 3 revue sur 10 !</h5>
+
+            <section>
+                <p> Pour pouvoir avoir acces à la recommendation personnalisée de SweetTable, il faut que vous donniez
+                    <strong> 10 notes </strong> à des restaurants différents!
+                    <a>En savoir plus</a>
+                </p>
+
+                <div> <a class="important_button" href="<?php echo $GLOBALS['host'];?>/write-a-review.php"> Ecrire une revue </a> </div>
+            </section>
+
+            <div>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
+            </div>
+
+
+        </article>
+
+
+        <?php
+
+        include ('model/search/restau_recherche.php');
+        $liste_restaurant_rechercheJSON = get_liste_restaurant_recherche();
+
+        include_once('vue/class/liste/liste_ac_titre.class.php');
+        include_once('vue/class/restaurant/restaurant_basic.class.php');
+        $liste = new Liste_ac_titre('Recomendés pour vous');
+
+        foreach($liste_restaurant_rechercheJSON as $restaurant_rechercheJSON){
+            $liste->ajoute(new Restaurant_basic($restaurant_rechercheJSON));
+        }
+        $liste->affiche('restau_recommendation', 'restaurant');
+        ?>
+
+    </section>
+
+
+
+</section>
+
+
+<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/etoile/dessineEtoile.js"> </script>
+<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/etoile/dessineDemiEtoile.js"> </script>
+<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/etoile/dessine_note.js"></script>
+
+<script>
+    dessine_note();
+</script>
+
+
+<script>
+
+    var canvas = document.getElementsByClassName('nb_revue_pour_recommendation');
+    var nb_revue = <?php echo 6;?>;
+
+    for(var i = 0; i < nb_revue; ++i){
+        dessine_cercle(canvas[i], canvas[i].height);
+        dessine_check(canvas[i], canvas[i].height);
+    }
+    for(var i = nb_revue; i < canvas.length; ++i){
+        dessine_cercle(canvas[i], canvas[i].height);
+    }
+
+    function dessine_cercle(canvas, taille){
+        var ctx = canvas.getContext("2d");
+        ctx.lineWidth = 1;
+
+        var decalage_droite = 1;
+
+        ctx.beginPath();
+        ctx.arc(taille * 0.286 + decalage_droite, taille * 0.571, taille * 0.286, 0, 2*Math.PI);
+        ctx.stroke();
+    }
+    function dessine_check(canvas, taille){
+        var ctx = canvas.getContext('2d');
+
+        ctx.strokeStyle = "black";
+        ctx.fillStyle = "green";
+        ctx.lineWidth = 2;
+
+        var decalage_droite = 1;
+
+        ctx.beginPath();
+        ctx.moveTo(0 + decalage_droite, taille * 0.429);
+        ctx.lineTo(taille * 0.143 + decalage_droite, taille * 0.286);
+        ctx.lineTo(taille * 0.286 + decalage_droite, taille * 0.571);
+        ctx.lineTo(taille * 0.571 + decalage_droite, decalage_droite);
+        ctx.lineTo(taille * 0.714 + decalage_droite, taille * 0.143);
+        ctx.lineTo(taille * 0.286 + decalage_droite, taille - decalage_droite);
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+
+
+    }
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,46 +1,24 @@
 <?php
 
-class Publication_photo{
+include_once('vue/class/publication/publication.class.php');
 
-    private $speudo;
-    private $photoProfil;
-    private $lienPersoneCreerEvenement;
-    private $dateDEcriture;
-    private $nomRestau;
-    private $lienRestau;
+class Publication_photo extends Publication{
+
     private $photo1;
     private $photo2;
     private $photo3;
 
 
     public function __construct($json){
-
-        $this->speudo = $json[0];
-        $this->photoProfil = $json[1];
-        $this->lienPersoneCreerEvenement = $json[2];
-        $this->dateDEcriture = $json[5];
-        $this->nomRestau = $json[3];
-        $this->lienRestau = $json[4];
-        $this->photo1 = $json[6];
-        $this->photo2 = $json[7];
-        $this->photo3 = $json[8];
+        parent::__construct($json[0], $json[1], $json[2], $json[3], $json[4], $json[5], $json[6]);
+        $this->photo1 = $json[7];
+        $this->photo2 = $json[8];
+        $this->photo3 = $json[9];
     }
 
     public function affiche($i){
 
-        echo '<div class="publicationPhoto">';
-
-        // photo de profil
-        echo '<img src="' . $this->photoProfil .'"></img>';
-        // article à droite de la photo
-        echo '<article>';
-            echo '<time>'. $this->dateDEcriture .'</time>';
-            echo '<h6>'; // titre qui a fait l'evenement
-                echo '<a id="lienPersonne'. $i .'" href="'.$this->lienPersoneCreerEvenement.'"><strong>'. $this->speudo. '</strong></a>'; // francais
-                echo '<span class="aCreerUnEvenement"> a publier des photos sur </span>';
-                echo '<a href="'.$this->lienRestau.'"><mark>'. $this->nomRestau. '</mark></a>';
-            echo '</h6>';
-
+        parent::affiche_debut($i, 'publication_photo', 'a publier des photos sur');
             echo ' <a href="'.$this->photo1[1].'"> <img src="'.$this->photo1[0].'"/> </a>';
             if($this->photo2){
                 echo '<section>';
@@ -50,9 +28,8 @@ class Publication_photo{
                     }
                 echo '</section>';
             }
-        echo '</article>';
+        parent::affiche_fin();
 
-        echo '</div>';
     }
 
 
