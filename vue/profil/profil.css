@@ -4,11 +4,65 @@
 }
 
 /* profil de la personne */
-#profil{
+#body>section{
     display: inline-block;
     vertical-align: top;
-    margin-right: 5%;
+    margin-right: 2%;
+    width: 44%;
 }
+
+#body>section> section{
+    width: 55%;
+    margin: auto;
+}
+
+#editer_info_profil,
+#editer_info_profil >form{
+    width: 100%;
+}
+
+#editer_info_profil >form > input{
+    display: block;
+    margin: 1.5% 0% 4.5% 30%;
+    border: none;
+    box-shadow: none;
+}
+#editer_info_profil >form > ul{
+    text-align: left;
+    width: 100%;
+}
+#editer_info_profil >form > ul > li{
+    margin-bottom: 10px;
+}
+#editer_info_profil >form > ul > li>span{
+    display: inline-block;
+    vertical-align: top;
+}
+#editer_info_profil >form > ul > li>span:first-child{
+    width: 35%;
+    min-width: 250px;
+    margin-right: 1%;
+
+}
+#editer_info_profil >form > ul > li>span:last-child{
+    width: 62%;
+    min-width: 280px;
+}
+#editer_info_profil >form > ul > li>span:last-child> input,
+#editer_info_profil >form > ul > li>span:last-child> select{
+    padding: 3px;
+    margin-right: 1.5%;
+    margin-bottom: 7px;
+}
+#editer_info_profil >form > ul > li>span:last-child> input{
+    width: 70%;
+}
+
+#editer_info_profil >form div.div_annuler_publier{
+  margin-right: 15%;
+    margin-top: 3%;
+}
+
 
 
 #revue{
@@ -16,5 +70,5 @@
     vertical-align: top;
     text-align: left;
     width: 50%;
-    margin-left: 3%;
+    margin-left: 2%;
 }

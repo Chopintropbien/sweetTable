@@ -26,11 +26,73 @@
 
 <section id="body">
 
-    <?php
-    include_once('vue/class/profil/profil.class.php');
-    $profil = new Profil();
-    $profil->affiche('profil');
-    ?>
+
+
+    <section>
+
+        <section id="profil_section">
+            <?php
+            include('model/get_profil.php');
+            $profil_JSON = get_profil($_SESSION['uid'], true);
+            var_dump( $profil_JSON);
+            include_once('vue/class/profil/profil.class.php');
+            $profil = new Profil($profil_JSON);
+            $profil->affiche('profil');
+            ?>
+            <button id="mise_a_jour">
+                Mettre à jour mon profil
+            </button>
+        </section>
+
+
+        <article id="editer_info_profil" style="display: none;">
+            <form action="post">
+                <img src="http://localhost/Meittopi/image/profil_vide.png"/>
+                <input type="file"/>
+
+                <ul>
+                    <li>
+                        <span> <label for="">Nom complet : </label> </span>
+                        <span> <input type="text" id=""/> </span>
+                    </li>
+                    <li>
+                        <span> <label for="">Ville présent actuellement : </label> </span>
+                        <span>
+                            <input type="search" id=""/>
+                            <select>
+                                <option> Pays</option>
+                            </select>
+                        </span>
+
+                    </li>
+                    <li>
+                        <span> <label for=""> Date de naissance : </label> </span>
+                        <span>
+                            <select>
+                                <option> Ville</option>
+                            </select>
+                            <select>
+                                <option> Code postale</option>
+                            </select>
+                            <select>
+                                <option> Pays</option>
+                            </select>
+                        </span>
+                    </li>
+                </ul>
+
+               <div class="div_annuler_publier">
+                   <input type="submit" value="Valider"/>
+               </div>
+
+            </form>
+        </article>
+
+    </section>
+
+
+
+
 
     <?php
     include_once('vue/class/liste/liste_ac_titre.class.php');
@@ -59,6 +121,15 @@
 
 <script>
     dessine_note();
+</script>
+
+<script>
+    (function(){
+        document.getElementById('mise_a_jour').onclick = function(){
+            document.getElementById('profil_section').style.display = 'none';
+            document.getElementById('editer_info_profil').style.display = 'block';
+        }
+    })();
 </script>
 
 </html>

@@ -27,7 +27,19 @@
 </section>
 
 <section id="body">
-    <h1 id="mettopi"> Meittopi a Lausanne</h1>
+
+
+    <h1 id="mettopi"> Meittopi a <?php
+        //$location = file_get_contents('http://freegeoip.net/json/'.$_SERVER['REMOTE_ADDR']);
+        if (isset($_SESSION['ville'])) echo $_SESSION['ville'];
+        else {
+            ?>
+                <a title="Pour que sweetTable puisse vous recommender des restaurants dans votre région" href="profil.php">
+                    Ajouter votre lieu d'habitation
+                </a>
+            <?php
+        }
+        ?></h1>
 
     <hr/>
 
@@ -43,13 +55,8 @@
         $liste = new Liste();
         //TODO: quand andrei aura fini l'api, refaire les conditions
         foreach($liste_publication_JSON as $element_JSON){
-            if(count($element_JSON) == 9){
-                $liste->ajoute(new Publication_Revue($element_JSON));
-            }
+            $liste->ajoute(new Publication_Revue($element_JSON));
 
-            else{
-                $liste->ajoute(new Publication_photo($element_JSON));
-            }
         }
         $liste->affiche('publication','publication');
         ?>
@@ -60,57 +67,43 @@
     <section id="partieDroite">
 
         <?php
+
+
+        // afficher profil
         include_once('vue/class/profil/profil.class.php');
-        $profil = new Profil();
+
+        include('model/get_profil.php');
+        $profil_JSON = get_profil($_SESSION['uid'], false);
+        var_dump( $profil_JSON);
+
+        include_once('vue/class/profil/profil.class.php');
+        $profil = new Profil($profil_JSON);
         $profil->affiche('profil');
-        ?>
-
-        <!-- si il n'y a pas assez de revue pour la recommendation-->
-
-        <article id="pas_encore_recommendation">
-
-            <h5> 3 revue sur 10 !</h5>
-
-            <section>
-                <p> Pour pouvoir avoir acces à la recommendation personnalisée de SweetTable, il faut que vous donniez
-                    <strong> 10 notes </strong> à des restaurants différents!
-                    <a>En savoir plus</a>
-                </p>
-
-                <div> <a class="important_button" href="<?php echo $GLOBALS['host'];?>/write-a-review.php"> Ecrire une revue </a> </div>
-            </section>
-
-            <div>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-                <canvas class="nb_revue_pour_recommendation" width="32" height="40" > </canvas>
-            </div>
 
 
-        </article>
+        //si il n'y a pas assez de revue pour la recommendation
 
-
-        <?php
-
-        include ('model/search/restau_recherche.php');
-        $liste_restaurant_rechercheJSON = get_liste_restaurant_recherche();
-
-        include_once('vue/class/liste/liste_ac_titre.class.php');
-        include_once('vue/class/restaurant/restaurant_basic.class.php');
-        $liste = new Liste_ac_titre('Recomendés pour vous');
-
-        foreach($liste_restaurant_rechercheJSON as $restaurant_rechercheJSON){
-            $liste->ajoute(new Restaurant_basic($restaurant_rechercheJSON));
+        $nb_revue = count($profil_JSON['review_list']);
+        if($nb_revue < 10){
+            include('vue/home/pas_assez_recommendation.php');
         }
-        $liste->affiche('restau_recommendation', 'restaurant');
+
+        // afficher recommendation
+        else{
+            include ('model/search/restau_recherche.php');
+            $liste_restaurant_rechercheJSON = get_liste_restaurant_recherche();
+
+            include_once('vue/class/liste/liste_ac_titre.class.php');
+            include_once('vue/class/restaurant/restaurant_basic.class.php');
+            $liste = new Liste_ac_titre('Recomendés pour vous');
+
+            foreach($liste_restaurant_rechercheJSON as $restaurant_rechercheJSON){
+                $liste->ajoute(new Restaurant_basic($restaurant_rechercheJSON));
+            }
+            $liste->affiche('restau_recommendation', 'restaurant');
+        }
+
+
         ?>
 
     </section>
@@ -132,7 +125,7 @@
 <script>
 
     var canvas = document.getElementsByClassName('nb_revue_pour_recommendation');
-    var nb_revue = <?php echo 6;?>;
+    var nb_revue = <?php echo $nb_revue;?>;
 
     for(var i = 0; i < nb_revue; ++i){
         dessine_cercle(canvas[i], canvas[i].height);

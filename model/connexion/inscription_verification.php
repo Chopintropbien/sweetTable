@@ -24,5 +24,5 @@ function inscription_pour_verification($email, $password){
     $req->execute(array($email));
     $donnees = $req->fetch();
 
-    return $donnees['id'];
+    return $donnees['uid'];
 }

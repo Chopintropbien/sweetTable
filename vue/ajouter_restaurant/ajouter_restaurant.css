@@ -1,8 +1,46 @@
 
+#body{
+    width: 83%;
+}
+
+#body > h2{
+    margin-bottom: 2%;
+    font-size: 200%;
+
+}
+
 #form_nouveau_restau{
 
 }
+
+/*le formulaire */
 #champ_restau{
     min-width: 430px;
-    width: 45%;
+    width: 60%;
+    margin-right: 3%;
+}
+
+#photos, #champ_restau{
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+/* ajouter photo */
+#photos{
+    text-align: center;
+    width: 27%;
+}
+#photos> input{
+    display: block;
+    border: none;
+    box-shadow: none;
+    margin: auto;
+    width: 190px;
+}
+
+/* valider */
+.div_annuler_publier {
+    margin-top: 2%;
+    margin-right: 15%;
+    margin-bottom: 10%;
 }

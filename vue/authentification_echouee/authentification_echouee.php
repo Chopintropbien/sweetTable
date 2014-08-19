@@ -30,7 +30,7 @@
 
     <article>
         <h3 id="connextionTitre"> <?php echo $connexionASweetTable ?></h3>
-        <p id="emailPAsBon">
+        <p id="emailPAsBon" class="error">
             <?php
             if(isset($email_deja_utilise)) echo $email_utilise;
             else echo $motDePasseEmailInvalise ?>

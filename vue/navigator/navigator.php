@@ -46,7 +46,7 @@ include($_SESSION['language'] . '.php');
     <div>
         <i class="fa fa-bars"></i>
         <ul>
-            <a><li> <?php echo $nav_logout; ?> </li></a>
+            <a href="home.php?session_destroy=true"><li> <?php echo $nav_logout; ?> </li></a>
         </ul>
     </div>
 

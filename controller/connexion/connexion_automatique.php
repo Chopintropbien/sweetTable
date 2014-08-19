@@ -1,5 +1,7 @@
 <?php
 
+//include_once('controller/home/home.php');
+
 
 include_once('model/connexion/connexion_verification.php');
 
@@ -17,7 +19,7 @@ if(isset($_COOKIE['sweettable_email']) && isset($_COOKIE['sweettable_password'])
 }
 // pour la connexion
 elseif(isset($_POST['motdepasseInscrit']) && isset($_POST['emailInscrit'])){
-    if(connexion_verification($_POST['emailInscrit'], $_POST['motdepasseInscrit'], isset ($_POST['sectionActive']))){
+    if(connexion_verification($_POST['motdepasseInscrit'], $_POST['emailInscrit'], isset ($_POST['sectionActive']))){
         include_once('controller/home/home.php');
     }
     else{
@@ -46,22 +48,20 @@ elseif( isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['email']
 
             $uid = inscription_pour_verification($_POST['email'], $_POST['motdepasse']);
             if($uid){
-                inscription($_POST['prenom'], $_POST['nom'], $_POST['jourDeNaissance'], $_POST['moisDeNaissance'],
-                    $_POST['anneeDeNaissance'], $_POST['sexe'], $uid);
+                $error_connexion_db = inscription($_POST['prenom'], $_POST['nom'], $_POST['jourDeNaissance'], $_POST['moisDeNaissance'],
+                                                  $_POST['anneeDeNaissance'], $_POST['sexe'], $uid);
 
                 include_once('controller/home/home.php');
-
             }
-
-
+            else{
+                $error_connexion_db_verification = true;
+                include('vue/connexion/connexion.php');
+            }
         }
         else{
             $email_deja_utilise = $_POST['email'];
             include_once('controller/authentification_echouee/authentification_echouee.php');
         }
-
-
-
     }
 }
 

@@ -25,7 +25,8 @@ function hash_password_verification($password, $salage, $random_ints_array){
     $hashed_password = ajoute_fin($hashed_password, $password, $i_p);
     $hashed_password =  ajoute_fin($hashed_password, $salage, $i_s);
 
-    return sha1($hashed_password); //TODO: change in sha3
+    return hash('sha512', $hashed_password, false);
+
 }
 
 function ajoute_fin($hashed_password, $string, $i){

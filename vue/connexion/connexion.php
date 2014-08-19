@@ -28,6 +28,17 @@
 
 <section id="body">
 
+    <?php
+    include('vue/connexion/francais/connexion.php');
+        if($error_connexion_db_verification){
+            echo '<p class="error">' . $error_connexion_db .'</p>';
+        }
+
+    ?>
+    <p>
+
+    </p>
+
     <section id="gauche">
 
         <img src="http://localhost/Meittopi/image/profil_vide.png" id="0slide"/>

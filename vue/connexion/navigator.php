@@ -6,7 +6,7 @@
         <img src="<?php echo $GLOBALS['host'];?>/vue/image/logo_sweettable.png"/>
     </a>
 
-    <form action="" method="post">
+    <form action="home.php" method="post">
 
         <table>
             <tr>

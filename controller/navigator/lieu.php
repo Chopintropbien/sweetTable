@@ -2,22 +2,36 @@
 
 $lettreTape = $_POST['lieu'];
 
-$data = unserialize(file_get_contents('../../model/navigator/towns.txt')); // Récupération de la liste complète des villes
-$dataLen = count($data);
-sort($data);
-
 $results = array();
+$file = fopen("../../model/ville/triee_par_nom/france.csv","r");
+while(! feof($file)){
+    $ligne = fgetcsv($file);
+    if (stripos($ligne[0], $lettreTape) === 0 || stripos($ligne[1], $lettreTape) === 0) { // Si la valeur commence par les mêmes caractères que la recherche
+        if ($ligne[1] == 'Paris')$results[$ligne[3]] = $ligne[1] . '  (75000)';
+        else $results[$ligne[3]] = $ligne[1] . '  ('. $ligne[2] . ')';
+    }
+}
+fclose($file);
+
+//trié par population
+krsort($results);
+
+
+$results_finaux = array();
 
 // La boucle ci-dessous parcourt tout le tableau $data, jusqu'à un maximum de 10 résultats
 
-
-for ($i = 0 ; $i < $dataLen && count($results) < 10 ; $i++) {
-    if (stripos($data[$i], $lettreTape) === 0) { // Si la valeur commence par les mêmes caractères que la recherche
-        array_push($results, $data[$i]);
-
+$i = 0;
+$resultsLen = count($results);
+foreach($results as $value){
+    if($i >= 10){
+        continue;
     }
+    $results_finaux[] = $value;
+    ++$i;
 }
 
-echo implode('|', $results); // Et on affiche les résultats séparés par une barre verticale |
+
+echo implode('|', $results_finaux); // Et on affiche les résultats séparés par une barre verticale |
 
 ?>

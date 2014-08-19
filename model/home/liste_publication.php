@@ -38,20 +38,9 @@ function get_liste_publication(){
 						"Un super titre de la mort qui tue!!!",
 						"2.5",
 						"Oui, j\'ai vraime aimer. les pizza sont pas cher du tout!!!!! Et tres bonnes Ma oui mA oui!!!!"
-						],
+						]
 		 
-			"photo" : [
-			            "Andreï Kucharavy",
-						"http://localhost/Meittopi/image/profil_vide.png",
-						"uid_andrei",
-						"14/02/2014",
-						"Chez J\'aime ",
-						"uid_restaurant",
-						"Un super titre de la mort qui tue!!!",
-					     ["http://localhost/Meittopi/image/profil_vide.png", "dd"],
-					     ["http://localhost/Meittopi/image/profil_vide.png", "dd"],
-					     ["http://localhost/Meittopi/image/profil_vide.png", "dd"]
-			        ]
+
 
 }';
 

@@ -63,6 +63,13 @@ select{
     font-size: 170%;
     color: orangered;
 }
+#body  h1 a{
+    font-size: 70%;
+    color: #305EC6;
+}
+#body  h1 a:hover{
+    text-decoration: underline;
+}
 #partiePrincipale >hr{
     width: 96%;
     margin-left: 2%;
@@ -115,6 +122,16 @@ select{
     position: relative;
     left: 1px;
     top: 1px;
+}
+
+
+.error{
+    border: 1px red solid;
+    border-radius: 3px;
+    margin: 20px;
+    background-color: #FFA594;
+    padding: 5px;
+    width: auto;
 }
 
 /* pour les div ou sont stoker les button publier, annuler, sauvegarder, ect */

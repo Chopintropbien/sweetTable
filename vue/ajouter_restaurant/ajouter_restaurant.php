@@ -23,11 +23,58 @@
 <section id="body">
 
 
+    <?php
 
-    <form action="post" id="form_nouveau_restau">
+    if(isset($_POST['nom_restau']) && isset($_POST['adresse_1']) ){
+
+        // si c'est l'admin ajouter le restaurant a la base de donne
+        if($_SESSION['uid'] == 'user21'){
+            if(isset($_POST['nom_restau']) && isset($_POST['horraire_admin']) && isset($_POST['adresse_1']) &&
+               isset($_POST['code_postal']) && isset($_POST['ville']) && isset($_POST['pays'])){
+
+                $uid = $_POST['nom_restau'];
+                $uid .= $_POST['adresse_1'];
+                if(isset($_POST['adresse_2'])) $uid .= $_POST['adresse_2'];
+                $uid .= $_POST['code_postal'];
+                $uid .= $_POST['ville'];
+                $uid .= $_POST['pays'];
+
+                echo $uid;
+
+                include('model/ajoute_restaurant_db.php');
+                //var_dump(ajoute_restaurant_db($uid, $_POST['nom_restau'], $_POST['date_ouverture'],  $_POST['horraire_admin']));
+            }
+
+        }
+        //envoyer un mail à l'admin
+        else{
+
+        }
+    }
+
+
+
+    ?>
+
+
+
+    <h2>Ajouter un restaurant</h2>
+
+    <form action="ajouter-restaurant.php" method="post" id="form_nouveau_restau">
 
        <!-- form pour le restau -->
        <?php include('vue/ajouter_restaurant/champ_restau.php');?>
+
+
+        <section id="photos">
+            <img src="http://localhost/Meittopi/image/profil_vide.png"/>
+            <input type="file"/>
+        </section>
+
+
+        <div class="div_annuler_publier">
+            <input type="submit" value="Valider"/>
+        </div>
 
     </form>
 

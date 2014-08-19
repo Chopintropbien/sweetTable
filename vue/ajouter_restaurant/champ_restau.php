@@ -5,18 +5,20 @@
 
     <div>
         <span>  <label><span>* </span>Nom du restaurant: </label> </span>
-        <span> <input type="text"/> </span>
+        <span> <input type="text" name="nom_restau"/> </span>
     </div>
 
     <div>
         <span> <label><span>* </span> Adresse: </label> </span>
         <span>
-            <input type="text"/>
-            <input type="text"/>
-            <input type="text" placeholder="Code postal" id="code_postal"/>
-            <input type="text" placeholder="Ville" id="ville"/>
-            <select id="pays">
-                <option>France</option>
+            <input type="text" name="adresse_1"/>
+            <input type="text" name="adresse_2"/>
+            <input type="text" placeholder="Code postal" id="code_postal" name="code_postal"/>
+            <input type="text" placeholder="Ville" id="ville" name="ville"/>
+            <select id="pays" name="pays">
+                <option value="US">Etats-Unis</option>
+                <option value="FR">France</option>
+                <option value="CH">Suisse</option>
             </select>
         </span>
     </div>
@@ -24,18 +26,35 @@
     <div>
         <span> <label> Horraire:</label>  </span>
         <span id="horraire">
-            <?php include('vue/ajouter_restaurant/horraire.php');?>
+
+            <?php
+            $_SESSION['uid'] = 'user21';
+            if($_SESSION['uid'] == 'user21') echo '<input type="text" name="horraire_admin"/>';
+            else include('vue/ajouter_restaurant/horraire.php')
+            ?>
         </span>
     </div>
 
+    <?php
+    if($_SESSION['uid'] == 'user21'){
+        ?>
+        <div>
+            <span> <label> Date d'ouverture :</label> </span>
+            <span> <input type="text" name="date_ouverture"/>  </span>
+        </div>
+
+        <?php
+    }
+    ?>
+
     <div>
         <span> <label> Numéro de téléphone:</label> </span>
-        <span> <input type="text"/>  </span>
+        <span> <input type="text" name="tel"/>  </span>
     </div>
 
     <div>
         <span>  <label> Site internet:</label> </span>
-        <span> <input type="text"/> </span>
+        <span> <input type="text" name="site_internet"/> </span>
     </div>
 
     <div>
