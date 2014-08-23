@@ -22,53 +22,46 @@
 
 <section id="body">
 
-
     <?php
 
-    if(isset($_POST['nom_restau']) && isset($_POST['adresse_1']) ){
+    include('vue/ajouter_restaurant/francais.php');
 
-        // si c'est l'admin ajouter le restaurant a la base de donne
-        if($_SESSION['uid'] == 'user21'){
-            if(isset($_POST['nom_restau']) && isset($_POST['horraire_admin']) && isset($_POST['adresse_1']) &&
-               isset($_POST['code_postal']) && isset($_POST['ville']) && isset($_POST['pays'])){
-
-                $uid = $_POST['nom_restau'];
-                $uid .= $_POST['adresse_1'];
-                if(isset($_POST['adresse_2'])) $uid .= $_POST['adresse_2'];
-                $uid .= $_POST['code_postal'];
-                $uid .= $_POST['ville'];
-                $uid .= $_POST['pays'];
-
-                echo $uid;
-
-                include('model/ajoute_restaurant_db.php');
-                //var_dump(ajoute_restaurant_db($uid, $_POST['nom_restau'], $_POST['date_ouverture'],  $_POST['horraire_admin']));
-            }
-
-        }
-        //envoyer un mail à l'admin
-        else{
-
-        }
+    // message de confirmation pour l'envoie de mail
+    if(isset($envoie_mail_succed)){
+        if($envoie_mail_succed) echo '<p class="confirmation">'.$message_confirmation_mail.'</p>';
+        else echo '<p class="error">'.$message_error_mail.'</p>';
     }
-
 
 
     ?>
 
-
-
     <h2>Ajouter un restaurant</h2>
 
-    <form action="ajouter-restaurant.php" method="post" id="form_nouveau_restau">
+    <form action="ajouter-restaurant.php" method="post" enctype="multipart/form-data" id="form_nouveau_restau">
 
        <!-- form pour le restau -->
        <?php include('vue/ajouter_restaurant/champ_restau.php');?>
 
 
         <section id="photos">
-            <img src="http://localhost/Meittopi/image/profil_vide.png"/>
-            <input type="file"/>
+
+            <div>
+                <img src="http://localhost/Meittopi/image/profil_vide.png" id="1img_tag"/>
+                <input type="file" name="1photo" id="1photo_input"/>
+                <p id="ajoute_2eme_photo">Ajouter une autre photo</p>
+            </div>
+
+            <div style="display: none;" id="2_div_photo">
+                <img src="http://localhost/Meittopi/image/profil_vide.png"  id="2img_tag"/>
+                <input type="file" name="2photo" id="2photo_input"/>
+                <p id="ajoute_3eme_photo">Ajouter une autre photo</p>
+            </div>
+
+            <div style="display: none;" id="3_div_photo" >
+                <img src="http://localhost/Meittopi/image/profil_vide.png" id="3img_tag"/>
+                <input type="file" name="3photo" id="3photo_input"/>
+            </div>
+
         </section>
 
 
@@ -86,5 +79,14 @@
 
 <script src="<?php echo $GLOBALS['host'];?>/controller/ajouter_restaurant/affiche_tableau_horraire.js"></script>
 <script src="<?php echo $GLOBALS['host'];?>/controller/ajouter_restaurant/action_tableau_horraire.js"></script>
+
+<!-- gestion des phtot -->
+<script src="<?php echo $GLOBALS['host'];?>/vue/ajouter_restaurant/gestion_photo.js"></script>
+<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/affiche_img_select.js"></script>
+<script>
+    affiche_img_select('1photo_input', '1img_tag');
+    affiche_img_select('2photo_input', '2img_tag');
+    affiche_img_select('3photo_input', '3img_tag');
+</script>
 
 </html>

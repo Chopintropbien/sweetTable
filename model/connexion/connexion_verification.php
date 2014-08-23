@@ -5,7 +5,10 @@ include_once('model/connexion/hash_password.php');
 include_once('model/connexion/hash_password_verification.php');
 
 function connexion_verification($password, $email, $set_cookie, $password_encripte = false){
-//TODO: ne pas bousiller la base de bonne
+
+    // injection sql
+    $email = mysql_real_escape_string($email);
+    $password = mysql_real_escape_string($password);
 
     $bdd = connexion_database_verification();
 

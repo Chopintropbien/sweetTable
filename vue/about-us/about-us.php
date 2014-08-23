@@ -23,6 +23,14 @@
 
     <section id="partieGauche">
 
+
+        <h2>  </h2>
+
+
+
+
+
+
         <h2>L'histoire de SweetTable</h2>
         <article>
 
@@ -33,25 +41,26 @@
                 L'histoire de SweetTable commence avec un voyage à Rome à la découverte de la chappelle sixtine, du colisée,
                 de la fontaine de Trevis,... de tous les autres incroyables monuments de cette ville si magnifique. <br/>
                 Mais un tel
-                voyage ne serait pas complet si on ne n'y venais pas pour découvrir dans le même temps la culture italienne,
-                comment les personnes vivent, pensent et... commement elle mangent.
+                voyage ne serait pas complet si on ne n'y venais pas aussi pour découvrir la culture italienne,
+                la vie à l'italienne et... <strong>la nourriture !</strong>
                 <br/>
                 <br/>
-                Ah... la nourriture italienne! Ces simples mots commence déjà à me titiller les papilles!
+                Ah... la nourriture italienne! Ces simples mots commencent déjà à me titiller les papilles!
                 Mais ou savoir aller manger? Demander un italien dans la rue? Quand on se retrouve au plein milieu du vatican avec
-                tout ces touristes pas facile.<br/>
+                tout ces touristes, pas si facile.<br/>
                 <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/restau_typique.jpg"/>
                 Alors on décida d'utiliser une application spécialiser dans ce genre de conseil: trouver un bon restaurant!
 
                 <br/> <br/>
 
-                Donc voilà partie pour un des meilleurs restaurant de Rome (celon cette apllication). Arrivée sur place, quel
-                deception! C'était un restaurant italien qui visait une cliantelle anglophone. Je n'ai rien contre les anglais les
-                américans, mais leur goûts ne correspond pas tout à fait au notre.
+                Donc voilà partie pour un des meilleurs restaurantS de Rome (celon cette apllication). Arrivée sur place, quel
+                deception! C'était un restaurant italien qui visait une clientelle majoritairement anglophone. Je n'ai rien contre les anglais
+                ou les
+                américans, mais leur goût ne correspond pas tout à fait au notre.
 
                 <br/> Le deuxième teste avec cette application n'a gère mieux marcher. A la troisième tentative, on abandonna l'idée
-                de se faire aider par notre téléphone protable et on chercha un restaurant à l'instin: on tomba sur un restaurant très
-                peu touristique: mamamia que c'était bon!!
+                de se faire aider par notre téléphone portable et on chercha un restaurant à l'instin: on tomba sur un restaurant très
+                peu touristique avec un service très rustique mais mamamia que c'était bon!!
                 <br/>
 
             </p>
@@ -59,8 +68,12 @@
             <h5> Mais pourquoi cette application n'a-t-elle pas marché? </h5>
 
             <p>
-                Ce genre d'application a un système de notation global.Ce qui fait que le meilleur restaurant sera défini en fonction
-                du goût moyen des personne qui l'utilise. <br/>
+                Un peu décu de cette aplication (qui est tout de même assez célèbre), on se demenda pourquoi elle n'avait pas bien
+                fonctionné.
+
+                Ce genre d'application a un système de notation global. Ce qui fait que le meilleur restaurant sera défini en fonction
+                du goût moyen des personne qui l'utilise. A Rome, il devait donc y avoir  <br/>
+
                 Mais la chaque personnes à des attentes différente face à un restaurant! Imaginez par exemple que vous aimer que vous
                 aimer que le service soit efficasse, par contre que vous en avez pas grand chose à faire du choix de bière que propose
                 le restaurant. Aimeriez-vous que l'on vous sugère un restaurant parce qu'il est très bien noté par les personnes qui

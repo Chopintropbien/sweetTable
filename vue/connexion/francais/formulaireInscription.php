@@ -11,6 +11,8 @@ $femme = 'Femme';
 $homme = 'Homme';
 $inscription = 'Inscription';
 
+$ville_d_habitation = 'Votre ville de résidence :';
+
 $annee = 'annee';
 
 $jour = 'jour';

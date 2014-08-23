@@ -36,31 +36,32 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
 
     <section id="partieGauche">
 
+
         <div>
 
-            <h1> <?php echo $restaurantJSON->nom;  ?></h1>
+            <h1> <?php echo $restaurantJSON->name;  ?></h1>
             <div>
                 <div> <!-- note -->
                     <?php
                     include_once('vue/fonction_annexe/etoile/note_etoile.php');
-                    note_etoile($restaurantJSON->note, 45);
+                    note_etoile(/*$restaurantJSON->note*/ 4.5, 45);
                     ?>
                 </div>
-                <p> <?php echo $restaurantJSON->nbAvis ?> avis </p> <!-- nb d'avis sur ce restaurant -->
+                <p> <?php echo count($restaurantJSON->review_list) ?> avis </p> <!-- nb d'avis sur ce restaurant -->
             </div>
 
             <section> <!-- prix et cathegorie -->
                 <!-- prix -->
                 <?php
                 $prix = '';
-                for($j=0; $j<$restaurantJSON->prix; ++$j){ $prix = $prix . '$';}
+                for($j=0; $j<$restaurantJSON->Price_range; ++$j){ $prix = $prix . '$';}
                 echo '<div>'.$prix.'</div>';
 
                 // categorie
-                $nbCathegorie = count($restaurantJSON->listeCathegorie);
+                $nbCathegorie = count($restaurantJSON->cuisine);
                 $cathegorie = '';
                 for($j=0; $j<$nbCathegorie; ++$j){
-                    $cathegorie = $cathegorie . $restaurantJSON->listeCathegorie[$j];
+                    $cathegorie = $cathegorie . $restaurantJSON->cuisine[$j];
                     if(!($j == $nbCathegorie-1)){ $cathegorie = $cathegorie . ', '; }
                 }
                 echo '<p>'.$cathegorie.'</p>';
@@ -76,9 +77,9 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
         <!-- liste des 3 photos -->
 
         <section>
-            <img src=" <?php echo $restaurantJSON->listePhotos[0] ?> "/>
-            <img src=" <?php echo $restaurantJSON->listePhotos[1] ?> "/>
-            <img src=" <?php echo $restaurantJSON->listePhotos[2] ?> "/>
+            <img src=" <?php echo $restaurantJSON->picture[0] ?> "/>
+            <img src=" <?php echo $restaurantJSON->picture[1] ?> "/>
+            <img src=" <?php echo $restaurantJSON->picture[2] ?> "/>
             <!-- <p><a href="<?php echo $restaurantJSON->lienPhoto?>"> Voir toutes les photos </a></p> -->
             <p><a href="http://localhost/meittopi/restaurant/photo.php"> Voir toutes les photos </a></p>
         </section>

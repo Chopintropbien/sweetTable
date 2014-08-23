@@ -19,18 +19,18 @@
     <?php include("vue/navigator/navigator.php"); ?>
 </section>
 
-<section id="body">
+<form id="body" method="post" action="">
 
-    <h1>Chez Jaime</h1>
+
+    <h1><?php echo $restaurantJSON->name?></h1>
 
     <!-- adresse -->
-
     <aside>
         <address>
             Chemin de Malley, 12 <br/>
             10007 Lausanne
         </address>
-        <p> +41 79 198 40 28</p>
+        <p> <?php echo $restaurantJSON->Phone_number?></p>
     </aside>
 
 
@@ -38,8 +38,8 @@
 
     <article>
         <h6>Note: </h6>
-        <div>
-            <canvas width="22.5" height="45" class="demiEtoileGauche" id="0demiEtoileGauche"></canvas>
+        <div id="div_etoiles">
+            <canvas width="22.5" height="45" class="demiEtoileGauche" id="0demiEtoileGauche" ></canvas>
             <canvas width="22.5" height="45" class="demiEtoileDroite" id="0demiEtoileDroite"></canvas>
 
             <canvas width="22.5" height="45" class="demiEtoileGauche" id="1demiEtoileGauche"></canvas>
@@ -53,36 +53,206 @@
 
             <canvas width="22.5" height="45" class="demiEtoileGauche" id="4demiEtoileGauche"></canvas>
             <canvas width="22.5" height="45" class="demiEtoileDroite" id="4demiEtoileDroite"></canvas>
-
-
         </div>
+        <input type="hidden" value="0" id="choix_note" name="note"/>
+        <input type="hidden" value="<?php echo $_GET['uid']?>" name="uid_restau"/>
         <p id="commentaire"></p>
     </article>
 
     <!-- zone de saisie -->
 
     <section>
+        <h6>Mon titre: </h6>
+        <input type="text" name="titre"/>
+
         <h6>Ma revue: </h6>
-        <textarea> </textarea>
+        <textarea name="revue"> </textarea>
     </section>
+
+
+    <!-- section photo -->
+    <section id="photos">
+
+        <div>
+            <img src="http://localhost/Meittopi/image/profil_vide.png" id="1img_tag"/>
+            <input type="file" name="1photo" id="1photo_input"/>
+        </div>
+
+        <div>
+            <img src="http://localhost/Meittopi/image/profil_vide.png"  id="2img_tag"/>
+            <input type="file" name="2photo" id="2photo_input"/>
+        </div>
+
+        <div>
+            <img src="http://localhost/Meittopi/image/profil_vide.png" id="3img_tag"/>
+            <input type="file" name="3photo" id="3photo_input"/>
+        </div>
+
+    </section>
+
+
 
     <!-- question -->
 
     <h4>Question pour aider les autres utilisateur</h4>
     <ul>
-        <li>
-            <p> Ce lieu est-il aménagé pour les endicapé</p>
-            <input type="radio" name="andicape" id="andicapeOui"/> <label> Oui</label>
-            <input type="radio" name="andicape" id="andicapeNon"/> <label> Non</label>
-            <input type="radio" name="andicape" id="andicapeSaisPas"/> <label> Je ne sais pas</label>
+
+
+        <?php
+        // les questions a afficher
+        $i = rand(0, 19);
+
+        $j = rand(0, 19);
+        while($j == $i) $j = rand(0, 19);
+
+        $k = rand(0, 19);
+        while($k == $i || $k == $j) $k = rand(0, 19);
+
+        $l = rand(0, 19);
+        while($l == $i || $l == $j || $l == $k) $l = rand(0, 19);
+
+        ?>
+
+        <li <?php $nb = 0; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?> >
+            <p> Ce restaurant propose-t-il des plats à emporter ? </p>
+            <input type="radio" name="aEmporter" value="oui"/> <label> Oui</label>
+            <input type="radio" name="aEmporter" value="non"<label> Non</label>
+            <input type="radio" name="aEmporter" value="bof"<label> Je ne sais pas</label>
         </li>
 
-        <li>
-            <p> Ce lieu est-il aménagé pour les endicapé</p>
-            <input type="radio" name="andicape" id="andicapeOui"/> <label> Oui</label>
-            <input type="radio" name="andicape" id="andicapeNon"/> <label> Non</label>
-            <input type="radio" name="andicape" id="andicapeSaisPas"/> <label> Je ne sais pas</label>
+        <li <?php $nb = 1; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant a-t-il un buffet ? </p>
+            <input type="radio" name="buffet" value="oui"/> <label> Oui</label>
+            <input type="radio" name="buffet" value="non"<label> Non</label>
+            <input type="radio" name="buffet" value="bof"<label> Je ne sais pas</label>
         </li>
+
+        <li <?php $nb = 2; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant a-t-il un buffet à volonté ? </p>
+            <input type="radio" name="buffetVolonte" value="oui"/> <label> Oui</label>
+            <input type="radio" name="buffetVolonte" value="non"<label> Non</label>
+            <input type="radio" name="buffetVolonte" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 3; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant propose-t-il un large choix de bière et de vin?</p>
+            <input type="radio" name="BiereVin" value="oui"/> <label> Oui</label>
+            <input type="radio" name="BiereVin" value="non"<label> Non</label>
+            <input type="radio" name="BiereVin" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 4; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-t-il sous form de café concert ? </p>
+            <input type="radio" name="CafeConcert" value="oui"/> <label> Oui</label>
+            <input type="radio" name="CafeConcert" value="non"<label> Non</label>
+            <input type="radio" name="CafeConcert" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 5; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant accepte-t-il les cartes de crédit ? </p>
+            <input type="radio" name="carteCredit" value="oui"/> <label> Oui</label>
+            <input type="radio" name="carteCredit" value="non"<label> Non</label>
+            <input type="radio" name="carteCredit" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 6; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-t-il adapté aux enfants en bas age ? </p>
+            <input type="radio" name="enfantBasAge" value="oui"/> <label> Oui</label>
+            <input type="radio" name="enfantBasAge" value="non"<label> Non</label>
+            <input type="radio" name="enfantBasAge" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 7; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-il adapté aux grande occasion ? </p>
+            <input type="radio" name="grandeOccasion" value="oui"/> <label> Oui</label>
+            <input type="radio" name="grandeOccasion" value="non"<label> Non</label>
+            <input type="radio" name="grandeOccasion" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 8; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-il ouvert jusqu'au bout de la nuit ? </p>
+            <input type="radio" name="boutDeLaNuit" value="oui"/> <label> Oui</label>
+            <input type="radio" name="boutDeLaNuit" value="non"<label> Non</label>
+            <input type="radio" name="boutDeLaNuit" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 9; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant fait-t-il des livraisons à domicile ? </p>
+            <input type="radio" name="livraison" value="oui"/> <label> Oui</label>
+            <input type="radio" name="livraison" value="non"<label> Non</label>
+            <input type="radio" name="livraison" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 10; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-il aménagé pour les personnes à mobilité réduite ?</p>
+            <input type="radio" name="mobiliteReduite" value="oui"/> <label> Oui</label>
+            <input type="radio" name="mobiliteReduite" value="non"<label> Non</label>
+            <input type="radio" name="mobiliteReduite" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 11; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant a-t-il un beau panorama ?</p>
+            <input type="radio" name="panorama" value="oui"/> <label> Oui</label>
+            <input type="radio" name="panorama" value="non"<label> Non</label>
+            <input type="radio" name="panorama" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 12; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant propose-t-il des petits-déjeuners ou des brunchs ?</p>
+            <input type="radio" name="mobiliteReduite" value="oui"/> <label> Oui</label>
+            <input type="radio" name="mobiliteReduite" value="non"<label> Non</label>
+            <input type="radio" name="mobiliteReduite" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 13; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-il adapté aux groupes ? </p>
+            <input type="radio" name="groupes" value="oui"/> <label> Oui</label>
+            <input type="radio" name="groupes" value="non"<label> Non</label>
+            <input type="radio" name="groupes" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 14; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-il adapté aux repas d'affaire ? </p>
+            <input type="radio" name="repasAffaires" value="oui"/> <label> Oui</label>
+            <input type="radio" name="repasAffaires" value="non"<label> Non</label>
+            <input type="radio" name="repasAffaires" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 15; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant est-il romantique ? </p>
+            <input type="radio" name="romantique" value="oui"/> <label> Oui</label>
+            <input type="radio" name="romantique" value="non"<label> Non</label>
+            <input type="radio" name="romantique" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 16; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant accepte-t-il les réservation ? </p>
+            <input type="radio" name="reservation" value="oui"/> <label> Oui</label>
+            <input type="radio" name="reservation" value="non"<label> Non</label>
+            <input type="radio" name="reservation" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 17; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant possède-t-il une télévision ? </p>
+            <input type="radio" name="tele" value="oui"/> <label> Oui</label>
+            <input type="radio" name="tele" value="non"<label> Non</label>
+            <input type="radio" name="tele" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 18; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant possède-t-il une terrasse extérieur ? </p>
+            <input type="radio" name="terrasse" value="oui"/> <label> Oui</label>
+            <input type="radio" name="terrasse" value="non"<label> Non</label>
+            <input type="radio" name="terrasse" value="bof"<label> Je ne sais pas</label>
+        </li>
+
+        <li <?php $nb = 19; if($nb != $i && $nb != $j && $nb != $k && $nb != $l) echo 'style="display: none;"';?>>
+            <p> Ce restaurant propose-t-il une connexion wifi ? </p>
+            <input type="radio" name="terrasse" value="oui"/> <label> Oui</label>
+            <input type="radio" name="terrasse" value="non"<label> Non</label>
+            <input type="radio" name="terrasse" value="bof"<label> Je ne sais pas</label>
+        </li>
+
 
     </ul>
 
@@ -90,14 +260,14 @@
 
     <div class="div_annuler_publier">
         <a href="<?php echo $GLOBALS['host'];?>/home.php">Annuler</a>
-        <input type="button" value="Publier"/>
+        <input type="submit" value="Publier"/>
     </div>
 
 
 
 
 
-</section>
+</form>
 
 
 
@@ -109,108 +279,15 @@
 <script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/etoile/dessineDemiEtoileDroite.js"> </script>
 <script src="<?php echo $GLOBALS['host'];?>/controller/js_function/add_event.js"> </script>
 
+<!-- Choisir la note -->
+<script src="<?php echo $GLOBALS['host'];?>/vue/editer-une-revue/choisir_note.js"> </script>
 
+<!-- gestion des phtot -->
+<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/affiche_img_select.js"></script>
 <script>
-
-    /* couleur des etoiles
-     * entre 0.5 et 2 => gold
-     * entre 2.5 et 4 => orange
-     * entre 4.5 et 5 => red
-     */
-
-    var etoiles = document.getElementsByTagName('canvas');
-
-    for(var i = 0; etoiles.length > i; ++i){
-
-        //colorie les contours des etoile
-        if(etoiles[i].className == 'demiEtoileGauche') dessineDemiEtoileGauche(etoiles[i], 45, 'transparent');
-        else if (etoiles[i].className == 'demiEtoileDroite') dessineDemiEtoileDroite(etoiles[i], 45, 'transparent');
-
-        // quand on entre dans la canvas
-        addEvent(etoiles[i], 'mouseover', function(){
-
-            // colorer les etoile
-            var i = this.id[0];
-            var couleur = 'gold';
-            if( i == 2 || i == 3 ) couleur = 'orange';
-            if( i == 4) couleur = 'red';
-
-            for(var j = 0;  i>j; ++j){
-
-                var demiEtoileGauche = document.getElementById(j + 'demiEtoileGauche');
-                dessineDemiEtoileGauche(demiEtoileGauche, 45, couleur);
-
-                var demiEtoileDroite = document.getElementById(j + 'demiEtoileDroite');
-                dessineDemiEtoileDroite(demiEtoileDroite, 45, couleur);
-            }
-
-            var demiEtoileGauche = document.getElementById(i + 'demiEtoileGauche');
-            dessineDemiEtoileGauche(demiEtoileGauche, 45, couleur);
-
-            if(this.className == 'demiEtoileDroite'){
-                var demiEtoileDroite = document.getElementById(i + 'demiEtoileDroite');
-                dessineDemiEtoileDroite(demiEtoileDroite, 45, couleur);
-            }
-
-            // aficher le commentaire
-            var commentaire = document.getElementById('commentaire');
-            var texte = '';
-            switch (i) {
-                case '0':
-                    if(this.className == 'demiEtoileGauche') texte = 'Plus jamais !';
-                    else if (this.className == 'demiEtoileDroite') texte = 'Pas bon !';
-                    break;
-
-                case '1':
-                    if(this.className == 'demiEtoileGauche') texte = 'Vraiment pas terrible';
-                    else if (this.className == 'demiEtoileDroite') texte = 'Peu faire mieux';
-                    break;
-
-                case '2':
-                    if(this.className == 'demiEtoileGauche') texte = 'Ni plus ni moins ...';
-                    else if (this.className == 'demiEtoileDroite') texte = 'Plutôt pas mal !';
-                    break;
-
-                case '3':
-                    if(this.className == 'demiEtoileGauche') texte = 'Pas mal !';
-                    else if (this.className == 'demiEtoileDroite') texte = ' Très Bon !';
-                    break;
-
-                case '4':
-                    if(this.className == 'demiEtoileGauche') texte = 'Exellent !';
-                    else if (this.className == 'demiEtoileDroite') texte = 'Vraiment incroyable !';
-                    break;
-            }
-            commentaire.innerHTML = texte;
-
-
-        });
-
-
-        // quand on sort du canvas
-        addEvent(etoiles[i], 'mouseout', function(){
-
-            // decolorer toutes les etoile
-            var etoilesDroites = document.getElementsByClassName('demiEtoileDroite');
-            for(var i = 0; etoilesDroites.length > i; ++i){
-                dessineDemiEtoileDroite(etoilesDroites[i], 45, 'transparent');
-            }
-
-            var etoilesGauches = document.getElementsByClassName('demiEtoileGauche');
-            for(var i = 0; etoilesGauches.length > i; ++i){
-                dessineDemiEtoileGauche(etoilesGauches[i], 45, 'transparent');
-            }
-
-            // enlever le commentaire
-            document.getElementById('commentaire').innerHTML = '';
-
-        });
-
-
-    }
-
-
-
+    affiche_img_select('1photo_input', '1img_tag');
+    affiche_img_select('2photo_input', '2img_tag');
+    affiche_img_select('3photo_input', '3img_tag');
 </script>
 
 </html>

@@ -1,14 +1,13 @@
 <?php
 
-function inscription($prenom, $nom, $jour_naissance, $mois_naissance, $annee_naissance, $sexe, $uid){
+function inscription($prenom, $nom, $uid){
 
     $uid = 'user' . $uid;
-    $name = $prenom . $nom;
-    $birthday = $annee_naissance . '-' .$mois_naissance . '-' .$jour_naissance;
+    $name = $prenom . ' '. $nom;
 
     $url = 'http://localhost:5000/user';
 
-    $data = array('uid' => $uid, 'name' => $name, 'birthday' => $birthday);
+    $data = array('uid' => $uid, 'name' => $name);
     $data = json_encode($data);
     $options = array(
         'http' => array(
@@ -23,4 +22,6 @@ function inscription($prenom, $nom, $jour_naissance, $mois_naissance, $annee_nai
     $context  = stream_context_create($options);
     $succed = file_get_contents($url, false, $context);
     if($succed) $_SESSION['uid'] = $uid;
+
+    return $succed;
 }

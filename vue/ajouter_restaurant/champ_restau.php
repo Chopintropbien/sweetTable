@@ -28,24 +28,19 @@
         <span id="horraire">
 
             <?php
-            $_SESSION['uid'] = 'user21';
             if($_SESSION['uid'] == 'user21') echo '<input type="text" name="horraire_admin"/>';
-            else include('vue/ajouter_restaurant/horraire.php')
+            else include('vue/ajouter_restaurant/horraire.php');
             ?>
         </span>
     </div>
 
-    <?php
-    if($_SESSION['uid'] == 'user21'){
-        ?>
-        <div>
-            <span> <label> Date d'ouverture :</label> </span>
-            <span> <input type="text" name="date_ouverture"/>  </span>
-        </div>
 
-        <?php
-    }
-    ?>
+    <div>
+        <span> <label> Date d'ouverture :</label> </span>
+        <span> <input type="text" name="date_ouverture"/>  </span>
+    </div>
+
+
 
     <div>
         <span> <label> Numéro de téléphone:</label> </span>
@@ -79,7 +74,7 @@
 
     <div>
         <span> <label> Remarque pour l'équipe:</label> </span>
-        <span> <textarea></textarea> </span>
+        <span> <textarea name="remarque"></textarea> </span>
     </div>
 
 

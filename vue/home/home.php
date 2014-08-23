@@ -73,7 +73,7 @@
         include_once('vue/class/profil/profil.class.php');
 
         include('model/get_profil.php');
-        $profil_JSON = get_profil($_SESSION['uid'], false);
+        $profil_JSON = get_profil($_SESSION['uid'], true);
         var_dump( $profil_JSON);
 
         include_once('vue/class/profil/profil.class.php');

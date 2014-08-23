@@ -12,6 +12,7 @@
 #inscription{
     margin-top: 7%;
 
+
 }
 
 .grandChamp, .grandChamp:focus {
@@ -85,12 +86,15 @@
     color: red;
 }
 
+#button_inscription{
+    text-align: right;
+}
 
 #creerUnCompte{
     padding: 2px;
     height: 40px;
     font-size: large;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 5px;
 
 }
@@ -98,4 +102,38 @@
 #dateEtGenre{
     position: relative;
     top: 15px;
+}
+
+
+
+/* ville */
+#span_ville{
+    display: inline-block;
+    width: 230px;
+    vertical-align: top;
+}
+#ville_titre{
+    margin-top: 2%;
+    position: relative;
+    top: 6px;
+}
+#ville{
+    width: 220px;
+    position: relative;
+    top: 6px;
+}
+
+#ville_search{
+    width: 220px;
+    position: absolute;
+    padding-top: 4px;
+    text-indent: 5px;
+    border: 1px silver inset;
+    border-top: none;
+    box-shadow: 2px 1px 3px silver;
+}
+#pays{
+    padding: 3px;
+    margin-left: 2%;
+    margin-top: 17px;
 }

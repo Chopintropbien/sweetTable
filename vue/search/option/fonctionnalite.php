@@ -18,7 +18,7 @@
 </div>
 
 <div>
-    <input class = "fonction" style="display: none" type="checkbox" name="Bière et vin" id="bierevin" />
+    <input class = "fonction" style="display: none" type="checkbox" name="BiereVin" id="bierevin" />
     <label class = "cacheFonction" style="display: none" for="bierevin" id="bierevinLabel"><?php echo $biere_vin; ?></label>
 </div>
 

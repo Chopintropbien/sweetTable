@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -21,9 +20,23 @@
 
 <section id="body">
 
-    <?php include("vue/inviter-amis/francais.php"); ?>
 
-    <form action="envoyerMail.php" method="post">
+    <?php
+
+    // message de confirmation pour l'envoie de mail
+    include("vue/inviter-amis/francais.php");
+    if($tentative_envoie_de_mail){
+        // tous les mail on ete envoie
+        if($tout_mail_envoie) echo '<p class="confirmation">'.$message_confirmation_mail.'</p>';
+        // seulement certaine
+        else if($error_que_certain_mail)  echo '<p class="error">'.$message_error_certain_mail.'</p>';
+        else echo '<p class="error">'.$message_error_tous_mail.'</p>';
+    }
+
+    ?>
+
+
+    <form action="" method="post">
         <h2> <?php echo $titre; ?> </h2>
         <section id="contenantEmail">
             <input type="text" placeholder="<?php echo $adresseMailN; ?> 1" id="1adressEmail" name="1adressEmail"/>

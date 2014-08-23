@@ -2,9 +2,11 @@
 
 
 
-if(isset($_SESSION['uid'])){
-    include ('model/restaurant/restaurant.php');
-    $restaurantJSON = get_info_restau_complete();
+if(isset($_SESSION['uid']) && isset($_GET['uid'])){
+    include ('model/get_restaurant.php');
+    $restaurantJSON = get_restaurant($_GET['uid'], true);
+
+    var_dump($restaurantJSON);
 
     include('model/restaurant/liste_revue.php');
     $liste_revuesJSON =  get_liste_revue();

@@ -55,6 +55,6 @@ include($_SESSION['language'] . '.php');
 <script src="<?php echo $GLOBALS['host'];?>/controller/js_function/add_event.js"></script>
 <script src="<?php echo $GLOBALS['host'];?>/controller/js_function/auto_complexion.js">  </script>
 <script>
-    autoComplexion('search', 'ajax_search', 'http://localhost/sweettable/controller/navigator/lieu.php');
-    autoComplexion('where', 'ajax_where', 'http://localhost/sweettable/controller/navigator/lieu.php');
+    autoComplexion('search', 'ajax_search', '<?php echo $GLOBALS['host'];?>/controller/navigator/lieu.php');
+    autoComplexion('where', 'ajax_where', '<?php echo $GLOBALS['host'];?>/controller/navigator/lieu.php');
 </script>

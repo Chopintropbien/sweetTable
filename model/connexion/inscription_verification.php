@@ -7,6 +7,11 @@ include_once('model/connexion/generate_salage.php');
 
 function inscription_pour_verification($email, $password){
 
+    // injection sql
+    $email = mysql_real_escape_string($email);
+    $password = mysql_real_escape_string($password);
+
+
     $bdd = connexion_database_verification();
 
     $salage = generate_salage(20);
@@ -24,5 +29,5 @@ function inscription_pour_verification($email, $password){
     $req->execute(array($email));
     $donnees = $req->fetch();
 
-    return $donnees['uid'];
+    return $donnees['id'];
 }

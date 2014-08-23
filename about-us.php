@@ -7,6 +7,13 @@ include ('controller/about-us/about-us.php');
 
 
 
+
+
+include('model/ajoute_location.php');
+//var_dump(ajoute_location('DE', 'country', 'Allemagne'));
+
+
+
 // nom simple -> 4
 // nom reel : -> 5
 // code postale -> 8

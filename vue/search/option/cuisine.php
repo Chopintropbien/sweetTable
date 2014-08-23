@@ -90,11 +90,12 @@
     <label class = "cacheCuisine" for="europeEst" style="display: none"  id="europeEstLabel"> <?php echo $europe_est;?> </label>
 </div>
 
+<!--
 <div>
     <input class="cuisine" type="checkbox" name="europeenne" id="europeenne" style="display: none"/>
     <label class = "cacheCuisine" for="europeenne" style="display: none" id="europeenneLabel"> <?php echo $europeenne;?> </label>
 </div>
-
+-->
 
 <div>
     <input class="cuisine" type="checkbox" name="fastfood" id="fastfood" style="display: none"/>
@@ -114,11 +115,12 @@
     <label class = "cacheCuisine" for="poisson" style="display: none" id="poissonLabel"> <?php echo $fruit_mer;?> </label>
 </div>
 
-
+<!--
 <div>
     <input class="cuisine" type="checkbox" name="fusion" id="fusion" style="display: none"/>
     <label class = "cacheCuisine" for="fusion" style="display: none" id="fusionLabel"> <?php echo $fusion;?> </label>
 </div>
+-->
 
 <div>
     <input class="cuisine" type="checkbox" name="grecque" id="grecque" style="display: none"/>
@@ -135,10 +137,12 @@
     <label class = "cacheCuisine" for="internationale" style="display: none" id="internationaleLabel"> <?php echo $internationale;?> </label>
 </div>
 
+<!--
 <div>
     <input class="cuisine" type="checkbox" name="irlandaise" id="irlandaise" style="display: none"/>
     <label class = "cacheCuisine" for="irlandaise" style="display: none" id="irlandaiseLabel" > <?php echo $irlandaise;?> </label>
 </div>
+-->
 
 <!-- visible -->
 <div>
@@ -148,7 +152,7 @@
 
 <!-- visible -->
 <div>
-    <input class="cuisine" type="checkbox" name="japonaise " id="japonaise"/>
+    <input class="cuisine" type="checkbox" name="japonaise" id="japonaise"/>
     <label class = "nonCacheCuisine" for="japonaise " id="japonaiseLabel"> <?php echo $japonaise;?> </label>
 </div>
 

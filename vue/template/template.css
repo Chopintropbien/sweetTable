@@ -125,13 +125,20 @@ select{
 }
 
 
-.error{
-    border: 1px red solid;
+.error, .confirmation{
     border-radius: 3px;
-    margin: 20px;
-    background-color: #FFA594;
+    margin: 20px 0px;
     padding: 5px;
     width: auto;
+}
+.error{
+    border: 1px red solid;
+    background-color: #FFA594;
+}
+
+.confirmation{
+    border: 1px green solid;
+    background-color: #C4FCC4;
 }
 
 /* pour les div ou sont stoker les button publier, annuler, sauvegarder, ect */
