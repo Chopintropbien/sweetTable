@@ -58,11 +58,12 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
                 echo '<div>'.$prix.'</div>';
 
                 // categorie
+                include_once('vue/search/option/francais/array_name.php');
                 $nbCathegorie = count($restaurantJSON->cuisine);
                 $cathegorie = '';
                 for($j=0; $j<$nbCathegorie; ++$j){
                     $cathegorie = $cathegorie . $restaurantJSON->cuisine[$j];
-                    if(!($j == $nbCathegorie-1)){ $cathegorie = $cathegorie . ', '; }
+                    if(!($j == $nbCathegorie-1)){ $cathegorie = $cuisines_name[$cathegorie] . ', '; }
                 }
                 echo '<p>'.$cathegorie.'</p>';
 
@@ -81,7 +82,7 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
             <img src=" <?php echo $restaurantJSON->picture[1] ?> "/>
             <img src=" <?php echo $restaurantJSON->picture[2] ?> "/>
             <!-- <p><a href="<?php echo $restaurantJSON->lienPhoto?>"> Voir toutes les photos </a></p> -->
-            <p><a href="http://localhost/meittopi/restaurant/photo.php"> Voir toutes les photos </a></p>
+            <!--<p><a href="http://localhost/meittopi/restaurant/photo.php"> Voir toutes les photos </a></p> -->
         </section>
 
 
@@ -109,10 +110,10 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
 
         <!-- button -->
         <div>
-            <a href = "http://localhost/meittopi/restaurant/ecrire-une-revue.php" class="important_button"> Ecrire une revue</a>
-            <button>
+            <a href="<?php echo $GLOBALS['host'];?>/editer-une-revue.php?uid=<?php echo $_GET['uid'];?>" class="important_button"> Ecrire une revue</a>
+            <!--<button>
                 Ajouter des photos
-            </button>
+            </button> -->
         </div>
 
         <section>

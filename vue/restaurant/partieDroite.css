@@ -2,7 +2,7 @@
 #partieDroite{
     display: inline-block;
     vertical-align: top;
-    width: 32%;
+    width: 27%;
     margin-left: 2%;
     margin-top: 4%;
 }
@@ -10,6 +10,7 @@
 
 /* zone des buttons */
 #partieDroite>div{
+    text-align: right;
 }
 
 #partieDroite> div> a{
@@ -29,12 +30,12 @@
 #partieDroite>section{
     margin-top: 25%;
     border: 1px darkgray solid;
-    width: 80%;
+    width: 100%;
+
 }
 
 /* carte */
 #partieDroite>section>div{
-
 }
 
 /* adresse */

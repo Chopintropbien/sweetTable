@@ -17,6 +17,9 @@ fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, em{
 li{
     display: block;
 }
+p{
+    text-align: justify;
+}
 input, input:focus, select, textarea, .like_input{
     outline: 0px;
     font-size: 100%;
@@ -35,6 +38,11 @@ html,body, #header{
 
 select{
     border: none;
+}
+mark{
+    color: #305EC6;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 #header{

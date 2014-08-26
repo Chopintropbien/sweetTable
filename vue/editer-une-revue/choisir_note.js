@@ -34,7 +34,7 @@
 
 
     // quand on sort du div contenant les canvas, colorier les etoiles avec la note enregistrer dans l input hidden
-    addEvent(document.getElementById('div_etoiles'), 'mouseout', function(){
+    document.getElementById('div_etoiles').onmouseout = function(){
         var note = parseFloat(document.getElementById('choix_note').value);
 
         if(note == 0){
@@ -52,7 +52,7 @@
             color_canvas(canvas, num_etoile);
             set_commentaire(canvas, num_etoile);
         }
-    });
+    };
 
 
 
@@ -155,6 +155,7 @@
                 break;
         }
         commentaire.innerHTML = texte;
+        commentaire.style.color = 'black'; // au cas ou si le teste était rouge du fait que l'utilisateur n'avait pas mis de note
     }
 
 })();

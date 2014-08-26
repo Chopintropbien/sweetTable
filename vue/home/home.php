@@ -54,9 +54,8 @@
 
         $liste = new Liste();
         //TODO: quand andrei aura fini l'api, refaire les conditions
-        foreach($liste_publication_JSON as $element_JSON){
-            $liste->ajoute(new Publication_Revue($element_JSON));
-
+        foreach($profil_JSON->review_list as $revue_JSON){
+            $liste->ajoute(new Publication_Revue($revue_JSON));
         }
         $liste->affiche('publication','publication');
         ?>
@@ -67,14 +66,10 @@
     <section id="partieDroite">
 
         <?php
-
-
         // afficher profil
         include_once('vue/class/profil/profil.class.php');
 
-        include('model/get_profil.php');
-        $profil_JSON = get_profil($_SESSION['uid'], true);
-        var_dump( $profil_JSON);
+
 
         include_once('vue/class/profil/profil.class.php');
         $profil = new Profil($profil_JSON);

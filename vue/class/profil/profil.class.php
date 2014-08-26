@@ -6,10 +6,10 @@ class Profil{
     private $photo;
 
     public function __construct($profil_JSON, $complet = true){
-        echo $profil_JSON;
-        $this->nom = 'Lauriane Mollier';
-        $this->lieu_habitation = 'Lausanne';
-        $photo = $profil_JSON->picture;
+        $this->nom = $profil_JSON->name;
+        $this->lieu_habitation = $profil_JSON->location;
+
+        $photo = $profil_JSON->picture[0];
         if($photo) $this->photo = $photo;
         else $this->photo = $_SESSION['photo_profil_vide'];
     }

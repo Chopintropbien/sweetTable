@@ -14,21 +14,3 @@
 }
 
 
-/* photos */
-.publication_revue article> section {
-    text-align: center;
-    width: 80%;
-    margin: auto;
-}
-
-.publication_revue article> section > a{
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 2.5%;
-    width: 25%;
-    cursor: pointer;
-
-}
-.publication_revue article> section > a>img{
-    width: 100%;
-}

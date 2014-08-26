@@ -23,14 +23,6 @@
 
     <section id="partieGauche">
 
-
-        <h2>  </h2>
-
-
-
-
-
-
         <h2>L'histoire de SweetTable</h2>
         <article>
 
@@ -48,10 +40,10 @@
                 Ah... la nourriture italienne! Ces simples mots commencent déjà à me titiller les papilles!
                 Mais ou savoir aller manger? Demander un italien dans la rue? Quand on se retrouve au plein milieu du vatican avec
                 tout ces touristes, pas si facile.<br/>
-                <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/restau_typique.jpg"/>
                 Alors on décida d'utiliser une application spécialiser dans ce genre de conseil: trouver un bon restaurant!
 
                 <br/> <br/>
+                <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/restau_typique.jpg"/>
 
                 Donc voilà partie pour un des meilleurs restaurantS de Rome (celon cette apllication). Arrivée sur place, quel
                 deception! C'était un restaurant italien qui visait une clientelle majoritairement anglophone. Je n'ai rien contre les anglais
@@ -72,25 +64,27 @@
                 fonctionné.
 
                 Ce genre d'application a un système de notation global. Ce qui fait que le meilleur restaurant sera défini en fonction
-                du goût moyen des personne qui l'utilise. A Rome, il devait donc y avoir  <br/>
+                du goût moyen des personne qui l'utilise. Il devait donc y avoir à Rome une majorité de touriste anglais qui utilisait
+                cette aplication. <br/>
 
-                Mais la chaque personnes à des attentes différente face à un restaurant! Imaginez par exemple que vous aimer que vous
-                aimer que le service soit efficasse, par contre que vous en avez pas grand chose à faire du choix de bière que propose
-                le restaurant. Aimeriez-vous que l'on vous sugère un restaurant parce qu'il est très bien noté par les personnes qui
-                font très attention au choix de bière mais pas du tout au service?
+                N'ayant pas les mêmes goûts que la majorité, on prefera se fier à notre intuition,
 
             </p>
 
             <h5> Voilà notre idée en route! </h5>
 
             <p>
-                J'aimerais qu'une application puisse reconnaitre mes goûts et me conseiller que les restaurants que j'aime. Alors nous
-                voila en train de coder!
                 <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/lauriane_geek.jpg"/>
+                L'idée est toute simple: la note que l'on voit affiché pour un restaurant dois être une note personnalisé: 4 étoiles! Nous pensons que ce restaurant
+                va vous plaire personnellement. Et non pas: tous les utilisateurs qui ont déjà visité ce restaurant ont donné une note moyenne
+                de 4 sur 5.
             </p>
 
+            <h5> Comment cela fonctionne-t-il ?  </h5>
 
-
+            <a class="important_button" href="<?php echo $GLOBALS['host'];?>/mode_de_fonctionnement.php">
+                Back-end et projet
+            </a>
 
 
         </article>
@@ -104,74 +98,86 @@
 
         <h2>L'équipe</h2>
 
+        <ul>
+            <li>
+                <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/lauriane_glace.jpg"/>
+                <h5> Lauriane Mollier </h5>
+            </li>
+            <li>
+                <h6> Lieu d'étude: </h6>
+                <ul>
+                    <li> - Lycéee expérimentale, Saint-Nazaire</li>
+                    <li> - EPFL, Lausanne </li>
+                </ul>
+            </li>
+            <li>
+                <h6> Patrie gastronomique: </h6>
+                <span>La Savoie:</span>
+                <ul>
+                    <li>-la fondu</li>
+                    <li>-la galette savoyarde</li>
+                    <li>-les rissoles</li>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/lauriane_glace.jpg"/>
-                    <h5> Lauriane Mollier </h5>
-                </td>
-                <td>
-                    <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/andrei.jpg"/>
-                    <h5> Andreï Kucharavy </h5>
-                </td>
-            </tr>
+                </ul>
+            </li>
+            <li>
+                <h6> Description: </h6>
+                <p>
+                    Etant francaise, mais faisant ses études à Lausanne, son coeur balence entre le compté et le gruyère.
+                    Si elle devait trancher, elle choisirai sans doute le gruyère, mais que vous ne vous y mépreniez pas: <br/>
+                    Rien ne vaudra jamais l'abondance !
+                </p>
+            </li>
+            <li>
+                <h6> Role : </h6>
+                <p>Font-end et marketing </p>
+            </li>
+        </ul>
 
-            <tr>
-                <td>
-                    <h6> Lieu d'étude: </h6>
-                    <ul>
-                        <li> - Lycéee expérimentale, Saint-Nazaire</li>
-                        <li> - EPFL, Lausanne </li>
-                    </ul>
-                </td>
+        <ul>
+            <li>
+                <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/andrei.jpg"/>
+                <h5> Andreï Kucharavy </h5>
+            </li>
+            <li>
+                <h6> Lieu d'étude: </h6>
+                <ul>
+                    <li> - Ecole polytechnique, Paris</li>
+                    <li> - EPFL, Lausanne </li>
+                    <li><br/></li>
+                </ul>
+            </li>
+            <li>
+                <h6> Patrie gastronomique: </h6>
+                <span>L'Alsace:</span>
+                <ul>
+                    <li>-mänale </li>
+                    <li>-spätzele </li>
+                    <li>-prëtzele </li>
 
-                <td>
-                    <h6> Lieu d'étude: </h6>
-                    <ul>
-                        <li> - Ecole polytechnique, Paris</li>
-                        <li> - EPFL, Lausanne </li>
-                    </ul>
-                </td>
-            </tr>
+                </ul>
+            </li>
+            <li>
+                <h6> Description: </h6>
+                <p>
+                    Toujours partent pour un petit restaurant, il est actuellement en "depression gastronomique" car
+                    il fait son doctorat à Kansas City, au Etats-Unis. Vivement de retour en europe pour une cuisine sans OGM,
+                    sans ormone de croissance mais surtout avec du gout!!!
+                </p>
+            </li>
 
-            <tr>
-                <td>
-                    <h6> Patrie gastronomique: </h6>
-                    <span>La Savoie:</span>
-                    <ul>
-                        <li>-la fondu</li>
-                        <li>-le farçon</li>
-                        <li></li>
-                    </ul>
-                </td>
-                <td>
-                    <h6> Patrie gastronomique: </h6>
-                    <span>L'Alsace:</span>
-                    <ul>
-                        <li>-mänale </li>
-                        <li>-spätzele </li>
-                        <li>-prëtzele </li>
-                    </ul>
-                </td>
-            </tr>
-
-            <tr>
-                <td> <h6> Description: </h6> </td>
-                <td> <h6> Description: </h6> </td>
-            </tr>
-
-            <tr>
-                <td>  </td>
-                <td>  </td>
-            </tr>
-
-        </table>
+            <li>
+                <h6> Role : </h6>
+                <p> Back-end </p>
+            </li>
+        </ul>
 
 
 
         <h2> Nous contacter</h2>
         <address>mollierlauriane@gmail.com</address>
+
+
 
     </section>
 

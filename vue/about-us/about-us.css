@@ -8,7 +8,8 @@
 #partieDroite> h2{
     font-size: 180%;
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+
 }
 
 
@@ -24,8 +25,9 @@
 #partieGauche > article{
 
 }
-#partieGauche > article>h2{
-
+#partieGauche > article>h5{
+    margin-top: 1.2%;
+    margin-bottom: 0.2%;
 }
 
 /* paragraphe */
@@ -38,6 +40,7 @@
     float: left;
     margin-right: 4px;
     margin-bottom: 4px;
+    margin-top: 2px;
     width: 110px;
 }
 
@@ -49,34 +52,46 @@
     display: inline-block;
     vertical-align: top;
     width: 39%;
-}
-#partieDroite > table{
-    margin-bottom: 2%;
-}
-
-#partieDroite > table tr td{
-    padding: 0.4%;
-}
-
-
-/*photo et nom */
-#partieDroite > table tr:first-child{
     text-align: center;
 }
-#partieDroite> table img{
+#partieDroite > ul{
+    text-align: left;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5%;
+    padding: 0.4%;
+    min-width: 180px;
+}
+#partieDroite > ul:first-child{
+    margin-right: 3%;
+
+}
+
+#partieDroite > ul > li h6{
+    margin-bottom: 0.3%;
+    margin-top: 2.5%;
+}
+
+/*photo et nom */
+#partieDroite > ul > li:first-child{
+    text-align: center;
+}
+#partieDroite > ul > li> img{
     width: 105px;
 }
-#partieDroite> table h5{
-    margin-bottom: 1%;
+#partieDroite > ul > li> p{
+    margin-right: 2%;
+}
+#partieDroite > ul > li> h5{
+    margin-bottom: 2%;
     font-size: 110%;
 }
 
 
 /* description*/
-#partieDroite> table h6{
-    margin-bottom: 0.7%;
-}
-#partieDroite> table ul{
+
+#partieDroite > ul > li ul{
     display: inline-block;
     vertical-align: top;
     margin-left: 1%;

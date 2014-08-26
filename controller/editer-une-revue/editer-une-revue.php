@@ -1,14 +1,17 @@
 <?php
 
+// si l'utilisateur à été mémoriser => creer la session
+include_once('controller/connexion/connexion_automatique.php');
+
 if(isset($_SESSION['uid'])){
 
-    // ajouter une revue
-    if($_POST['note'] != 0 && isset($_POST['uid_restau']) && isset($_POST['titre']) && isset($_POST['revue'])){
-        include('model/ajoute_revue.php');
-        ajoute_revue($_SESSION['uid'], $_POST['uid_restau'], $_POST['titre'], $_POST['revue'], $_POST['note']);
+    // si c'est pour editer une renue;
+    if($_GET['uid_revue']){
+        include ('model/get_revue.php');
+        $revue_JSON = get_revue($_GET['uid_revue']);
     }
 
-
+    //TODO: mettre erreur s'il n'y a pas de get
     include ('model/get_restaurant.php');
     $restaurantJSON = get_restaurant($_GET['uid'], false);
 

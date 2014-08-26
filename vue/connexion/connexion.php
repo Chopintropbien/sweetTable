@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/navigator/navigator.css"/>
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/connexion/navigator.css"/>
 
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/slide_presentation_sweetTable/slide_presentation_sweetTable.css"/>
+
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/connexion/connexion.css"/>
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/connexion/formulaireInscription.css"/>
+
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/slide_presentation/js-image-slider.css" type="text/css" />
+
     <title> SweetTable </title>
 </head>
 
@@ -47,24 +52,7 @@
     </p>
 
     <section id="gauche">
-
-        <img src="http://localhost/Meittopi/image/profil_vide.png" id="0slide"/>
-        <img src="" id="1slide" style="display:none;"/>
-        <img src="http://localhost/Meittopi/image/profil_vide.png" id="2slide" style="display:none;"/>
-        <img src="" id="3slide" style="display:none;"/>
-        <img src="http://localhost/Meittopi/image/profil_vide.png" id="4slide" style="display:none;"/>
-        <img src="" id="5slide" style="display:none;"/>
-
-        <div id="div_button_slide" class="0">
-            <canvas id="0slide_button" class="slide_button"></canvas>
-            <canvas id="1slide_button" class="slide_button"></canvas>
-            <canvas id="2slide_button" class="slide_button"></canvas>
-            <canvas id="3slide_button" class="slide_button"></canvas>
-            <canvas id="4slide_button" class="slide_button"></canvas>
-            <canvas id="5slide_button" class="slide_button"></canvas>
-        </div>
-
-
+       <?php include('vue/slide_presentation/slide_presentation.php');?>
     </section>
 
     <section id="droite">
@@ -84,7 +72,7 @@
 
 
 <script src="<?php echo $GLOBALS['host'];?>/controller/connexion/facebook/initialise.js"> </script>
-<script src="<?php echo $GLOBALS['host'];?>/controller/connexion/slide.js"> </script>
+<script src="<?php echo $GLOBALS['host'];?>/vue/slide_presentation_sweetTable/slide.js"> </script>
 
 </html>
 

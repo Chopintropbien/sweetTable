@@ -2,6 +2,10 @@
 
 include_once('controller/envoie_mail.php');
 
+
+// si l'utilisateur à été mémoriser => creer la session
+include_once('controller/connexion/connexion_automatique.php');
+
 if(isset($_SESSION['uid'])){
 
 

@@ -1,18 +1,12 @@
 
 #droite >form> table{
-    margin-left: 0px;
-    padding-left: 0px;
+    margin:0 auto;
+
 }
 
 
 #droite >form>table tr td >h1{
     font-size: xx-large;
-}
-
-#inscription{
-    margin-top: 7%;
-
-
 }
 
 .grandChamp, .grandChamp:focus {

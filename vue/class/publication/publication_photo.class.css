@@ -1,0 +1,18 @@
+/* photos */
+.publication_photo {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.publication_photo > a{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2.5%;
+    width: 25%;
+    cursor: pointer;
+
+}
+.publication_photo > a>img{
+    width: 100%;
+}

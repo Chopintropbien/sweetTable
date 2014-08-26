@@ -27,7 +27,7 @@ function connexion_verification($password, $email, $set_cookie, $password_encrip
         setcookie('sweettable_password', $password , time() + 365*24*3600, null, null, false, true);
     }
 
-    $_SESSION['uid'] = 'user' . $donnees['id'];
+    if($succed) $_SESSION['uid'] = 'user' . $donnees['id'];
 
     return $succed;
 

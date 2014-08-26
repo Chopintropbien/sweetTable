@@ -21,7 +21,7 @@
                 nom.className = 'petitChampErreur';
                 return false;
             }
-            else if(! /^[a-zA-Zéèçàïêë ]+$/.test(nom.value) || /^[\s]/.test(nom.value)){
+            else if(! /^[a-zA-Zéèçàïêë ]+$/.test(nom.value) || ! /[^ \n\t]/.test(nom.value)){
                 nom.value = '';
                 nom.placeholder = 'Veillez saisir un ' + valeur;
                 nom.className = 'petitChampErreur';

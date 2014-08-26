@@ -50,6 +50,7 @@
     font-size: 130%;
     color: #305EC6;
     margin-right: 2%;
+    cursor: pointer;
 }
 .restaurant > section > article> article >a > h4:hover{
     text-decoration: underline;

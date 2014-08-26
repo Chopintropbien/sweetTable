@@ -32,12 +32,14 @@
     vertical-align: middle;
     width: 270px;
     margin-left: 2%;
+    cursor: pointer;
 }
 
 /* etoiles */
 #body > article > div> canvas{
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
     margin-right: 0%;
     padding: 0%;
 }

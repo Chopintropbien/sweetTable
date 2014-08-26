@@ -4,10 +4,10 @@ $cuisines_name = array('africaine' => 'Africaine', 'allemande' => 'Allemande', '
     'ameriqueDuSud' => 'Amérique du Sud', 'asiatique' => 'Asiatique', 'barbecueGrillades' => 'Barbecue/Grillades',
     'boulangeriePatisserie' => 'Boulangerie/Pâtisserie', 'britannique' => 'Britannique',
     'cafe' => 'Café', 'cajunCreole' => 'Cajun & créole', 'caraibes' => 'Caraïbes', 'charcuterie' => 'Charcuterie',
-    'chinoise' => ' Chinoise', 'continentale' => 'Continentale', 'desserts' => 'Desserts', 'espagnol' => 'Espagnole',
+    'chinoise' => 'Chinoise', 'continentale' => 'Continentale', 'desserts' => 'Desserts', 'espagnol' => 'Espagnole',
     'europeEst' => 'Europe de l\'Est', 'fastfood' => 'Fast-food', 'francaise' => ' Française',
     'poisson' => 'Fruits de mer/Poisson ', 'grecque' => 'Grecque', 'indienne' => 'Indienne',
-    'internationale' => 'Internationale', 'italienne' => ' Italienne', 'japonaise' => ' Japonaise',
+    'internationale' => 'Internationale', 'italienne' => 'Italienne', 'japonaise' => 'Japonais',
     'mexicaine' => 'Mexicaine/Tex-mex', 'moyenOrient' => 'Moyen-Orient', 'mediterraneenne' => 'Méditerranéenne',
     'pizza' => 'Pizza', 'pub' => 'Pub', 'soupe' => 'Soupes', 'steakhouse' => 'Steakhouse', 'suisse' => 'Suisse',
     'sushi' => 'Sushi', 'thai' => 'Thaï', 'vietnamienne' => 'Vietnamienne', 'vegetarienne' => 'Végétarienne');

@@ -6,8 +6,6 @@ function manage_tag($uid, $array_cuisine_tags, $array_other_tags){
     $data = array('uid' => $uid, 'cuisine_tags' => $array_cuisine_tags, 'other_tags' => $array_other_tags);
     $data = json_encode($data);
 
-    var_dump($data);
-
     $chlead = curl_init();
     curl_setopt($chlead, CURLOPT_URL, $url);
     curl_setopt($chlead, CURLOPT_USERAGENT, 'SugarConnector/1.4');
@@ -21,8 +19,4 @@ function manage_tag($uid, $array_cuisine_tags, $array_other_tags){
     $chleadapierr = curl_errno($chlead);
     $chleaderrmsg = curl_error($chlead);
     curl_close($chlead);
-
-    echo $chleadresult;
-    echo $chleaderrmsg;
-    echo $chleadapierr;
 }

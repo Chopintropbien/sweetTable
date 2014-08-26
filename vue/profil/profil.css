@@ -8,7 +8,7 @@
     display: inline-block;
     vertical-align: top;
     margin-right: 2%;
-    width: 44%;
+    width: 40%;
 }
 
 #body>section> section{
@@ -30,6 +30,7 @@
 #editer_info_profil >form > ul{
     text-align: left;
     width: 100%;
+    padding-left: 3%;
 }
 #editer_info_profil >form > ul > li{
     margin-bottom: 10px;
@@ -63,12 +64,47 @@
     margin-top: 3%;
 }
 
+/* message pour le chexk des date */
+#editer_info_profil #message_check_date{
+    color: red;
+}
 
-
-#revue{
+#revue, #pas_encore_revue{
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    width: 50%;
     margin-left: 2%;
+}
+
+/* quand la personne a deja fait des revue */
+#revue{
+    width: 50%;
+}
+
+
+/* pas encore de revue */
+#pas_encore_revue{
+    width: 45%;
+}
+#pas_encore_revue>h2{
+    text-align: center;
+    font-size: 120%;
+    margin-bottom: 3%;
+}
+#pas_encore_revue>p{
+}
+/* button add revue */
+#pas_encore_revue>div{
+    margin-top: 5%;
+    margin-bottom: 6%;
+    text-align: center;
+}
+#pas_encore_revue>div>a{
+    font-size: 110%;
+    padding: 3px;
+}
+
+#slide_presentation_sweetTable{
+    margin: auto;
+    width: 70%;
 }

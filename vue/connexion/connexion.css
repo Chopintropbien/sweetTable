@@ -3,39 +3,24 @@
 }
 
 
-#gauche{
+#gauche, #droite{
     display: inline-block;
     vertical-align: top;
-    width: 40%;
-    margin-right: 7%;
+    width: 48%;
+    min-width: 400px;
+    margin-right: 1.5%;
     margin-bottom: 4%;
-}
-#gauche>img{
-    display: inline-block;
-    vertical-align: middle;
-    width: 98%;
-    height: 98%;
-    margin: 1%;
-}
-/* section des petits ronds */
-#gauche>div{
-}
-#gauche>div>canvas{
-    border: 1px #FFB15D solid;
-    width: 6px;
-    height: 6px;
-    cursor: pointer;
-}
-
-#droite{
-    display: inline-block;
-    vertical-align: top;
+    margin-top: 3%;
+    max-width: 500px;
     text-align: left;
 }
+#gauche{
+    margin-top: 4%;
+}
+
+
 #droite h1{
     font-size: xx-large;
     color: black;
 }
-#droite>div{
-    margin-top: 2%;
-}
+

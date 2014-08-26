@@ -11,19 +11,20 @@ class Restaurant_basic {
     protected $liste_cathegorie;
     protected $uid_restaurant;
 
-    public function __construct($restaurantJSON){
-        if(is_array($restaurantJSON)){
-            $this->nom = $restaurantJSON[0];
-            $this->photo = $restaurantJSON[1];
-            $this->note = $restaurantJSON[2];
-            $this->prix = $restaurantJSON[3];
-            $this->liste_cathegorie = $restaurantJSON[5];
-            $this->uid_restaurant = $restaurantJSON[6];
+    public function __construct($nom, $photo, $note, $prix, $nb_avis, $liste_cathegorie, $uid_restaurant){
+        $this->nom = $nom;
+        $this->note = $note;
+        $this->prix = $prix;
+        $this->liste_cathegorie = $liste_cathegorie;
+        $this->uid_restaurant = $uid_restaurant;
 
-            // si avis = -1 -> pas afficher avis
-            if($restaurantJSON[4] == -1) $this->nb_avis = '';
-            else $this->nb_avis = $restaurantJSON[4] . ' avis';
-        }
+        if($photo) $this->photo = $photo;
+        else $this->photo = $_SESSION['photo_profil_vide'];
+
+        // si avis = -1 -> pas afficher avis
+        if($nb_avis == -1) $this->nb_avis = '';
+        else $this->nb_avis = $nb_avis . ' avis';
+
     }
     // if $ecrire une revue => apparait le button ecrire une revue
     protected  function affichePartieDroitePhoto($i, $ecrire_revue = false, $class_conplet_ou_basic = 'restaurant_basic'){
@@ -33,13 +34,13 @@ class Restaurant_basic {
 
             echo '<article>'; // tire restau
                 echo '<p>'. ($i+1).'. </p>';
-                echo '<a><h4>'.$this->nom.'</h4></a>';
+                echo '<a href="'.$GLOBALS['host'].'/restaurant.php?uid='.$this->uid_restaurant .'"><h4>'.$this->nom.'</h4></a>';
                 if ($ecrire_revue) echo '<button type="button"> Ecrire une revue </button>';
             echo'</article>';
 
             echo '<div>'; // etoile et nobre d'avis
                 echo '<div>'; // note
-                    note_etoile($this->note, 23);
+                    note_etoile($this->note, 24);
                 echo '</div>';
                 echo '<p>'. $this->nb_avis.'</p>';
             echo'</div>';
@@ -51,10 +52,11 @@ class Restaurant_basic {
                 echo '<div>'.$prix.'</div>';
 
                 // categorie
+                include('vue/search/option/francais/array_name.php');
                 $nbCathegorie = count($this->liste_cathegorie);
                 $cathegorie = '';
                 for($j=0; $j<$nbCathegorie; ++$j){
-                    $cathegorie = $cathegorie . $this->liste_cathegorie[$j];
+                    $cathegorie = $cathegorie . $cuisines_name[$this->liste_cathegorie[$j]];
                     if(!($j == $nbCathegorie-1)){ $cathegorie = $cathegorie . ', '; }
                 }
                 echo '<p>'.$cathegorie.'</p>';
