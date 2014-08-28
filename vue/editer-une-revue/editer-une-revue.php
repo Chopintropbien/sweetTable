@@ -154,6 +154,9 @@ else echo 'write-a-review.php';
     }
 ?>
 
+<!-- check form -->
+<script src="<?php echo $GLOBALS['host'];?>/vue/editer-une-revue/check_form.js"></script>
+
 </html>
 
 

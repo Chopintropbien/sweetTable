@@ -37,5 +37,4 @@ if(isset($_SESSION['uid'])){
     include('vue/profil/profil.php');
 }
 
-else include('home.php');
-
+else include('controller/connexion/connexion_inscription.php');

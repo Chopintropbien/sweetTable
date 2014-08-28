@@ -15,5 +15,4 @@ if(isset($_SESSION['uid']) && isset($_GET['uid'])){
 
     include ('vue/restaurant/restaurant.php');
 }
-else include('home.php');
-
+else include('controller/connexion/connexion_inscription.php');

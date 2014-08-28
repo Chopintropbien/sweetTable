@@ -131,6 +131,71 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
             <div id="carte" style="width: 100%; height: 250px;"> </div>
         </section>
 
+
+        <table id="horraire">
+            <tr>
+                <td>Lundi</td>
+                <td> 10-19h </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Mardi</td>
+                <td> 10-19h </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Mercredi</td>
+                <td> 10-19h </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Jeudi</td>
+                <td> 10-19h </td>
+                <td class="open_now" style="color: green;">Ouvert maintenant</td>
+            </tr>
+
+            <tr>
+                <td>Vendredi</td>
+                <td> 10-19h </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Samedi</td>
+                <td> 10-19h </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Dimanche</td>
+                <td> 10-19h </td>
+                <td></td>
+            </tr>
+        </table>
+
+
+        <ul id="fonctionnalite">
+            <li><h3> Fonctionnalitées </h3></li>
+
+            <?php
+
+            include('vue/search/option/francais/cuisines_name.php');
+            foreach($fonctionnalite_name as $keys_tags => $name_tag){
+                echo '<li>';
+                    echo '<p>'. $name_tag . '</p>';
+                    if(in_array( $keys_tags , $restaurantJSON->tags)){
+                        echo '<canvas class="fonctionnalite_presente" width="23" height="28" >';
+                    }
+                echo '</li>';
+            }
+            ?>
+        </ul>
+
+
+
     </section>
 
 
@@ -156,6 +221,22 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
 <script src="http://localhost/meittopi/controleur/restaurant/restaurant/initializeCarte.js"> </script>
 <script>
     google.maps.event.addDomListener(window, 'load', initialize("<?php echo $restaurantJSON->latitude ?>","<?php echo $restaurantJSON->longitude ?>"));
+</script>
+
+
+<!-- dessine check -->
+<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/dessine_check.js"></script>
+<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/dessine_cercle.js"></script>
+<script>
+
+    var canvas = document.getElementsByClassName('fonctionnalite_presente');
+
+    for(var i = 0; i < canvas.length; ++i){
+        dessine_cercle(canvas[i], canvas[i].height);
+        dessine_check(canvas[i], canvas[i].height);
+    }
+
+
 </script>
 
 </html>

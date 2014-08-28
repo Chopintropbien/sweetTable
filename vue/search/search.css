@@ -1,4 +1,8 @@
-
+/* message d'erreur si la recherche n'a pas abouti */
+#error_find_restau{
+    width: 66%;
+    margin-left: 28.5%;
+}
 
 #options{
 	width: 15.5%;

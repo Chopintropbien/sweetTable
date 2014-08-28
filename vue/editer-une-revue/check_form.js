@@ -15,8 +15,12 @@
             if (note == 0){
                 commentaire.innerHTML = 'Veillez noter ce restaurant';
                 commentaire.style.color = 'red';
+                return false;
             }
-            else commentaire.style.color = 'black';
+            else {
+                commentaire.style.color = 'black';
+                return true;
+            }
         }
 
         check['titre'] = function(id){
@@ -24,10 +28,12 @@
             if (! /[^ \n\t]/.test(texte.value)){
                 texte.placeholder = 'Veiller remplir ce champ';
                 texte.style.border = '1px red solid';
+                return false;
             }
             else{
                 texte.placeholder = '';
                 texte.style.border = '1px silver inset';
+                return true;
             }
         }
 

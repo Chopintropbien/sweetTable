@@ -1,5 +1,4 @@
 <?php
-
 include_once('model/connexion/connexion_verification.php');
 
 if(isset($_COOKIE['sweettable_email']) && isset($_COOKIE['sweettable_password']) && ! isset($_SESSION['uid'])){

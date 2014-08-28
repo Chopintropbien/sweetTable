@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/liste/liste.class.css"/>
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/restaurant/restaurant.class.css"/>
 
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/restaurant_not_find/restaurant_not_find.css"/>
+
+
+
+
+
     <title> SweetTable </title>
 </head>
 
@@ -45,6 +51,9 @@
             </td>
         </tr>
     </table>
+
+    <!-- si le restaurant cherché n'est pas trouvé -->
+    <?php include('vue/restaurant_not_find/restaurant_not_find.php');?>
 
 
     <?php

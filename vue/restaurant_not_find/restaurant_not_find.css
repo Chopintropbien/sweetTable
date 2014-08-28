@@ -1,0 +1,30 @@
+#error_find_restau{
+    background-color: #FFEAE7;
+    padding: 1%;
+}
+#error_find_restau > div{
+    display: inline-block;
+    vertical-align: text-top;
+}
+#error_find_restau > div:first-child{
+    width: 65%;
+}
+#error_find_restau > div:last-child{
+    width: 33%;
+    text-align: center;
+    padding-top: 9px;
+}
+
+/* en savoir plus */
+#error_find_restau > div> div{
+    color: #305EC6;
+    cursor: pointer;
+}
+#error_find_restau > div> div:hover{
+    text-decoration: underline;
+}
+
+/* button ajout restaurant */
+#error_find_restau > div> a{
+    padding: 5px;
+}

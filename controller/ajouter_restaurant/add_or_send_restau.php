@@ -1,7 +1,7 @@
 <?php
 
-if(isset($_POST['nom_restau'])  && isset($_POST['adresse_1']) && isset($_POST['code_postal']) &&
-    isset($_POST['ville']) && isset($_POST['pays'])){
+if(true/*isset($_POST['nom_restau'])  && isset($_POST['adresse_1']) && isset($_POST['code_postal']) &&
+    isset($_POST['ville']) && isset($_POST['pays'])*/){
 
     include('vue/search/option/array_name.php');
 

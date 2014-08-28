@@ -46,18 +46,17 @@
     <section id="partieGauche">
         <h2>Activités récentes</h2>
 
-        <?php
+        <?php/*
         include_once('vue/class/liste/liste.class.php');
         include_once('vue/class/publication/publication.class.php');
         include_once('vue/class/photo/publication_photo.class.php');
         include_once('vue/class/revue/publication_revue.class.php');
 
         $liste = new Liste();
-        //TODO: quand andrei aura fini l'api, refaire les conditions
         foreach($profil_JSON->review_list as $revue_JSON){
             $liste->ajoute(new Publication_Revue($revue_JSON));
         }
-        $liste->affiche('publication','publication');
+        $liste->affiche('publication','publication');*/
         ?>
 
 
@@ -93,7 +92,7 @@
             $liste = new Liste_ac_titre('Recomendés pour vous');
 
             foreach($liste_restaurant_rechercheJSON as $restaurant_rechercheJSON){
-                $liste->ajoute(new Restaurant_basic($restaurant_rechercheJSON));
+                //$liste->ajoute(new Restaurant_basic($restaurant_rechercheJSON));
             }
             $liste->affiche('restau_recommendation', 'restaurant');
         }
@@ -117,53 +116,31 @@
 </script>
 
 
-<script>
+<?php
+if($nb_revue < 10){
+    ?>
+    <!-- dessine check -->
+    <script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/dessine_check.js"></script>
+    <script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/dessine_cercle.js"></script>
+    <script>
 
-    var canvas = document.getElementsByClassName('nb_revue_pour_recommendation');
-    var nb_revue = <?php echo $nb_revue;?>;
+        var canvas = document.getElementsByClassName('nb_revue_pour_recommendation');
+        var nb_revue = <?php echo $nb_revue;?>;
 
-    for(var i = 0; i < nb_revue; ++i){
-        dessine_cercle(canvas[i], canvas[i].height);
-        dessine_check(canvas[i], canvas[i].height);
-    }
-    for(var i = nb_revue; i < canvas.length; ++i){
-        dessine_cercle(canvas[i], canvas[i].height);
-    }
-
-    function dessine_cercle(canvas, taille){
-        var ctx = canvas.getContext("2d");
-        ctx.lineWidth = 1;
-
-        var decalage_droite = 1;
-
-        ctx.beginPath();
-        ctx.arc(taille * 0.286 + decalage_droite, taille * 0.571, taille * 0.286, 0, 2*Math.PI);
-        ctx.stroke();
-    }
-    function dessine_check(canvas, taille){
-        var ctx = canvas.getContext('2d');
-
-        ctx.strokeStyle = "black";
-        ctx.fillStyle = "green";
-        ctx.lineWidth = 2;
-
-        var decalage_droite = 1;
-
-        ctx.beginPath();
-        ctx.moveTo(0 + decalage_droite, taille * 0.429);
-        ctx.lineTo(taille * 0.143 + decalage_droite, taille * 0.286);
-        ctx.lineTo(taille * 0.286 + decalage_droite, taille * 0.571);
-        ctx.lineTo(taille * 0.571 + decalage_droite, decalage_droite);
-        ctx.lineTo(taille * 0.714 + decalage_droite, taille * 0.143);
-        ctx.lineTo(taille * 0.286 + decalage_droite, taille - decalage_droite);
-        ctx.closePath();
-        ctx.stroke();
-        ctx.fill();
+        for(var i = 0; i < nb_revue; ++i){
+            dessine_cercle(canvas[i], canvas[i].height);
+            dessine_check(canvas[i], canvas[i].height);
+        }
+        for(var i = nb_revue; i < canvas.length; ++i){
+            dessine_cercle(canvas[i], canvas[i].height);
+        }
 
 
-    }
+    </script>
 
-</script>
+    <?php
+}
+?>
 
 
 

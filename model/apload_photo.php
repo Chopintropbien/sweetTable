@@ -4,12 +4,12 @@
 // type: profil, restaurant, revue
 
 function apload_photo($name, $maxsize, $type, $attachement_uid){
-
+echo 'dd';
     $error = '';
     $server_response = '';
 
     if ($_FILES[$name]['error'] > 0) $error = 'chargement';
-    elseif ($_FILES['icone']['size'] > $maxsize) $error = 'size';
+    elseif ($_FILES[$name]['size'] > $maxsize) $error = 'size';
     else{
         $extensions_valides = array( 'jpg' , 'jpeg'  , 'png' );
 
@@ -22,6 +22,7 @@ function apload_photo($name, $maxsize, $type, $attachement_uid){
             $photo_base64 = base64_encode(file_get_contents($_FILES[$name]['tmp_name']));
             // add to the data base
             $url = 'http://localhost:5000/image';
+            var_dump($photo_base64) ;
 
             $data = array('attachement_uid' => $attachement_uid, 'payload' => $photo_base64, 'type' => $type);
             $data = json_encode($data);
@@ -33,11 +34,9 @@ function apload_photo($name, $maxsize, $type, $attachement_uid){
                     'content' => $data
                 )
             );
-            //echo $data;;
             $context  = stream_context_create($options);
             $error = false;
             $server_response = file_get_contents($url, false, $context);
-            var_dump($server_response);
 
         }
         else $error = 'format';
