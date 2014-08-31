@@ -1,0 +1,12 @@
+.modifiable{
+    margin-right: 5px;
+    text-align: right;
+    font-size: 80%;
+}
+.modifiable>a{
+    color: #305EC6;
+    cursor: pointer;
+}
+.modifiable>a:hover{
+    text-decoration: underline;
+}

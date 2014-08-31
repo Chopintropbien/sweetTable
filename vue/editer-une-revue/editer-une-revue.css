@@ -89,7 +89,7 @@
 }
 #photos> div{
     display: inline-block;
-    margin-right: 5%;
+    width: 29%;
     margin-bottom: 4%;
 }
 #photos> div> img{

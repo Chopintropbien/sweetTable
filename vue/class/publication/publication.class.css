@@ -11,13 +11,17 @@
     vertical-align: top;
 }
 
-.publication article{
-    display: inline-block;
+/* si on affiche la photo, l'article a droite doit se reduite de taille*/
+.publication article.sans_personne{
+    width: 100%;
+}
+.publication article.avec_personne{
     width: 88.5%;
+    display: inline-block;
     vertical-align: top;
     margin-left: 1%;
-
 }
+
 .publication article > time{
     float: right;
     color: gray;
@@ -41,20 +45,18 @@
 .publication article h6 a:hover{
     text-decoration: underline;
 }
-.publication article h6 a strong{
-    margin-right: 5px;
-    color: #305EC6;
-}
 /* texte entre les deux */
 .publication article h6 span{
     color: grey;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* retaurant sur lequel porte la publication*/
 .publication article h6 a mark{
-    margin-left: 5px;
     background-color: transparent;
     color: #305EC6;
+    cursor: pointer;
 }
 .publication article h6 a mark:hover{
     text-decoration: underline;

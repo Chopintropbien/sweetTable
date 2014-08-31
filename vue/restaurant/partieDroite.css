@@ -53,6 +53,66 @@
 }
 
 
+#horraire, #fonctionnalite{
+    margin-top: 8%;
+    min-width: 210px;
+}
+#horraire> caption,
+#fonctionnalite > li> h3{
+    font-weight: bold;
+    font-size: 110%;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+/* horraire */
+
+#horraire{
+    width: 100%;
+}
+
+#horraire tr td{
+    vertical-align: middle;
+}
+#horraire tr td:first-child{
+    width: 35%;
+}
+#horraire tr td.open_now{
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* fonctionnalite */
+#fonctionnalite > li> p,
+#fonctionnalite > li> canvas{
+    vertical-align: middle;
+    display: inline-block;
+}
+#fonctionnalite > li> p{
+    padding: 5px 0px;
+    padding-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,12 +3,12 @@
 
 // type: profil, restaurant, revue
 
-function apload_photo($name, $maxsize, $type, $attachement_uid){
-echo 'dd';
+function apload_photo($name, $maxsize, $type, $uid){
+
     $error = '';
     $server_response = '';
 
-    if ($_FILES[$name]['error'] > 0) $error = 'chargement';
+    if ($_FILES[$name]['error'] > 0) echo $error = 'chargement';
     elseif ($_FILES[$name]['size'] > $maxsize) $error = 'size';
     else{
         $extensions_valides = array( 'jpg' , 'jpeg'  , 'png' );
@@ -18,13 +18,12 @@ echo 'dd';
         //3. strtolower met l'extension en minuscules.
         $extension_upload = strtolower(  substr(  strrchr($_FILES[$name]['name'], '.')  ,1)  );
         if ( in_array($extension_upload,$extensions_valides) ){
-
+            echo 'eeee';
             $photo_base64 = base64_encode(file_get_contents($_FILES[$name]['tmp_name']));
             // add to the data base
             $url = 'http://localhost:5000/image';
-            var_dump($photo_base64) ;
 
-            $data = array('attachement_uid' => $attachement_uid, 'payload' => $photo_base64, 'type' => $type);
+            $data = array('uid' => $uid, 'payload' => $photo_base64, 'type' => $type);
             $data = json_encode($data);
             $options = array(
                 'http' => array(
@@ -37,7 +36,6 @@ echo 'dd';
             $context  = stream_context_create($options);
             $error = false;
             $server_response = file_get_contents($url, false, $context);
-
         }
         else $error = 'format';
     }

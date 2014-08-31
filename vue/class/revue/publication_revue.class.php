@@ -16,10 +16,11 @@ class Publication_Revue extends Publication{
         $this->texte_revue =$teste_revue;
     }
 
-    public function affiche($i){
+    // affiche_personne -> affiche la photo et le nom de ce lui qui a ecrit la revue
+    public function affiche($i, $affiche_personne){
         include('vue/class/revue/francais/nouvelleRevueDeQuelquUn.php');
 
-        parent::affiche_debut($i, 'publication_revue', 'a écrit sur');
+        parent::affiche_debut($i, 'publication_revue', 'a écrit sur', $affiche_personne);
 				// etoile
 				echo '<div>';
                     note_etoile($this->note_restau, 30);

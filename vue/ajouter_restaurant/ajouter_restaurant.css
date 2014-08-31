@@ -48,7 +48,9 @@
 #photos> div> p{
    margin-top: 2%;
    color: #305EC6;
-    cursor: pointer;
+   cursor: pointer;
+    text-align: center;
+
 }
 #photos> div> p:hover{
     text-decoration: underline;

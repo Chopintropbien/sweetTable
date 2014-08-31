@@ -109,7 +109,7 @@ else echo 'write-a-review.php';
     <!-- button de fin de saisie -->
 
     <div class="div_annuler_publier">
-        <a href="<?php echo $GLOBALS['host'];?>/home.php">Annuler</a>
+        <a href="<?php echo $GLOBALS['host'];?>/write-a-review.php">Annuler</a>
         <input type="button" value="Publier" id="button_revue"/>
     </div>
 

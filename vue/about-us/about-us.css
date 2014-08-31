@@ -1,42 +1,103 @@
 
-#partieGauche,
-#partieDroite{
-    display: inline-block;
-    vertical-align: top;
+
+
+#body{
+    width: 70%;
 }
-#partieGauche> h2,
-#partieDroite> h2{
-    font-size: 180%;
+
+#body  h2{
+    font-size: 160%;
+    margin-bottom: 1%;
+    margin-top: 3%;
     text-align: center;
+}
+
+/* pour les explication de sweetTable */
+#explication{
+
+}
+
+#explication>p{
+
+}
+
+
+/* tableau de comparaison d'une note */
+#explication>table{
+    width: 70%;
+    min-width: 650px;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    font-size: 105%;
+}
+#explication>table td{
+    padding-right: 5%;
+    width: 50%;
+}
+/* titre du tableau */
+#explication>table caption{
+    margin-bottom: 1%;
+}
+
+
+/* sous-titre des colones */
+#explication>table h6{
+    text-align: center;
+    color: orangered;
+    font-size: 120%;
+    margin-bottom: 1%;
+}
+
+#explication>table p{
     margin-bottom: 3%;
+}
+/* image explicative */
+#explication>table img{
+   width: 100%;
+}
+
+/* */
+#explication>table div#on_est_les_meilleur{
+   text-align: center;
 
 }
 
 
 
-/* partie de gauche */
-#partieGauche{
-    width: 57%;
-    margin-right: 3%;
+/* question */
+#explication> cite{
+}
+
+
+
+
+
+
+
+
+
+/* histoire */
+#histoire{
 
 }
 
 /* article de la presentation de sweetTable */
-#partieGauche > article{
+#histoire > article{
 
 }
-#partieGauche > article>h5{
+#histoire > article>h5{
     margin-top: 1.2%;
     margin-bottom: 0.2%;
 }
 
 /* paragraphe */
-#partieGauche > article> p{
+#histoire > article> p{
     text-align: justify;
     display: block;
     min-height: 120px;
 }
-#partieGauche > article>p> img{
+#histoire > article>p> img{
     float: left;
     margin-right: 4px;
     margin-bottom: 4px;
@@ -48,13 +109,10 @@
 
 
 /* partie de droite */
-#partieDroite{
-    display: inline-block;
-    vertical-align: top;
-    width: 39%;
+#equipe{
     text-align: center;
 }
-#partieDroite > ul{
+#equipe > ul{
     text-align: left;
     width: 48%;
     display: inline-block;
@@ -63,27 +121,27 @@
     padding: 0.4%;
     min-width: 180px;
 }
-#partieDroite > ul:first-child{
+#equipe > ul:first-child{
     margin-right: 3%;
 
 }
 
-#partieDroite > ul > li h6{
+#equipe > ul > li h6{
     margin-bottom: 0.3%;
     margin-top: 2.5%;
 }
 
 /*photo et nom */
-#partieDroite > ul > li:first-child{
+#equipe > ul > li:first-child{
     text-align: center;
 }
-#partieDroite > ul > li> img{
+#equipe > ul > li> img{
     width: 105px;
 }
-#partieDroite > ul > li> p{
+#equipe > ul > li> p{
     margin-right: 2%;
 }
-#partieDroite > ul > li> h5{
+#equipe > ul > li> h5{
     margin-bottom: 2%;
     font-size: 110%;
 }
@@ -91,7 +149,7 @@
 
 /* description*/
 
-#partieDroite > ul > li ul{
+#equipe > ul > li ul{
     display: inline-block;
     vertical-align: top;
     margin-left: 1%;

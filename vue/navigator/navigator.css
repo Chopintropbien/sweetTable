@@ -69,6 +69,7 @@
 #main_nav> section >ul >li>input[type="search"]{
     padding: 4px;
     display: inline-block;
+    border-radius: 0px;
     vertical-align: top;
     position: relative;
     right: 5px;

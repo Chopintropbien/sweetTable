@@ -1,6 +1,8 @@
 <?php
 
 include_once('vue/class/publication/publication_photo.class.php');
+
+include_once('controller/fonction_annexe/date_publication.php');
 class Publication extends Publication_photo{
     private $nom_personne_qui_publie;
     private $photo_profil;
@@ -24,27 +26,35 @@ class Publication extends Publication_photo{
         else $this->photo_profil = $_SESSION['photo_profil_vide'];
 
         $this->uid_personne_publie = $uid_personne_publie;
-        $this->date_ecriture = $date_ecriture;
+        $this->date_ecriture = date_publication($date_ecriture);
         $this->restaurant_nom = $restaurant_nom;
         $this->uid_restaurant = $uid_restaurant;
         $this->titre = $titre;
     }
 
-    protected function affiche_debut($i, $class_publication, $texte_action){
+    // affiche_personne -> affiche la photo et le nom de ce lui qui a ecrit la revue
+    protected function affiche_debut($i, $class_publication, $texte_action, $affiche_personne){
 
         echo '<div class = "'.$class_publication. '">';
-            echo '<img src="'.$this->photo_profil.'"/>';
+            if($affiche_personne) echo '<img src="'.$this->photo_profil.'"/>';
 
-            echo '<article>';
+            // si on affiche la photo, l'article a droite doit se reduite de taille
+            if($affiche_personne) echo '<article class="avec_personne">';
+            else echo '<article class="sans_personne">';
                 echo '<time>'.$this->date_ecriture.'</time>';
 
                 echo '<h5>'.$this->titre.'</h5>';
 
                 // titre
                 echo '<h6>';
-                    echo '<a ><strong>'.$this->nom_personne_qui_publie.'</strong></a>';
+                    if($affiche_personne){
+                        echo '<a href="'.$GLOBALS['host'].'/profil.php?uid='.$this->uid_personne_publie.'">';
+                            echo '<mark>'.$this->nom_personne_qui_publie.'</mark></a>';
                         echo '<span>'.$texte_action.'</span>';
-                    echo '<a><mark>'.$this->restaurant_nom.'</mark></a>';
+                    }
+
+                    echo '<a href="'.$GLOBALS['host'].'/restaurant.php?uid='.$this->uid_restaurant.'">';
+                        echo '<mark>'.$this->restaurant_nom.'</mark></a>';
                 echo '</h6>';
     }
 

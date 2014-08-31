@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/liste/liste.class.css"/>
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/revue/publication_revue.class.css"/>
     <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/publication/publication.class.css"/>
+    <link rel="stylesheet" href="<?php echo $GLOBALS['host'];?>/vue/class/publication/publication_photo.class.css"/>
 
     <title> SweetTable </title>
 
@@ -78,9 +79,9 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
         <!-- liste des 3 photos -->
 
         <section>
-            <img src=" <?php echo $restaurantJSON->picture[0] ?> "/>
-            <img src=" <?php echo $restaurantJSON->picture[1] ?> "/>
-            <img src=" <?php echo $restaurantJSON->picture[2] ?> "/>
+            <img src="data:image/png;base64,<?php echo $restaurantJSON->picture[0]->thumbnail ?>"/>
+            <img src="data:image/png;base64,<?php echo $restaurantJSON->picture[1]->thumbnail ?> "/>
+            <img src="data:image/png;base64,<?php echo $restaurantJSON->picture[2]->thumbnail ?> "/>
             <!-- <p><a href="<?php echo $restaurantJSON->lienPhoto?>"> Voir toutes les photos </a></p> -->
             <!--<p><a href="http://localhost/meittopi/restaurant/photo.php"> Voir toutes les photos </a></p> -->
         </section>
@@ -92,11 +93,16 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
         include_once('vue/class/publication/publication.class.php');
         include_once('vue/class/revue/publication_revue.class.php');
 
+        include_once('model/get_revue.php');
+
         $liste = new Liste();
-        foreach($liste_revuesJSON as $revue_JSON){
-            $liste->ajoute(new Publication_Revue($revue_JSON));
+        foreach($restaurantJSON->review_list as $revue_JSON){
+            $revue = get_revue($revue_JSON->uid);
+            $liste->ajoute(new Publication_Revue($revue->issuer[0]->name, $photo_profil, $revue->issuer[0]->uid, $revue->created,
+                $revue->object->name, $revue->object->uid, $revue->title, $revue->user_match, $revue->contents,
+                $revue->picture[0]->thumbnail, $revue->picture[0]->thumbnail, $revue->picture[0]->thumbnail));
         }
-        $liste->affiche('revue','publication');
+        $liste->affiche('revue','publication', true);
 
         ?>
 
@@ -118,13 +124,11 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
 
         <section>
             <article>
+                <!-- TODO: -->
                 <address><?php echo $restaurantJSON->quartier?></address>
                 <address><?php echo $restaurantJSON->rue?></address>
                 <address><?php echo $restaurantJSON->ville?></address>
                 <p><?php echo $restaurantJSON->tel?></p>
-
-                <h4>Horraire d'ouverture</h4>
-                <p><?php echo $restaurantJSON->ouverture ?></p>
 
             </article>
 
@@ -133,6 +137,7 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
 
 
         <table id="horraire">
+            <caption> Horraire d'ouverture</caption>
             <tr>
                 <td>Lundi</td>
                 <td> 10-19h </td>

@@ -28,11 +28,29 @@ if(isset($_SESSION['uid'])){
         if($birthday || $name){
             modifie_profil($_SESSION['uid'], $name, $birthday);
         }
+
+        // photo de profil
+        include_once('model/apload_photo.php');
+        if($_FILES['photo_profil']){
+            apload_photo('photo_profil', $GLOBALS['photo_size'], 'profil', $_SESSION['uid']);
+        }
     }
 
     // get profil
     include('model/get_profil.php');
-    $profil_JSON = get_profil($_SESSION['uid'], true);
+
+    // avoir le profil de l'utilisateur ou celui d'une autre, pour pouvoir le regarder.
+    // $profil_user => true si c'est le propre profil de l'utilisateur
+    if(isset($_GET['uid']) && $_GET['uid'] != $_SESSION['uid']){
+        $profil_JSON = get_profil($_GET['uid'], true);
+        $profil_user = false;
+    }
+    else{
+        $profil_JSON = get_profil($_SESSION['uid'], true);
+        $profil_user = true;
+    }
+
+
 
     include('vue/profil/profil.php');
 }

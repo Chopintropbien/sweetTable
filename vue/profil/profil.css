@@ -20,7 +20,9 @@
 #editer_info_profil >form{
     width: 100%;
 }
-
+#editer_info_profil >form > img{
+    width: 27.5%;
+}
 #editer_info_profil >form > input{
     display: block;
     margin: 1.5% 0% 4.5% 30%;

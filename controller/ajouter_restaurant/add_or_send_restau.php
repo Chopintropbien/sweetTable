@@ -43,7 +43,7 @@ if(true/*isset($_POST['nom_restau'])  && isset($_POST['adresse_1']) && isset($_P
 
         // apload photo
         include_once('model/apload_photo.php');
-        if($_FILES['1photo']) apload_photo('1photo', 10000, 'restaurant', 'aaaUS');
+        if($_FILES['1photo']) apload_photo('1photo', $GLOBALS['photo_size'], 'restaurant', 'aaaUS');
         //if($_FILES['2photo']) $message_txt = add_photo('2photo', $message_txt, $saut_ligne);
         //if($_FILES['3photo']) $message_txt = add_photo('3photo', $message_txt, $saut_ligne);
     }

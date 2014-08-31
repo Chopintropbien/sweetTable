@@ -21,13 +21,81 @@
 
 <section id="body">
 
-    <section id="partieGauche">
+
+    <article id="explication">
+
+        <h2>Qu'est ce que SweetTabel a de différent des autres? </h2>
+
+
+        <p>
+            Nous disposons d'un système de <mark>recommendation personnalisé ! </mark>
+        </p>
+
+        <table>
+            <caption>
+                <h5>Ce restaurant a 4 etoiles</h5>
+                <cite> " Qu'est ce que ce que cela signifie? "</cite>
+            </caption>
+            <tr>
+                <td> <h6>SweetTable</h6></td>
+                <td> <h6>Une autre application</h6></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>4 étoiles! Nous pensons que ce restaurant
+                    va vous <mark>plaire personnellement.</mark>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                    Tous les utilisateurs qui ont déjà visité ce restaurant ont donné une <mark>note moyenne</mark>
+                    de 4 sur 5.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/sweettable_systeme_note_notre.png"/>
+                    <div  id="on_est_les_meilleur"><mark>Plus proche de votre goût !</mark></div>
+                </td>
+                <td>
+                    <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/sweettable_systeme_note_autre.png"/>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+        <cite>Comment fait SweetTable pour me donner un conseil personnalisé? </cite>
+
+        <p>
+            Nous essayons tout simplement de reproduire ce qui se passe dans la vie réelle:
+            <br/>
+            Pour savoir si un restaurant est bon ou non, vous demandez à votre entourage n'est-ce pas? Mais parmis tous ces avis
+            (parfois contradictoires), vous ne recolter que les plus intéressant: c'est à dire les avis des personnes dont le goût
+            correspond le plus à votre goût.
+            <br/>
+            <br/>
+            C'est exactement ce qui nous faisons!!
+        </p>
+
+
+    </article>
+
+
+
+
+
+
+
+
+    <section id="histoire">
 
         <h2>L'histoire de SweetTable</h2>
         <article>
 
-            <p><!--
-                <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/restau_typique.jpg"/> -->
+            <p>
                 <img src="<?php echo $GLOBALS['host'];?>/vue/image/about-us/vatican.jpg"/>
 
                 L'histoire de SweetTable commence avec un voyage à Rome à la découverte de la chappelle sixtine, du colisée,
@@ -80,18 +148,12 @@
                 de 4 sur 5.
             </p>
 
-            <h5> Comment cela fonctionne-t-il ?  </h5>
-
-            <a class="important_button" href="<?php echo $GLOBALS['host'];?>/mode_de_fonctionnement.php">
-                Back-end et projet
-            </a>
-
 
         </article>
 
     </section>
 
-    <section id="partieDroite">
+    <section id="equipe">
 
 
         <!-- presentation de l'equipe -->
