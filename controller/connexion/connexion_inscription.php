@@ -1,7 +1,5 @@
 <?php
 
-//include_once('controller/home/home.php');
-
 
 include_once('model/connexion/connexion_verification.php');
 
@@ -9,7 +7,7 @@ include_once('controller/connexion/verification_donnee_connexion.php');
 include_once('controller/connexion/verification_donnee_inscription.php');
 
 // si l'utilisateur à été mémoriser
-include_once('model/connexion/connexion_automatique.php');
+include_once('controller/connexion/connexion_automatique.php');
 
 // pour la connexion
 if(isset($_POST['motdepasseInscrit']) && isset($_POST['emailInscrit'])){
