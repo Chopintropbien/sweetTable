@@ -36,13 +36,13 @@
     <?php
     include('vue/connexion/francais/connexion.php');
 
-    if($error_connexion_db_verification){
+    if(isset($error_connexion_db_verification) && $error_connexion_db_verification){
         echo '<p class="error">' . $error_connexion_db_message .'</p>';
     }
-    if($donne_pas_remplie_bien){
+    if(isset($donne_pas_remplie_bien) && $donne_pas_remplie_bien){
         echo '<p class="error">' . $pas_bien_remplie .'</p>';
     }
-    if($error_connexion_db){
+    if(isset($error_connexion_db) && $error_connexion_db){
         echo '<p class="error">' . $error_connexion_db_big_probleme .'</p>';
     }
 

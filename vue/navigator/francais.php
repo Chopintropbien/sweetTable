@@ -1,8 +1,5 @@
 <?php
 
-session_start();
-
-
 $nav_search = 'Rechercher';
 $nav_profil = 'Profil';
 $nav_write_a_review = 'Ecrire une revue';
