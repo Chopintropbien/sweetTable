@@ -9,6 +9,7 @@ if(isset($_SESSION['uid'])){
     $liste_restaurant_rechercheJSON = get_liste_restaurant_recherche();
 
     include ('vue/search/search.php');
+
 }
 else include('controller/connexion/connexion_inscription.php');
 

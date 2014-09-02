@@ -35,7 +35,11 @@ elseif( isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['email']
             $uid = inscription_pour_verification($_POST['email'], $_POST['motdepasse']);
             if($uid){
                 $error_connexion_db = ! inscription($_POST['prenom'], $_POST['nom'],  $uid);
-                include('controller/home/home.php');
+
+                if(! $error_connexion_db)
+                    include('controller/home/home.php');
+                // TODO: faire le cas d'echec
+                else echo 'erreur connexion a la base de donne de andrei';
             }
             else{
                 $error_connexion_db_verification = true;

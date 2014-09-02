@@ -8,11 +8,10 @@ if(isset($_SESSION['uid']) && isset($_GET['uid'])){
     include ('model/get_restaurant.php');
     $restaurantJSON = get_restaurant($_GET['uid'], true);
 
+    if($restaurantJSON)
+        include ('vue/restaurant/restaurant.php');
+    else include ('vue/page_error/page_error.php');
 
-
-    include('model/restaurant/liste_revue.php');
-    $liste_revuesJSON =  get_liste_revue();
-
-    include ('vue/restaurant/restaurant.php');
 }
+elseif(! isset($_GET['uid'])) include ('vue/page_error/page_error.php');
 else include('controller/connexion/connexion_inscription.php');

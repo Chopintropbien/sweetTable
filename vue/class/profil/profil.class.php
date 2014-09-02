@@ -9,9 +9,8 @@ class Profil{
         $this->nom = $profil_JSON->name;
         $this->lieu_habitation = $profil_JSON->location;
 
-        $photo_base64 = $profil_JSON->picture[0]->thumbnail;
-        if($photo_base64) $this->photo = 'data:image/png;base64,' . $photo_base64;
-        else $this->photo = $_SESSION['photo_profil_vide'];;
+        if($profil_JSON->picture) $this->photo = 'data:image/png;base64,' . $profil_JSON->picture[0]->thumbnail;
+        else $this->photo = $_SESSION['photo_profil_vide'];
     }
     public function affiche($id){
         echo '<aside id="'.$id.'" class=""profil>';
