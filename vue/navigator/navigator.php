@@ -19,27 +19,36 @@ include($_SESSION['language'] . '.php');
         </nav>
 
 
+        <form action="search.php" methode="GET" id="recherche_restau_form">
+            <ul>
+                <li>
+                    <label for="search"> <?php echo $nav_search_label; ?> </label>
+                    <input type="search" name="search" id="search" placeholder="<?php echo $nav_search_placeholder; ?>"
+                           autocomplete="off" value="<?php if(isset($_GET['search'])) echo $_GET['search'];?>" />
+                    <ul id="ajax_search" class="like_input" style="display: none;"> </ul>
+                </li>
 
-        <ul>
-            <li>
-                <label for="search"> <?php echo $nav_search_label; ?> </label>
-                <input type="search" name="search" id="search" placeholder="<?php echo $nav_search_placeholder; ?>" autocomplete="off"/>
-                <ul id="ajax_search" class="like_input" style="display: none;"> </ul>
-            </li>
+                <li>
+                    <label for="where"> <?php echo $nav_where_label; ?> </label>
+                    <input type="search" name="where" id="where" placeholder="<?php echo $nav_where_placeholder; ?>"
+                           autocomplete="off" value="<?php if(isset($_GET['where'])) echo $_GET['where'];?>"/>
+                    <ul id="ajax_where" class="like_input" style="display: none;"> </ul>
+                </li>
 
-            <li>
-                <label for="where"> <?php echo $nav_where_label; ?> </label>
-                <input type="search" name="where" id="where" placeholder="<?php echo $nav_where_placeholder; ?>" autocomplete="off"/>
-                <ul id="ajax_where" class="like_input" style="display: none;"> </ul>
-            </li>
+                <li>
+                    <button value="submit" type="submit" id="submit_nav">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </li>
 
-            <li>
-                <button value="submit" type="submit">
-                    <i class="fa fa-search"></i>
-                </button>
-            </li>
+                <!-- pour les filtres -->
+                <input type="hidden" name="cuisine" id="cuisine_HI"/>
+                <input type="hidden" name="tags" id="tags_HI"/>
+                <input type="hidden" name="maxPrice" id="maxPrice_HI" value="5"/>
+                <input type="hidden" name="minPrice" id="minPrice_HI" value="0"/>
 
-        </ul>
+            </ul>
+        </form>
 
     </section>
 

@@ -28,7 +28,7 @@
         <span id="horraire">
 
             <?php
-            if($_SESSION['uid'] == 'user21') echo '<input type="text" name="horraire_admin"/>';
+            if($_SESSION['uid'] == 'user1') echo '<input type="text" name="horraire_admin"/>';
             else include('vue/ajouter_restaurant/horraire.php');
             ?>
         </span>

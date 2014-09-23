@@ -10,10 +10,10 @@ if(isset($_SESSION['uid']) && isset($_GET['uid'])){
     include ('model/get_restaurant.php');
     $restaurantJSON = get_restaurant($_GET['uid'], false);
 
-    if( $restaurantJSON){
+    if($restaurantJSON){
 
         // si c'est pour editer une renue;
-        if($_GET['uid_revue']){
+        if(isset($_GET['uid_revue'])){
             include ('model/get_revue.php');
             $revue_JSON = get_revue($_GET['uid_revue']);
         }

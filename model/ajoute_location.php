@@ -1,11 +1,11 @@
 <?php
 
-function ajoute_location($uid, $type, $payload){
+function ajoute_location($uid, $type, $payload, $GPS, $diameter){
 
 
     $url = 'http://localhost:5000/location';
 
-    $data = array('uid' => $uid, 'type' => $type, 'payload' => $payload);
+    $data = array('uid' => $uid, 'type' => $type, 'payload' => $payload, 'GPS' => $GPS, 'diameter' => $diameter);
     $data = json_encode($data);
     $options = array(
         'http' => array(

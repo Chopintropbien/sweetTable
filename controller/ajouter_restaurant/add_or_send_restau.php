@@ -6,7 +6,7 @@ if(true/*isset($_POST['nom_restau'])  && isset($_POST['adresse_1']) && isset($_P
     include('vue/search/option/array_name.php');
 
     // si c'est l'admin ajouter le restaurant a la base de donne
-    if($_SESSION['uid'] == 'user21'){
+    if(/*$_SESSION['uid'] == 'user21'*/true ){
 
 
         $uid = $_POST['nom_restau'];
@@ -20,10 +20,13 @@ if(true/*isset($_POST['nom_restau'])  && isset($_POST['adresse_1']) && isset($_P
         include('model/ajoute_restaurant_db.php');
         //var_dump(ajoute_restaurant_db($uid, $_POST['nom_restau'], $_POST['date_ouverture'],  $_POST['horraire_admin']));
 
-        include('model/attache_location.php');
+        // ajoute location a enlever
+        include('model/ajoute_location.php');
+        //var_dump(ajoute_location('FR', 'pays', 'France', '', ''));
 
         // pays
-        //attache_location($_POST['pays'] , $uid);
+        include('model/attache_location.php');
+        attache_location($_POST['pays'] , $uid);
 
 
         // manage the tag

@@ -10,5 +10,3 @@ function connexion_database_verification(){
 
     return $bdd;
 }
-
-connexion_database_verification();

@@ -6,10 +6,10 @@ include('controller/config.php');
 include ('controller/about-us/about-us.php');
 
 
+//include('model/ajoute_location.php');
 
 
 
-include('model/ajoute_location.php');
 //var_dump(ajoute_location('DE', 'country', 'Allemagne'));
 
 
@@ -38,6 +38,8 @@ foreach ($array as $key => $val) {
     fputcsv($new_file, $val);
 }
 fclose($new_file);
+
+*/
 
 
 

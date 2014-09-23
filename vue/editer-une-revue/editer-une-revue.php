@@ -16,7 +16,10 @@
 <body>
 
 <section id="header">
-    <?php include("vue/navigator/navigator.php"); ?>
+    <?php
+    include("vue/navigator/navigator.php");
+    affiche_nav();
+    ?>
 </section>
 
 
@@ -30,16 +33,17 @@ else echo 'write-a-review.php';
 ">
 
 
-    <h1><?php echo $restaurantJSON->name?></h1>
-
     <!-- adresse -->
     <aside>
         <address>
             Chemin de Malley, 12 <br/>
             10007 Lausanne
         </address>
-        <p> <?php echo $restaurantJSON->Phone_number?></p>
+        <p> <?php echo $restaurantJSON->phone?></p>
     </aside>
+
+
+    <h1><?php echo $restaurantJSON->name?></h1>
 
 
     <!-- note -->
@@ -73,10 +77,10 @@ else echo 'write-a-review.php';
 
     <section>
         <h6>Mon titre: </h6>
-        <input type="text" name="titre" id="titre" value="<?php if($revue_JSON) echo $revue_JSON->title?>"/>
+        <input type="text" name="titre" id="titre" value="<?php if(isset($revue_JSON)) echo $revue_JSON->title?>"/>
 
         <h6>Ma revue: </h6>
-        <textarea name="revue" id="revue"><?php if($revue_JSON) echo $revue_JSON->contents?></textarea>
+        <textarea name="revue" id="revue"><?php if(isset($revue_JSON)) echo $revue_JSON->contents?></textarea>
 
     </section>
 
@@ -104,7 +108,7 @@ else echo 'write-a-review.php';
 
 
     <!-- question -->
-    <?php if(! $revue_JSON->uid) include('vue/editer-une-revue/question.php');?>
+    <?php if(! isset($revue_JSON->uid)) include('vue/editer-une-revue/question.php');?>
 
     <!-- button de fin de saisie -->
 
@@ -145,7 +149,7 @@ else echo 'write-a-review.php';
 
 <?php
     // si c'est editer une revue, alors activer la coloration des etoile fasse a l'input hidden qui contient la note
-    if($_GET['uid_revue']){
+    if(isset($_GET['uid_revue'])){
         ?>
         <script>
             document.getElementById('div_etoiles').onmouseout();

@@ -30,7 +30,10 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
 <body onload="onLoad();">
 
 <section id="header">
-    <?php include("vue/navigator/navigator.php"); ?>
+    <?php
+    include("vue/navigator/navigator.php");
+    affiche_nav();
+    ?>
 </section>
 
 <section id="body">
@@ -45,7 +48,7 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
                 <div> <!-- note -->
                     <?php
                     include_once('vue/fonction_annexe/etoile/note_etoile.php');
-                    note_etoile(/*$restaurantJSON->note*/ 4.5, 45);
+                    note_etoile(/*$restaurantJSON->note*/ 4.5, 45); // TODO
                     ?>
                 </div>
                 <p> <?php echo count($restaurantJSON->review_list) ?> avis </p> <!-- nb d'avis sur ce restaurant -->
@@ -55,7 +58,7 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
                 <!-- prix -->
                 <?php
                 $prix = '';
-                for($j=0; $j<$restaurantJSON->Price_range; ++$j){ $prix = $prix . '$';}
+                for($j=0; $j<$restaurantJSON->price; ++$j){ $prix = $prix . '$';}
                 echo '<div>'.$prix.'</div>';
 
                 // categorie
@@ -125,10 +128,10 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
         <section>
             <article>
                 <!-- TODO: -->
-                <address><?php echo $restaurantJSON->quartier?></address>
-                <address><?php echo $restaurantJSON->rue?></address>
-                <address><?php echo $restaurantJSON->ville?></address>
-                <p><?php echo $restaurantJSON->tel?></p>
+                <address><?php //echo $restaurantJSON->quartier?></address>
+                <address><?php //echo $restaurantJSON->rue?></address>
+                <address><?php //echo $restaurantJSON->ville?></address>
+                <p><?php echo $restaurantJSON->phone?></p>
 
             </article>
 
@@ -187,7 +190,7 @@ qu'elle ne peut pas être redimensionnée par l'utilisateur -->
 
             <?php
 
-            include('vue/search/option/francais/cuisines_name.php');
+
             foreach($fonctionnalite_name as $keys_tags => $name_tag){
                 echo '<li>';
                     echo '<p>'. $name_tag . '</p>';

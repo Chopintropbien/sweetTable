@@ -6,17 +6,22 @@
 /* titre restau */
 #body>h1{
     font-size: 240%;
+    width: 70%;
 }
 
 /* adresse et numéro de telephone */
 #body > aside{
     float: right;
-
+    margin-top: 1.5%;
+    font-size: 115%;
 }
-
+/* phone */
+#body > aside > p{
+    margin-top: 4%;
+}
 /* choisis la note */
 #body > article{
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 /* titre de ce qu'on va choisir */

@@ -2,7 +2,7 @@
     <form action="" method="post" id="form_mise_a_jour" enctype="multipart/form-data">
 
         <?php
-        if($profil_JSON->picture[0]->thumbnail) $src_photo = 'data:image/png;base64,' . $profil_JSON->picture[0]->thumbnail;
+        if($profil_JSON->picture) $src_photo = 'data:image/png;base64,' . $profil_JSON->picture->thumbnail; // peut etre rajouter [0] a picture
         else $src_photo = $_SESSION['photo_profil_vide'];
         ?>
         <img src="<?php echo $src_photo;?>" id="photo_profil_img"/>
@@ -30,10 +30,17 @@
                             <?php
 
                             include('vue/profil/francais.php');
-                            $birthday = explode('-', $profil_JSON->birthday);
-                            $birthday_jour = $birthday[2];
-                            $birthday_mois = $birthday[1];
-                            $birthday_annee = $birthday[0];
+
+
+                            $birthday_jour = -1;
+                            $birthday_mois = -1;
+                            $birthday_annee = -1;
+                            if($profil_JSON->birthday){
+                                $birthday = explode('-', $profil_JSON->birthday);
+                                $birthday_jour = $birthday[2];
+                                $birthday_mois = $birthday[1];
+                                $birthday_annee = $birthday[0];
+                            }
 
                             ?>
                             <!-- jour -->

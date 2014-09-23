@@ -1,118 +1,122 @@
+#body{
+    text-align: center;
+}
+
 /* message d'erreur si la recherche n'a pas abouti */
 #error_find_restau{
     width: 66%;
     margin-left: 28.5%;
 }
 
+/*a cote de la carte*/
+#next_map{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+    text-align: left;
+}
+/*option a choisir*/
 #options{
-	width: 15.5%;
-    min-width: 120px;
-	font-size: 93%;
-	display: inline-block;
+    width: 25%;
+    margin-left: 1%;
+    font-size: 93%;
+    display: inline-block;
     margin-top: 0.7%;
 }
 
-	.titreOption{
-		margin-top: 5px;
-        margin-bottom: 4px;
-	}
+.titreOption{
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
 
-    /* afficher plus d'option */
-	#fonctionsAvancees, #cuisinesAvancees{
-		color: #305EC6;
-		margin-top: 5px;
-		margin-bottom: 8px;
-        cursor: pointer;
-	}
-	#fonctionsAvancees:hover, #cuisinesAvancees:hover{
-		text-decoration: underline;
-		
-	}
-    #options> li  label,
-    #options> li  input{
-        vertical-align: middle;
-        margin-bottom: 3px;
-    }
+/* afficher plus d'option */
+#fonctionsAvancees, #cuisinesAvancees{
+    color: #305EC6;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+#fonctionsAvancees:hover, #cuisinesAvancees:hover{
+    text-decoration: underline;
+
+}
+#options> li  label,
+#options> li  input{
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
 
 
 /* partie de la liste des restaurant rechercher */
 #recherche_restau{
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-    margin-left: 27.5%;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
     padding: 1%;
 }
 
 
 /* la partie qui contient la carte */
 #contientCarte{
-    position: fixed;
-    top: 124px;
-    width: 22%;
-    margin-left: 1.5%;
+    width: 30%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 3%;
+    text-align: left;
+
 }
+#carte{
+    width: 30%;
+    z-index: 1;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#contour_carte{
+    cursor: pointer;
+    z-index: 2;
+    border: 10px #FF8400 solid;
+}
+#contour_carte #voir_resultat{
+    width: 140px;
+    background-color: #FF8400;
+    border-bottom: 1px #F17F04 solid;
+    box-shadow: 4px 4px 4px grey;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    opacity: 1;
+
+}
+/* information pour cliquer su la carte*/
+#contour_carte #voir_resultat >p{
+    font-size: 110%;
+    font-weight: bold;
+    padding: 20px;
+    padding-right: 5px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    cursor: pointer;
+}
+#contour_carte #voir_resultat >i{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*la grande carte*/
+#contient_carte_avance{
+    margin-bottom: 2%;
+}
+
+
 /* le titre de la recherche */
 #titreRecherche{
-    font-size: 220%;
-    margin-bottom: 3%;
+    font-size: 180%;
+    margin-bottom: 1%;
+    cursor: pointer;
 }
-
-.infoBulle{
-    background-color: white;
-    border: 2px gainsboro solid;
-    padding: 2%;
-}
-
-.infoBulle>img{
-    width: 25%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* a droite de la photo */
-.infoBulle>section{
-    width: 73%;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 2%;
-}
-
-/* titre du restau */
-.infoBulle>section>article>p{
-    display: inline-block;
-    vertical-align: bottom;
-}
-.infoBulle>section>article>a>h4{
-    display: inline-block;
-    vertical-align: bottom;
-    margin-left: 2%;
-    color: #305EC6;
-    font-size: 120%;
-}
-.infoBulle>section>article>a>h4:hover{
-    text-decoration: underline;
-}
-
-/* etoile et avis */
-.infoBulle>section>div>div{
-    display: inline-block;
-    vertical-align: middle;
-}
-.infoBulle>section>div>p{
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 2%;
-}
-
-/* adresse et telephone */
-.infoBulle>section>aside{
-    font-size: 90%;
-    margin-top: 2%;
-}
-
-
-
 
 
 /*

@@ -17,7 +17,10 @@
 </section>
 
 <section id="body">
-    .neo4j start bin app2.ŷ
+    ./neo4j start
+    elasticsearch start
+    /usr/local/bin/python
+
 
 
 </section>

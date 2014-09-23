@@ -34,4 +34,3 @@ foreach($results as $value){
 
 echo implode('|', $results_finaux); // Et on affiche les résultats séparés par une barre verticale |
 
-?>

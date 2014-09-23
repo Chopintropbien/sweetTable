@@ -33,9 +33,13 @@
 #partieDroite> #pas_encore_recommendation{
     margin-top: 5%;
 }
+/* titre */
+#partieDroite> #pas_encore_recommendation>  h5{
+    font-size: 120%;
+}
 /* explication */
 #partieDroite> #pas_encore_recommendation> section> p{
-    font-size: 85%;
+    font-size: 110%;
     text-align: justify;
     margin-bottom: 3%;
 }
@@ -52,6 +56,10 @@
 #partieDroite> #pas_encore_recommendation> section> div{
     text-align: center;
     margin-bottom: 3%;
+    font-size: 120%;
+}
+#partieDroite> #pas_encore_recommendation> section> div> a{
+    padding: 0.7%;
 }
 
 /* canvas */

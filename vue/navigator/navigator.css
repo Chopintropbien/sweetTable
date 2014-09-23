@@ -25,6 +25,8 @@
 #main_nav> section{
     display: inline-block;
     vertical-align: middle;
+    width: 60%;
+    min-width: 500px;
 }
 
 /* navigator */
@@ -48,17 +50,20 @@
 
 
 /* search input */
-#main_nav> section >ul{
-    margin-bottom: 5px;
+#main_nav> section form {
+    width: 100%;
+    margin-bottom: 2px;
 }
-#main_nav> section >ul >li{
+#main_nav> section ul >li{
     display: inline-block;
 }
-#main_nav> section >ul >li>label{
+#main_nav> section ul >li>label{
     vertical-align: top;
     display: inline-block;
     padding: 4px;
     padding-bottom: 3px;
+
+    height: 17px;
 
     background-color: white;
     font-weight: bold;
@@ -66,7 +71,7 @@
     border-right: 0px;
     box-shadow: 1px 1px 5px silver;
 }
-#main_nav> section >ul >li>input[type="search"]{
+#main_nav> section ul >li>input[type="search"]{
     padding: 4px;
     display: inline-block;
     border-radius: 0px;
@@ -79,7 +84,7 @@
 
 /* button search*/
 
-#main_nav> section >ul >li>button{
+#main_nav> section ul >li>button{
     display: inline-block;
     vertical-align: sub;
     position: relative;

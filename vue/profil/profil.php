@@ -41,7 +41,10 @@
 <body>
 
 <section id="header">
-    <?php include("vue/navigator/navigator.php"); ?>
+    <?php
+    include("vue/navigator/navigator.php");
+    affiche_nav();
+    ?>
 </section>
 
 <section id="body">
@@ -67,7 +70,7 @@
         <?php
         // si c'est le propre profil de l'utilisateur
         if($profil_user){
-            include('vue/ptofil/editer_info.php');
+            include('vue/profil/editer_info.php');
         }
         ?>
 

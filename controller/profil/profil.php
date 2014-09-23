@@ -25,10 +25,11 @@ if(isset($_SESSION['uid'])){
     if($profil_JSON){
 
         // editer une revue
-        include('vue/profil/editer_revue.php');
+        include('controller/profil/editer_revue.php');
 
         // modifier le profil
-        include('vue/profil/modifier_profil.php');
+        include('controller/profil/modifier_profil.php');
+
 
 
         include('vue/profil/profil.php');

@@ -1,0 +1,33 @@
+
+/* titre */
+#body > h1{
+
+}
+#body {
+    font-size: 115%;
+}
+
+/* texte d'introduction */
+#body > p{
+    margin-top: 1%;
+}
+
+
+/* liste des condition */
+#body > ol{
+    margin-top: 2%;
+    list-style-type: circle;
+    font-size: 98%;
+}
+
+#body > ol> li> h3{
+    margin-top: 1%;
+}
+
+
+#body > ol> li> ol{
+    margin-left: 2%;
+}
+#body > ol> li> ol> li> h6{
+    margin-top: 0.5%;
+}

@@ -101,12 +101,10 @@
 .restaurant > section > aside{
     display: inline-block;
     vertical-align: top;
-    text-align: right;
-    width: 38%;
-    font-size: 80%;
+    float: right;
+    font-size: 85%;
 }
 .restaurant > section > aside> address{
-    text-align: left;
 }
 .restaurant > section > aside> p{
     margin-top: 2%;

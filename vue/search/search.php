@@ -29,6 +29,7 @@
 
 <body onload="onLoad();">
 
+
 <section id="header">
     <?php include("vue/navigator/navigator.php"); ?>
 </section>
@@ -36,41 +37,83 @@
 <section id="body">
 
     <!-- si le restaurant cherché n'est pas trouvé -->
-    <?php include('vue/restaurant_not_find/restaurant_not_find.php');?>
+    <?php //include('vue/restaurant_not_find/restaurant_not_find.php');?>
+
 
 
     <!-- carte de recherche -->
     <div id="contientCarte">
         <h2 id="titreRecherche"> Chez J'aime </h2>
-        <div id="carte" style="width: 100%; height: 250px;">  </div>
-        <aside id="infoBulle"></aside>
+        <div id="contour_carte">
+            <div id="voir_resultat">
+                <p>Voir les résultats sur la carte.</p>
+                <i class="fa fa-search"></i>
+            </div>
+            <div id="carte" style="width: 100%; height: 250px;">  </div>
+        </div>
+
     </div>
 
-    <?php
-    include_once('vue/class/liste/liste.class.php');
-    include_once('vue/class/restaurant/restaurant_complet.class.php');
-    $liste = new Liste();
+    <div id="contient_carte_avance" style="display: none;">
+        <div id="carte_avance" style="width: 100%; height: 450px;" ></div>
+    </div>
 
-    foreach($liste_restaurant_rechercheJSON as $restaurant_rechercheJSON){
-        $liste->ajoute(new Restaurant_complet($restaurant_rechercheJSON));
-    }
-    $liste->affiche('recherche_restau', 'restaurant');
-    ?>
+    <section id="next_map">
+        <?php
+        include_once('vue/class/liste/liste.class.php');
+        include_once('vue/class/restaurant/restaurant_complet.class.php');
+        $liste = new Liste();
 
-    <!-- options -->
-    <ul id="options">
-        <?php include("vue/search/option/option.php"); ?>
-    </ul>
+        foreach($recherche_restau_JSON as $restaurant_JSON){
+            $liste->ajoute(new Restaurant_complet($restaurant_JSON->name,
+                false, // photo
+                3.5, //TODO: note
+                $restaurant_JSON->price,
+                count($restaurant_JSON->review_list),
+                $restaurant_JSON->cuisine,
+                $restaurant_JSON->uid,
+                '20 rue du mont verier', //TODO: adresse
+                $restaurant_JSON->phone));
+        }
+        $liste->affiche('recherche_restau', 'restaurant');
+        ?>
+
+
+
+        <!-- options -->
+        <ul id="options">
+            <?php include("vue/search/option/option.php"); ?>
+        </ul>
+
+
+    </section>
 
 </section>
 
 
+<!-- Check les filtres et les et met dans les inputs hidden avant de lancer la recherche -->
+<script src="<?php echo $GLOBALS['host'];?>/controller/search/manage_option_ds_input_hidden_du_nav.js"> </script>
+
+
+
+
+
 <!-- carte -->
-<script src="<?php echo $GLOBALS['host'];?>/vue/fonction_annexe/etoile/note_etoile.js"></script>
 <script src="<?php echo $GLOBALS['host'];?>/controller/search/initialise_carte.js"> </script>
 
 <script>
     google.maps.event.addDomListener(window, 'load', initialize('carte'));
+
+
+    //affiche la grande carte quand on click sur la petite
+    (function(d){
+
+        d.getElementById('contientCarte').onclick = function(){
+            this.style.display = 'none';
+            d.getElementById('contient_carte_avance').style.display = 'block';
+            google.maps.event.addDomListener(window, 'load', initialize_carte_avance('carte_avance'));
+        }
+    })(document);
 </script>
 
 
@@ -82,9 +125,6 @@
 <script>
     dessine_note();
 </script>
-
-
-<!-- restaurant-->
 
 </body>
 

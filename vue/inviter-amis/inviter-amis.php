@@ -15,7 +15,10 @@
 <body>
 
 <section id="header">
-    <?php include("vue/navigator/navigator.php"); ?>
+    <?php
+    include("vue/navigator/navigator.php");
+    affiche_nav();
+    ?>
 </section>
 
 <section id="body">

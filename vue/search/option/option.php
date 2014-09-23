@@ -14,24 +14,24 @@
 		<h2 class = "titreOption" id = "titrePrix"><?php echo $prix; ?> </h2>
 	</li>
 	<li>
-		<input type="checkbox" class="sous" name="toutPrix" id="toutPrix" /> <label for="toutPrix" id="toutPrixLabel"> <?php echo $tous; ?></label><br />
-		<input type="checkbox" class="sous" name="$" id="$" /> <label for="$" id="$Label"><?php echo $devise; ?></label><br />
-		<input type="checkbox" class="sous" name="$$" id="$$" /> <label for="$" id="$$Label">
+		<input type="checkbox" class="sous" name="toutPrix" id="toutPrix" /> <label for="toutPrix" > <?php echo $tous; ?></label><br />
+		<input type="checkbox" class="sous" name="1prix" id="1prix" /> <label for="1prix"><?php echo $devise; ?></label><br />
+		<input type="checkbox" class="sous" name="2prix" id="2prix" /> <label for="2prix">
             <?php
                 for($i = 0; $i<2; ++$i){echo $devise;}
             ?>
         </label><br />
-		<input type="checkbox" class="sous" name="$$$" id="$$$" /> <label for="$" id="$$$Label">
+		<input type="checkbox" class="sous" name="3prix" id="3prix" /> <label for="3prix">
             <?php
             for($i = 0; $i<3; ++$i){echo $devise;}
             ?>
 		</label><br />
-		<input type="checkbox" class="sous" name="$$$$" id="$$$$" /> <label for="$" id="$$$$Label">
+		<input type="checkbox" class="sous" name="4prix" id="4prix" /> <label for="4prix">
             <?php
             for($i = 0; $i<4; ++$i){echo $devise;}
             ?>
         </label><br />
-		<input type="checkbox" class="sous" name="$$$$$" id="$$$$$" /> <label for="$" id="$$$$$Label">
+		<input type="checkbox" class="sous" name="5prix" id="5prix" /> <label for="5prix">
             <?php
             for($i = 0; $i<5; ++$i){echo $devise;}
             ?>

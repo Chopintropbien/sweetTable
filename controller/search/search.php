@@ -8,6 +8,11 @@ if(isset($_SESSION['uid'])){
     include ('model/search/restau_recherche.php');
     $liste_restaurant_rechercheJSON = get_liste_restaurant_recherche();
 
+
+    // search something
+    include('controller/search/search_something.php');
+
+    // html code
     include ('vue/search/search.php');
 
 }

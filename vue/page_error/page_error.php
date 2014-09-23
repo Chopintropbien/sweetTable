@@ -16,8 +16,10 @@
 
 <section id="header">
     <?php
-    if(isset($_SESSION['uid']))
+    if(isset($_SESSION['uid'])){
         include("vue/navigator/navigator.php");
+        affiche_nav();
+    }
     else include("vue/connexion/navigator.php");
     ?>
 </section>

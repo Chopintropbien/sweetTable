@@ -1,6 +1,4 @@
 <?php
-
-
 // modifier le profil
 include_once('model/modifie_profil.php');
 include_once('controller/fonction_annexe/check_date.php');

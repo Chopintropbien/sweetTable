@@ -9,11 +9,10 @@ class Restaurant_complet extends Restaurant_basic{
     protected $tel;
 
 
-    public function __construct($restaurantJSON){
-        parent::__construct($restaurantJSON);
-        $this->adresse = $restaurantJSON[7];
-        $this->tel = $restaurantJSON[8];
-
+    public function __construct($nom, $photo, $note, $prix, $nb_avis, $liste_cathegorie, $uid_restaurant, $adresse, $tel){
+        parent::__construct($nom, $photo, $note, $prix, $nb_avis, $liste_cathegorie, $uid_restaurant);
+        $this->adresse = $adresse;
+        $this->tel = $tel;
     }
     // if $ecrire une revue => apparait le button ecrire une revue
     protected  function affichePartieDroitePhoto($i, $ecrire_revue = false){
@@ -21,7 +20,7 @@ class Restaurant_complet extends Restaurant_basic{
         parent::affichePartieDroitePhoto($i, $ecrire_revue, 'restaurant_complet');
 
         echo '<aside>'; // coordonné restau
-            echo '<adress>'. $this->adresse .'</adress>';
+            echo '<address>'. $this->adresse .'</address>';
             echo '<p>'.$this->tel.'</p>';
         echo '</aside>';
 

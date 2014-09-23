@@ -28,7 +28,6 @@ class Restaurant_basic {
     }
     // if $ecrire une revue => apparait le button ecrire une revue
     protected  function affichePartieDroitePhoto($i, $ecrire_revue = false, $class_conplet_ou_basic = 'restaurant_basic'){
-        include('francais/restaurantRecherche.php');
 
         echo '<article class="'.$class_conplet_ou_basic.'">'; // info restau
 
